@@ -1,0 +1,109 @@
+dependent_variables:
+- header: {name: $P_1$, units: ''}
+  qualifiers:
+  - {name: SQRT(S), units: TeV, value: 13}
+  - {name: LUMINOSITY, units: 'fb$^{-1}$', value: 140}
+  values:
+  - errors:
+    - asymerror: {minus: -0.204, plus: 0.234}
+      label: stat
+    - {label: syst, symerror: 0.04}
+    value: 0.089
+  - errors:
+    - asymerror: {minus: -0.208, plus: 0.187}
+      label: stat
+    - {label: syst, symerror: 0.051}
+    value: -0.285
+  - errors:
+    - asymerror: {minus: -0.168, plus: 0.153}
+      label: stat
+    - {label: syst, symerror: 0.038}
+    value: -0.297
+  - errors:
+    - asymerror: {minus: -0.102, plus: 0.101}
+      label: stat
+    - {label: syst, symerror: 0.046}
+    value: -0.056
+  - errors:
+    - asymerror: {minus: -0.047, plus: 0.051}
+      label: stat
+    - {label: syst, symerror: 0.03}
+    value: -0.439
+  - errors:
+    - asymerror: {minus: -0.037, plus: 0.037}
+      label: stat
+    - {label: syst, symerror: 0.025}
+    value: -0.465
+- header: {name: '$P_1{}_{,ABCDMN}$', units: ''}
+  values:
+  - errors:
+    - {label: theo, symerror: 0.05}
+    value: 0.052
+  - errors:
+    - {label: theo, symerror: 0.09}
+    value: -0.108
+  - errors:
+    - {label: theo, symerror: 0.118}
+    value: -0.208
+  - errors:
+    - {label: theo, symerror: 0.123}
+    value: -0.248
+  - {value: '---'}
+  - errors:
+    - {label: theo, symerror: 0.089}
+    value: -0.503
+- header: {name: '$P_1{}_{,EOS}$', units: ''}
+  values:
+  - errors:
+    - {label: theo, symerror: 0.0112}
+    value: 0.052
+  - errors:
+    - {label: theo, symerror: 0.0321}
+    value: -0.101
+  - errors:
+    - {label: theo, symerror: 0.0496}
+    value: -0.188
+  - errors:
+    - {label: theo, symerror: 0.0456}
+    value: -0.206
+  - {value: '---'}
+  - {value: '---'}
+- header: {name: '$P_1{}_{,flavio}$', units: ''}
+  values:
+  - errors:
+    - {label: theo, symerror: 0.049}
+    value: 0.042
+  - errors:
+    - {label: theo, symerror: 0.037}
+    value: -0.106
+  - errors:
+    - {label: theo, symerror: 0.049}
+    value: -0.18
+  - {value: '---'}
+  - {value: '---'}
+  - {value: '---'}
+- header: {name: '$P_1{}_{,HEPfit}$', units: ''}
+  values:
+  - errors:
+    - {label: theo, symerror: 0.467}
+    value: -0.04
+  - errors:
+    - {label: theo, symerror: 0.405}
+    value: -0.055
+  - errors:
+    - {label: theo, symerror: 0.444}
+    value: -0.056
+  - errors:
+    - {label: theo, symerror: 0.484}
+    value: -0.056
+  - {value: '---'}
+  - {value: '---'}
+independent_variables:
+- header: {name: $q^2$ range, units: '$\mathrm{GeV}^2$'}
+  values:
+  - {high: 2, low: 1.1}
+  - {high: 4.3, low: 2}
+  - {high: 6, low: 4.3}
+  - {high: 8.68, low: 6}
+  - {high: 12.86, low: 10.09}
+  - {high: 16, low: 14.18}

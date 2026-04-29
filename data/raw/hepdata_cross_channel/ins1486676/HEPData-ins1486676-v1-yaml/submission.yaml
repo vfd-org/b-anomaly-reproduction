@@ -1,0 +1,59 @@
+comment: |
+  CERN-LHC.  Measurements of the differential branching fraction and angular moments of the decay $B^0 \to K^+ \pi^- \mu^+ \mu^-$ in the $K^*_{0,2}(1430)^0$ in the $K^+\pi^-$ invariant mass range $1330<m(K^+ \pi^-)<1530~MeV/c^2$ are presented. Proton-proton collision data are used, corresponding to an integrated luminosity of 3 $fb^{-1}$ collected by the LHCb experiment. Differential branching fraction measurements are reported in five bins of the invariant mass squared of the dimuon system, $q^2$, between 0.1 and 8.0 $GeV^2/c^4$. For the first time, an angular analysis sensitive to the S-, P- and D-wave contributions of this rare decay is performed. The set of 40 normalised angular moments describing the decay is presented for the $q^2$ range 1.1--6.0 $GeV^2/c^4$.
+dateupdated: 07/11/2016 14:14:20
+hepdata_doi: 10.17182/hepdata.75193.v1
+modifications:
+- {action: Encoded, date: 01 NOV 2016, who: 'Marcin Chrzaszcz, mchrzasz@cern.ch'}
+record_ids:
+- {id: 1486676, type: inspire}
+- {id: 6698, type: red}
+---
+data_file: Table1.yaml
+description: |
+  : Differential branching fraction of $B^0 \to K^+ \pi^- \mu^+ \mu^-$ in bins of $q^2$ for the range $1330<m(K^+ \pi^-)<1530~MeV/c^2$. The first uncertainty is statistical, the second systematic and the third due to the uncertainty on the $B^0 \to J/\psi K^*(892)^0$ and $J/\psi \to \mu\mu$ branching fractions.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [BR, ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement, Proton-Proton Scattering, Strange Production,
+    Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Section 7, Figure 5, Table 2
+name: Table 1
+table_doi: 10.17182/hepdata.75193.v1/t1
+---
+data_file: Table2.yaml
+description: |
+  Measurement of the normalised moments, $\overline{\Gamma}_{i}$, of the decay  $B^0 \to K^+ \pi^- \mu^+ \mu^-$ in the range $1.1< q^2<6.0 GeV^2/c^4$ and $1330<m(K^+ \pi^-)<1530~MeV/c^2$. The first uncertainty is statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [POL, ASYM]
+- name: phrases
+  values: [Inclusive, Polarization, Asymmetry Measurement, Proton-Proton Scattering,
+    Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Section 8, Table 3
+name: Table 2
+table_doi: 10.17182/hepdata.75193.v1/t2
+---
+data_file: Table3.yaml
+description: |
+  Full covariance matrix of the normalised moments. The statistical and systematic uncertainties are combined.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Additional material
+name: Table 3
+table_doi: 10.17182/hepdata.75193.v1/t3

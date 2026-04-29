@@ -1,0 +1,205 @@
+dependent_variables:
+- header: {name: ''}
+  qualifiers:
+  - {name: $q^2$ = M**2(<MU+ MU->), units: GeV^2, value: 6.0-8.0}
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - {value: 1.0}
+  - {value: -0.07}
+  - {value: -0.06}
+  - {value: 0.03}
+  - {value: -0.03}
+  - {value: -0.01}
+  - {value: 0.02}
+  - {value: -0.15}
+  - {value: -0.07}
+  - {value: 1.0}
+  - {value: 0.08}
+  - {value: 0.12}
+  - {value: -0.07}
+  - {value: -0.01}
+  - {value: 0.01}
+  - {value: -0.06}
+  - {value: -0.06}
+  - {value: 0.08}
+  - {value: 1.0}
+  - {value: -0.07}
+  - {value: 0.08}
+  - {value: 0.01}
+  - {value: 0.0}
+  - {value: 0.05}
+  - {value: 0.03}
+  - {value: 0.12}
+  - {value: -0.07}
+  - {value: 1.0}
+  - {value: 0.13}
+  - {value: -0.03}
+  - {value: 0.01}
+  - {value: 0.01}
+  - {value: -0.03}
+  - {value: -0.07}
+  - {value: 0.08}
+  - {value: 0.13}
+  - {value: 1.0}
+  - {value: 0.02}
+  - {value: 0.05}
+  - {value: -0.06}
+  - {value: -0.01}
+  - {value: -0.01}
+  - {value: 0.01}
+  - {value: -0.03}
+  - {value: 0.02}
+  - {value: 1.0}
+  - {value: -0.11}
+  - {value: 0.12}
+  - {value: 0.02}
+  - {value: 0.01}
+  - {value: 0.0}
+  - {value: 0.01}
+  - {value: 0.05}
+  - {value: -0.11}
+  - {value: 1.0}
+  - {value: 0.06}
+  - {value: -0.15}
+  - {value: -0.06}
+  - {value: 0.05}
+  - {value: 0.01}
+  - {value: -0.06}
+  - {value: 0.12}
+  - {value: 0.06}
+  - {value: 1.0}
+independent_variables:
+- header: {name: CORR}
+  values:
+  - {value: '$F_{\rm L}$'}
+  - {value: $A_3$}
+  - {value: $A_4$}
+  - {value: $A_5$}
+  - {value: '$A_{6s}$'}
+  - {value: $A_7$}
+  - {value: $A_8$}
+  - {value: $A_9$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $A_3$}
+  - {value: $A_4$}
+  - {value: $A_5$}
+  - {value: '$A_{6s}$'}
+  - {value: $A_7$}
+  - {value: $A_8$}
+  - {value: $A_9$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $A_3$}
+  - {value: $A_4$}
+  - {value: $A_5$}
+  - {value: '$A_{6s}$'}
+  - {value: $A_7$}
+  - {value: $A_8$}
+  - {value: $A_9$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $A_3$}
+  - {value: $A_4$}
+  - {value: $A_5$}
+  - {value: '$A_{6s}$'}
+  - {value: $A_7$}
+  - {value: $A_8$}
+  - {value: $A_9$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $A_3$}
+  - {value: $A_4$}
+  - {value: $A_5$}
+  - {value: '$A_{6s}$'}
+  - {value: $A_7$}
+  - {value: $A_8$}
+  - {value: $A_9$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $A_3$}
+  - {value: $A_4$}
+  - {value: $A_5$}
+  - {value: '$A_{6s}$'}
+  - {value: $A_7$}
+  - {value: $A_8$}
+  - {value: $A_9$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $A_3$}
+  - {value: $A_4$}
+  - {value: $A_5$}
+  - {value: '$A_{6s}$'}
+  - {value: $A_7$}
+  - {value: $A_8$}
+  - {value: $A_9$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $A_3$}
+  - {value: $A_4$}
+  - {value: $A_5$}
+  - {value: '$A_{6s}$'}
+  - {value: $A_7$}
+  - {value: $A_8$}
+  - {value: $A_9$}
+- header: {name: CORR}
+  values:
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: $A_3$}
+  - {value: $A_3$}
+  - {value: $A_3$}
+  - {value: $A_3$}
+  - {value: $A_3$}
+  - {value: $A_3$}
+  - {value: $A_3$}
+  - {value: $A_3$}
+  - {value: $A_4$}
+  - {value: $A_4$}
+  - {value: $A_4$}
+  - {value: $A_4$}
+  - {value: $A_4$}
+  - {value: $A_4$}
+  - {value: $A_4$}
+  - {value: $A_4$}
+  - {value: $A_5$}
+  - {value: $A_5$}
+  - {value: $A_5$}
+  - {value: $A_5$}
+  - {value: $A_5$}
+  - {value: $A_5$}
+  - {value: $A_5$}
+  - {value: $A_5$}
+  - {value: '$A_{6s}$'}
+  - {value: '$A_{6s}$'}
+  - {value: '$A_{6s}$'}
+  - {value: '$A_{6s}$'}
+  - {value: '$A_{6s}$'}
+  - {value: '$A_{6s}$'}
+  - {value: '$A_{6s}$'}
+  - {value: '$A_{6s}$'}
+  - {value: $A_7$}
+  - {value: $A_7$}
+  - {value: $A_7$}
+  - {value: $A_7$}
+  - {value: $A_7$}
+  - {value: $A_7$}
+  - {value: $A_7$}
+  - {value: $A_7$}
+  - {value: $A_8$}
+  - {value: $A_8$}
+  - {value: $A_8$}
+  - {value: $A_8$}
+  - {value: $A_8$}
+  - {value: $A_8$}
+  - {value: $A_8$}
+  - {value: $A_8$}
+  - {value: $A_9$}
+  - {value: $A_9$}
+  - {value: $A_9$}
+  - {value: $A_9$}
+  - {value: $A_9$}
+  - {value: $A_9$}
+  - {value: $A_9$}
+  - {value: $A_9$}

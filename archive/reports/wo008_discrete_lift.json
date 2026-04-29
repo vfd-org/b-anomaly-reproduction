@@ -1,0 +1,74 @@
+[
+  {
+    "model":"SM",
+    "k_params":0,
+    "chi2":10.1778338736,
+    "amplitude":null,
+    "delta_aic_vs_FREE_C9":null,
+    "delta_aic_vs_KAPPA_EXP":null,
+    "correlation_with_exp":null,
+    "correlation_with_cos":null,
+    "eigenvalue":null,
+    "notes":"baseline"
+  },
+  {
+    "model":"FREE_C9",
+    "k_params":1,
+    "chi2":6.704573091,
+    "amplitude":-0.1536218338,
+    "delta_aic_vs_FREE_C9":0.0,
+    "delta_aic_vs_KAPPA_EXP":0.8006645909,
+    "correlation_with_exp":null,
+    "correlation_with_cos":null,
+    "eigenvalue":null,
+    "notes":"global C_9 shift"
+  },
+  {
+    "model":"KAPPA_EXP (continuum Green's function)",
+    "k_params":1,
+    "chi2":5.9039085,
+    "amplitude":0.2907737079,
+    "delta_aic_vs_FREE_C9":-0.8006645909,
+    "delta_aic_vs_KAPPA_EXP":0.0,
+    "correlation_with_exp":1.0,
+    "correlation_with_cos":0.8573973265,
+    "eigenvalue":null,
+    "notes":"Layer 1 derivation: Green's fn of L_phi on R"
+  },
+  {
+    "model":"DISCRETE_LIFT[FREE_DIRICHLET]",
+    "k_params":1,
+    "chi2":6.2424736217,
+    "amplitude":0.2119542746,
+    "delta_aic_vs_FREE_C9":-0.4620994693,
+    "delta_aic_vs_KAPPA_EXP":0.3385651217,
+    "correlation_with_exp":0.8629405131,
+    "correlation_with_cos":0.999905037,
+    "eigenvalue":0.152240935,
+    "notes":"shell eigenmode psi at shells = [0.0, 0.38268343236509034, 0.7071067811865481, 0.923879532511287, 1.0, 0.9238795325112863, 0.7071067811865468, 0.3826834323650892, 0.0]"
+  },
+  {
+    "model":"DISCRETE_LIFT[PHI_MASS]",
+    "k_params":1,
+    "chi2":6.2424736217,
+    "amplitude":0.211954275,
+    "delta_aic_vs_FREE_C9":-0.4620994693,
+    "delta_aic_vs_KAPPA_EXP":0.3385651217,
+    "correlation_with_exp":0.8629405131,
+    "correlation_with_cos":0.999905037,
+    "eigenvalue":0.5342069462,
+    "notes":"shell eigenmode psi at shells = [0.0, 0.38268343236509034, 0.7071067811865485, 0.923879532511288, 1.0, 0.9238795325112874, 0.7071067811865476, 0.3826834323650894, 0.0]"
+  },
+  {
+    "model":"DISCRETE_LIFT[PHI_COCYCLE[alpha=1.0]]",
+    "k_params":1,
+    "chi2":6.425196855,
+    "amplitude":0.3275084546,
+    "delta_aic_vs_FREE_C9":-0.279376236,
+    "delta_aic_vs_KAPPA_EXP":0.521288355,
+    "correlation_with_exp":0.9827687354,
+    "correlation_with_cos":0.7643755569,
+    "eigenvalue":2.1858364852,
+    "notes":"shell eigenmode psi at shells = [-0.0, 0.0011151826504249753, 0.08498727259339207, 0.5980647630336323, 1.0, 0.5980647630336315, 0.08498727259339174, 0.001115182650425115, -0.0]"
+  }
+]

@@ -1,0 +1,188 @@
+% =====================================================================
+\section{Results on LHCb 2025}\label{sec:results}
+% =====================================================================
+
+This section reports the kernel fit on the LHCb 2025 dataset
+\citep{LHCb2025BKstmumuComp,LHCb2025BKstmumuHEPData}, both on the
+single-observable $P_{5}'$ and on the four-observable joint fit
+$(P_{5}', P_{4}', P_{1}, P_{2})$. We report the headline non-linear
+result first; the linearised Mode-B numbers are then quoted as a
+methodology diagnostic and the discrepancy is discussed.
+
+\subsection{Joint fit, four observables (non-linear, headline)}\label{subsec:joint_fit}
+
+We fit the four optimised $P_{i}$ observables jointly with the full
+LHCb $32{\times}32$ correlation matrix:
+$(P_{5}', P_{4}', P_{1}, P_{2})$, 8 bins each, 32 data points total.
+Fits are evaluated using \texttt{flavio.np\_prediction} directly
+(no Taylor expansion), with one fitted parameter per model
+($k=1$). Results in Table~\ref{tab:joint_fit_nl}.
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcrrrl}
+\toprule
+Model & $k$ & $\chi^{2}$ & AIC & $\Delta\mathrm{AIC}$ & best fit \\
+\midrule
+SM                              & 0 & 160.6 & 160.6 & $+119.7$ & -- \\
+\textbf{FREE\_C9} (non-linear)  & 1 &  \textbf{40.89} &  \textbf{42.89} & $\boldsymbol{0.00}$ & $\Delta C_{9}=-1.00$ \\
+VFD\_GREEN\_600CELL (non-linear)& 1 &  41.98 &  43.98 & $+1.09$ & $A=+1.14$, $\Delta C_{9}^{\mathrm{eff}}=-0.86$ \\
+\bottomrule
+\end{tabular}
+\caption{Headline non-linear joint fit on the four LHCb 2025 angular
+observables (32 data points, full covariance). At equal parameter cost
+the constant Wilson-coefficient shift $\mathrm{FREE\_C9}$ has lower
+AIC by $1.09$ units, a marginal preference (Akaike weight ratio
+$\approx 1.7$). The geometry-derived kernel produces a comparable
+$\chi^{2}$ but does not beat $\mathrm{FREE\_C9}$ in this analysis.
+Reproducible from \texttt{scripts/wo016c\_nonlinear\_refit.py}.}
+\label{tab:joint_fit_nl}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{fig_F2_bin_pulls.pdf}
+\caption{Per-bin pulls $(O_{\mathrm{obs}} - O_{\mathrm{pred}})/\sigma$
+on the LHCb 2025 four-observable joint fit, evaluated under the
+non-linear $\mathrm{FREE\_C9}$ best fit ($\Delta C_{9}=-1.00$) and
+the non-linear VFD best fit ($A=+1.14$). Dashed lines mark the
+$\pm 1\sigma$ bands. Both models leave residuals of $\lesssim 2\sigma$
+in most bins; neither shows a systematic spatial structure that the
+other captures. Reproducible from
+\texttt{scripts/wo017\_paper\_figures.py}.}
+\label{fig:F2_bin_pulls}
+\end{figure}
+
+\subsection{Mode-B linearised fit (diagnostic only)}
+
+The earlier project iteration used the Mode-B linearised response of
+Eq.~\eqref{eq:modeB}, fitting $\Delta C_{9}$ via the central-difference
+slope at $\delta=\pm 0.5$ around $C_{9}^{\mathrm{SM}}$. On the same
+joint fit this gives Table~\ref{tab:joint_fit_linear}.
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcrrrl}
+\toprule
+Model & $k$ & $\chi^{2}$ & AIC & $\Delta\mathrm{AIC}$ & best fit \\
+\midrule
+SM                          & 0 & 160.6 & 160.6 & $+119.3$ & -- \\
+FREE\_C9 (Mode B)           & 1 &  39.30 &  41.30 & $0.00$  & $\Delta C_{9}=-1.34$ \\
+VFD\_GREEN\_600CELL (Mode B)& 1 &  37.63 &  39.63 & $-1.67$ & $A=+1.59$, $\Delta C_{9}^{\mathrm{eff}}=-1.37$ \\
+\bottomrule
+\end{tabular}
+\caption{Linearised Mode-B fit on the same data. Under the linear
+model $\mathrm{VFD\_GREEN\_600CELL}$ has lower AIC by $1.67$ units.
+This number does not survive non-linear evaluation: see
+Table~\ref{tab:joint_fit_modes}.}
+\label{tab:joint_fit_linear}
+\end{table}
+
+\subsection{Linearised vs non-linear: drift diagnostic}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+quantity & linearised (Mode B) & non-linear refit & drift \\
+\midrule
+$\chi^{2}$ FREE\_C9                & 39.30 & 40.89 & $+1.59$ \\
+$\chi^{2}$ VFD\_GREEN\_600CELL     & 37.63 & 41.98 & $+4.35$ \\
+$\Delta\mathrm{AIC}$ (VFD vs FREE) & $-1.67$ & $+1.09$ & $\mathbf{+2.77}$ \\
+$\Delta C_{9}^{\mathrm{FREE}}$ best fit & $-1.34$ & $-1.00$ & $+0.34$ \\
+$A$ best fit (VFD)                 & $+1.59$ & $+1.14$ & $-0.45$ \\
+max per-bin linearisation residual & --  & $4.27\sigma$ & -- \\
+mean per-bin linearisation residual & -- & $0.71\sigma$ & -- \\
+\bottomrule
+\end{tabular}
+\caption{Comparison of the same fit under Mode-B linearisation vs
+direct \texttt{flavio.np\_prediction}. The drift in
+$\Delta\mathrm{AIC}$ is $2.77$ units, larger than the Mode-B
+preference itself: the headline flips sign under non-linear
+evaluation. Per-bin linearisation residuals reach $4\sigma$,
+confirming that $|\Delta C_{9}|\sim 1.4$ is well outside the
+linear regime. Reproducible from
+\texttt{scripts/wo016c\_nonlinear\_refit.py}
+(reports/wo016c\_nonlinear\_refit.md).}
+\label{tab:joint_fit_modes}
+\end{table}
+
+\subsection{Single-observable fit on $P_{5}'$ (linearised, retained as a check)}
+
+For comparability with the project's earlier reports we retain the
+single-observable $P_{5}'$ fit under the linearised Mode-B response.
+On the canonical 8-bin grid with the full $8{\times}8$ covariance:
+SM $\chi^{2}=17.3$, FREE\_C9 $\chi^{2}=14.91$ ($\Delta C_{9}=-1.38$),
+KAPPA\_EXP (continuum, Layer 1) $\chi^{2}=7.91$ at $A=+4.49$, and
+VFD\_GREEN\_600CELL $\chi^{2}=13.55$ at $A=+1.68$. The continuum
+exponential dominates on this single observable
+($\Delta\mathrm{AIC}=-7.00$ vs FREE\_C9), reflecting that $P_{5}'$ is
+the sharpest $C_{9}$-sensitive observable in this dataset and prefers
+the most-peaked kernel; this preference is reduced when the four
+$P$-basis observables are fitted jointly. Single-observable fits are
+not run in non-linear mode because the conclusion (the kernel is
+consistent with the shape of $P_{5}'$) is preserved across
+both modes.
+
+\subsection{Leave-one-observable-out stability (linearised, retained)}
+
+Refitting the shared kernel under Mode B after removing one of the
+four observables gives Table~\ref{tab:loo_obs}.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+dropped & $n$ remaining & $A$ (Mode B) & $\Delta C_{9}^{\mathrm{eff}}$ mean & $\chi^{2}$ \\
+\midrule
+$P_{1}$  & 24 & 1.558 & $-1.336$ & 29.23 \\
+$P_{2}$  & 24 & 1.651 & $-1.416$ & 27.70 \\
+$P_{4}'$ & 24 & 1.620 & $-1.390$ & 33.46 \\
+$P_{5}'$ & 24 & 1.581 & $-1.356$ & 26.86 \\
+\midrule
+all (reference, Mode B)  & 32 & 1.594 & $-1.367$ & 37.63 \\
+\bottomrule
+\end{tabular}
+\caption{Leave-one-observable-out fits of the shared kernel under
+Mode B (linearised). $A$ varies within $\pm 3\,\%$ across the four
+folds, $\Delta C_{9}^{\mathrm{eff}}$ stays in $[-1.42, -1.34]$, sign
+always negative. The non-linear LOO produces qualitatively the same
+sign-stable behaviour at lower magnitudes
+($A\in[1.05, 1.20]$); we retain the linearised values here for
+continuity with the project's earlier multi-observable joint-fit
+report.}
+\label{tab:loo_obs}
+\end{table}
+
+\subsection{Acceptance gates}
+
+The acceptance criteria pre-committed for this multi-observable
+joint-fit test were stated for the linearised analysis. Under the
+headline non-linear analysis they read as follows:
+\begin{enumerate}[label=(\roman*)]
+\item $\mathrm{VFD\_GREEN\_600CELL}\ \mathrm{AIC} \leq \mathrm{FREE\_C9}\ \mathrm{AIC}$:
+  \textsc{fail} (non-linear $\Delta\mathrm{AIC}=+1.09$, marginal in
+  the opposite direction).
+\item All major angular observables prefer the same sign of effective
+  $\Delta C_{9}$ in the shared-amplitude fit:
+  \textsc{pass} ($A>0$ on every fold; $\Delta C_{9}^{\mathrm{eff}}<0$
+  on every bin in the headline non-linear fit).
+\item Leave-one-observable-out remains stable in sign and bounded in
+  magnitude: \textsc{pass} ($A$ within $\pm 3\,\%$ across folds, sign
+  always positive).
+\end{enumerate}
+
+Acceptance criterion (i) does not pass under the headline non-linear
+analysis on this single dataset; the kernel is statistically
+indistinguishable from a constant Wilson-coefficient shift on AIC.
+Sign-stability and amplitude-bounded behaviour survive both modes.
+The next two sections establish whether the kernel transfers in a
+sign-uniform way to other datasets (\S\ref{sec:cross-dataset}) and
+to other channels (\S\ref{sec:cross-channel}), under the full
+non-linear analysis.

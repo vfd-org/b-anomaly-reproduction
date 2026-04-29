@@ -1,0 +1,205 @@
+dependent_variables:
+- header: {name: ''}
+  qualifiers:
+  - {name: $q^2$ = M**2(<MU+ MU->), units: GeV^2, value: 5.0-6.0}
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - {value: 1.0}
+  - {value: -0.28}
+  - {value: 0.14}
+  - {value: 0.19}
+  - {value: -0.25}
+  - {value: -0.14}
+  - {value: 0.01}
+  - {value: -0.13}
+  - {value: -0.28}
+  - {value: 1.0}
+  - {value: -0.18}
+  - {value: -0.21}
+  - {value: 0.08}
+  - {value: 0.0}
+  - {value: -0.04}
+  - {value: 0.06}
+  - {value: 0.14}
+  - {value: -0.18}
+  - {value: 1.0}
+  - {value: 0.13}
+  - {value: -0.14}
+  - {value: -0.11}
+  - {value: 0.01}
+  - {value: -0.04}
+  - {value: 0.19}
+  - {value: -0.21}
+  - {value: 0.13}
+  - {value: 1.0}
+  - {value: -0.11}
+  - {value: -0.11}
+  - {value: 0.08}
+  - {value: 0.07}
+  - {value: -0.25}
+  - {value: 0.08}
+  - {value: -0.14}
+  - {value: -0.11}
+  - {value: 1.0}
+  - {value: 0.17}
+  - {value: 0.06}
+  - {value: 0.06}
+  - {value: -0.14}
+  - {value: 0.0}
+  - {value: -0.11}
+  - {value: -0.11}
+  - {value: 0.17}
+  - {value: 1.0}
+  - {value: -0.04}
+  - {value: 0.07}
+  - {value: 0.01}
+  - {value: -0.04}
+  - {value: 0.01}
+  - {value: 0.08}
+  - {value: 0.06}
+  - {value: -0.04}
+  - {value: 1.0}
+  - {value: 0.07}
+  - {value: -0.13}
+  - {value: 0.06}
+  - {value: -0.04}
+  - {value: 0.07}
+  - {value: 0.06}
+  - {value: 0.07}
+  - {value: 0.07}
+  - {value: 1.0}
+independent_variables:
+- header: {name: CORR}
+  values:
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{8}$'}
+- header: {name: CORR}
+  values:
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{4}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{5}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{6}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$P''_{8}$'}
+  - {value: '$P''_{8}$'}

@@ -1,0 +1,18 @@
+[
+  {
+    "dropped_observable":"BR",
+    "n_remaining":8,
+    "amplitude":0.2908,
+    "effective_delta_c9_mean":-0.1229603609,
+    "chi2":5.9039085,
+    "aic":7.9039085
+  },
+  {
+    "dropped_observable":"P5p",
+    "n_remaining":8,
+    "amplitude":0.0,
+    "effective_delta_c9_mean":-0.0,
+    "chi2":202.6670281153,
+    "aic":204.6670281153
+  }
+]

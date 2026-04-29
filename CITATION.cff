@@ -1,0 +1,86 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying paper, please cite as below."
+title: "vfd-b-anomaly: a geometry-derived response kernel for the B->K*mumu angular anomaly"
+type: software
+authors:
+  - given-names: Lee
+    family-names: Smart
+    affiliation: Institute of Vibrational Field Dynamics
+version: "0.2.0"
+date-released: 2026-04-29
+license: MIT
+url: "https://github.com/vfd-org/b-anomaly-reproduction"
+repository-code: "https://github.com/vfd-org/b-anomaly-reproduction"
+abstract: >-
+  A reproducible cross-dataset and cross-channel test of the b->s mu mu angular
+  anomaly using a single q^2-dependent response kernel constructed from a finite
+  2I-equivariant graph (the 600-cell V_600) regularised by the golden ratio
+  phi^-2 as a discrete mass scale. Five public HEPData fits across two
+  collaborations and three decay channels (LHCb 2015, LHCb 2021 B+->K*+, CMS
+  2025, LHCb 2025, LHCb 2015 Bs->phi) are evaluated using flavio.np_prediction
+  directly (non-linear in Delta C_9). The kernel is sign-uniform across all five
+  fits but is statistically indistinguishable from a constant Wilson-coefficient
+  shift on AIC; an earlier linearised analysis found a stronger result that did
+  not survive the non-linear refit, and is reported as a methodology diagnostic.
+keywords:
+  - flavour physics
+  - rare decays
+  - Wilson coefficients
+  - B-physics anomaly
+  - LHCb
+  - CMS
+  - 600-cell
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "A geometry-derived response kernel for the $B \\to K^{*}\\mu^{+}\\mu^{-}$ angular anomaly: sign-uniform cross-dataset and cross-channel fit"
+  authors:
+    - given-names: Lee
+      family-names: Smart
+      affiliation: Institute of Vibrational Field Dynamics
+  year: 2026
+  journal: "Preprint, Institute of Vibrational Field Dynamics"
+  url: "https://github.com/vfd-org/b-anomaly-reproduction/blob/main/paper/main.pdf"
+references:
+  - type: article
+    authors:
+      - name: "LHCb Collaboration"
+    title: "A comprehensive analysis of the B0 -> K*0 mu+ mu- decay"
+    year: 2025
+    identifiers:
+      - type: other
+        value: "arXiv:2512.18053"
+      - type: other
+        value: "LHCb-PAPER-2025-041"
+  - type: data
+    authors:
+      - name: "LHCb Collaboration"
+    title: "Supplementary data for arXiv:2512.18053"
+    year: 2026
+    identifiers:
+      - type: doi
+        value: "10.17182/hepdata.167733.v1"
+      - type: other
+        value: "HEPData ins3094698"
+  - type: article
+    authors:
+      - given-names: David
+        family-names: Straub
+    title: "flavio: a Python package for flavour and precision phenomenology"
+    year: 2018
+    identifiers:
+      - type: other
+        value: "arXiv:1810.08132"
+  - type: article
+    authors:
+      - given-names: Jason
+        family-names: Aebischer
+      - given-names: Jacky
+        family-names: Kumar
+      - given-names: David
+        family-names: Straub
+    title: "Wilson: a Python package for the running and matching of Wilson coefficients above and below the electroweak scale"
+    year: 2018
+    identifiers:
+      - type: other
+        value: "arXiv:1804.05033"

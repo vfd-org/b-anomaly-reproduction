@@ -1,0 +1,7 @@
+model,chi2,aic,delta_aic_vs_FREE_C9,fit_param
+FREE_C9_linear,39.3034,41.3034,0.0000,DC9=-1.340
+FREE_C9_nonlinear@linear-best-fit,66.5964,68.5964,0.0000,DC9=-1.340
+FREE_C9_nonlinear_refit,40.8907,42.8907,0.0000,DC9=-1.002
+VFD_linear,37.6314,39.6314,-1.6720,A=+1.594
+VFD_nonlinear@linear-best-fit,82.2408,84.2408,15.6444,A=+1.594
+VFD_nonlinear_refit,41.9832,43.9832,1.0926,A=+1.135

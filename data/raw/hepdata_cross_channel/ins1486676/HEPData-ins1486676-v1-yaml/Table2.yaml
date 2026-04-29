@@ -1,0 +1,211 @@
+dependent_variables:
+- header: {name: Value}
+  qualifiers:
+  - {name: M(<K+ PI->), units: MeV, value: 1330.0-1530.0}
+  - {name: RE, value: P P --> B0 < K+ PI- MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.13}
+    - {label: sys, symerror: 0.03}
+    value: -0.42
+  - errors:
+    - {label: stat, symerror: 0.15}
+    - {label: sys, symerror: 0.01}
+    value: -0.38
+  - errors:
+    - {label: stat, symerror: 0.14}
+    - {label: sys, symerror: 0.01}
+    value: -0.02
+  - errors:
+    - {label: stat, symerror: 0.14}
+    - {label: sys, symerror: 0.02}
+    value: 0.29
+  - errors:
+    - {label: stat, symerror: 0.14}
+    - {label: sys, symerror: 0.04}
+    value: -0.05
+  - errors:
+    - {label: stat, symerror: 0.15}
+    - {label: sys, symerror: 0.03}
+    value: -0.06
+  - errors:
+    - {label: stat, symerror: 0.16}
+    - {label: sys, symerror: 0.01}
+    value: 0.04
+  - errors:
+    - {label: stat, symerror: 0.16}
+    - {label: sys, symerror: 0.02}
+    value: 0.05
+  - errors:
+    - {label: stat, symerror: 0.17}
+    - {label: sys, symerror: 0.02}
+    value: 0.24
+  - errors:
+    - {label: stat, symerror: 0.13}
+    - {label: sys, symerror: 0.01}
+    value: 0.06
+  - errors:
+    - {label: stat, symerror: 0.13}
+    - {label: sys, symerror: 0.02}
+    value: -0.01
+  - errors:
+    - {label: stat, symerror: 0.12}
+    - {label: sys, symerror: 0.01}
+    value: -0.08
+  - errors:
+    - {label: stat, symerror: 0.13}
+    - {label: sys, symerror: 0.01}
+    value: 0.09
+  - errors:
+    - {label: stat, symerror: 0.13}
+    - {label: sys, symerror: 0.0}
+    value: 0.11
+  - errors:
+    - {label: stat, symerror: 0.13}
+    - {label: sys, symerror: 0.01}
+    value: -0.12
+  - errors:
+    - {label: stat, symerror: 0.13}
+    - {label: sys, symerror: 0.01}
+    value: -0.04
+  - errors:
+    - {label: stat, symerror: 0.14}
+    - {label: sys, symerror: 0.01}
+    value: 0.03
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: 0.11
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: 0.0
+  - errors:
+    - {label: stat, symerror: 0.12}
+    - {label: sys, symerror: 0.01}
+    value: 0.03
+  - errors:
+    - {label: stat, symerror: 0.12}
+    - {label: sys, symerror: 0.01}
+    value: 0.21
+  - errors:
+    - {label: stat, symerror: 0.12}
+    - {label: sys, symerror: 0.01}
+    value: 0.03
+  - errors:
+    - {label: stat, symerror: 0.1}
+    - {label: sys, symerror: 0.01}
+    value: -0.1
+  - errors:
+    - {label: stat, symerror: 0.1}
+    - {label: sys, symerror: 0.01}
+    value: 0.03
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: 0.08
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: 0.14
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: -0.04
+  - errors:
+    - {label: stat, symerror: 0.15}
+    - {label: sys, symerror: 0.04}
+    value: 0.06
+  - errors:
+    - {label: stat, symerror: 0.15}
+    - {label: sys, symerror: 0.04}
+    value: -0.21
+  - errors:
+    - {label: stat, symerror: 0.16}
+    - {label: sys, symerror: 0.01}
+    value: -0.07
+  - errors:
+    - {label: stat, symerror: 0.17}
+    - {label: sys, symerror: 0.02}
+    value: -0.16
+  - errors:
+    - {label: stat, symerror: 0.17}
+    - {label: sys, symerror: 0.02}
+    value: -0.04
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: 0.15
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: -0.13
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: 0.05
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: 0.05
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.0}
+    value: 0.06
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.0}
+    value: -0.08
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: 0.15
+  - errors:
+    - {label: stat, symerror: 0.11}
+    - {label: sys, symerror: 0.01}
+    value: 0.12
+independent_variables:
+- header: {name: '$\overline{\Gamma}_i$'}
+  values:
+  - {value: 2.0}
+  - {value: 3.0}
+  - {value: 4.0}
+  - {value: 5.0}
+  - {value: 6.0}
+  - {value: 7.0}
+  - {value: 8.0}
+  - {value: 9.0}
+  - {value: 10.0}
+  - {value: 11.0}
+  - {value: 12.0}
+  - {value: 13.0}
+  - {value: 14.0}
+  - {value: 15.0}
+  - {value: 16.0}
+  - {value: 17.0}
+  - {value: 18.0}
+  - {value: 19.0}
+  - {value: 20.0}
+  - {value: 21.0}
+  - {value: 22.0}
+  - {value: 23.0}
+  - {value: 24.0}
+  - {value: 25.0}
+  - {value: 26.0}
+  - {value: 27.0}
+  - {value: 28.0}
+  - {value: 29.0}
+  - {value: 30.0}
+  - {value: 31.0}
+  - {value: 32.0}
+  - {value: 33.0}
+  - {value: 34.0}
+  - {value: 35.0}
+  - {value: 36.0}
+  - {value: 37.0}
+  - {value: 38.0}
+  - {value: 39.0}
+  - {value: 40.0}
+  - {value: 41.0}

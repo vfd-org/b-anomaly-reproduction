@@ -1,0 +1,137 @@
+dependent_variables:
+- header: {name: '$N_{\phi\mu\mu}$'}
+  qualifiers:
+  - {name: RE, value: $B_s^0 \to \phi\mu^+\mu^-$}
+  values:
+  - errors:
+    - asymerror: {minus: -10.0, plus: 11.0}
+    value: 85.0
+  - errors:
+    - asymerror: {minus: -9.0, plus: 10.0}
+    value: 60.0
+  - errors:
+    - asymerror: {minus: -11.0, plus: 12.0}
+    value: 83.0
+  - errors:
+    - {symerror: 10.0}
+    value: 70.0
+  - errors:
+    - {symerror: 10.0}
+    value: 83.0
+  - errors:
+    - asymerror: {minus: -7.0, plus: 8.0}
+    value: 54.0
+  - errors:
+    - asymerror: {minus: -12.0, plus: 13.0}
+    value: 101.0
+  - errors:
+    - {symerror: 13.0}
+    value: 136.0
+- header: {name: '$\frac{{\rm d}{\cal B}(B_s^0\to\phi\mu\mu)}{{\cal B}(B_s^0\to J\psi\phi){\rm
+      d}q^2}$', units: '$10^{-5}\rm{GeV}^{-2}c^{4}$'}
+  qualifiers:
+  - {name: RE, value: $B_s^0 \to \phi\mu^+\mu^-$}
+  values:
+  - errors:
+    - asymerror: {minus: -0.64, plus: 0.68}
+      label: stat
+    - {label: sys, symerror: 0.13}
+    value: 5.44
+  - errors:
+    - asymerror: {minus: -0.37, plus: 0.39}
+      label: stat
+    - {label: sys, symerror: 0.06}
+    value: 2.38
+  - errors:
+    - asymerror: {minus: -0.39, plus: 0.41}
+      label: stat
+    - {label: sys, symerror: 0.07}
+    value: 2.98
+  - errors:
+    - asymerror: {minus: -0.61, plus: 0.64}
+      label: stat
+    - {label: sys, symerror: 0.14}
+    value: 4.37
+  - errors:
+    - asymerror: {minus: -0.5, plus: 0.53}
+      label: stat
+    - {label: sys, symerror: 0.11}
+    value: 4.2
+  - errors:
+    - asymerror: {minus: -0.5, plus: 0.53}
+      label: stat
+    - {label: sys, symerror: 0.13}
+    value: 3.68
+  - errors:
+    - asymerror: {minus: -0.29, plus: 0.3}
+      label: stat
+    - {label: sys, symerror: 0.07}
+    value: 2.4
+  - errors:
+    - asymerror: {minus: -0.35, plus: 0.37}
+      label: stat
+    - {label: sys, symerror: 0.12}
+    value: 3.75
+- header: {name: '$\frac{{\rm d}{\cal B}(B_s^0\to\phi\mu^+\mu^-)}{{\rm d}q^2}$', units: '$10^{-8}\rm{GeV}^{-2}c^{4}$'}
+  qualifiers:
+  - {name: RE, value: $B_s^0 \to \phi\mu^+\mu^-$}
+  values:
+  - errors:
+    - asymerror: {minus: -0.69, plus: 0.73}
+      label: stat
+    - {label: sys, symerror: 0.14}
+    - {label: 'sys,branching fraction', symerror: 0.44}
+    value: 5.85
+  - errors:
+    - asymerror: {minus: -0.39, plus: 0.42}
+      label: stat
+    - {label: sys, symerror: 0.06}
+    - {label: 'sys,branching fraction', symerror: 0.19}
+    value: 2.56
+  - errors:
+    - asymerror: {minus: -0.42, plus: 0.44}
+      label: stat
+    - {label: sys, symerror: 0.08}
+    - {label: 'sys,branching fraction', symerror: 0.24}
+    value: 3.21
+  - errors:
+    - asymerror: {minus: -0.65, plus: 0.69}
+      label: stat
+    - {label: sys, symerror: 0.15}
+    - {label: 'sys,branching fraction', symerror: 0.36}
+    value: 4.71
+  - errors:
+    - asymerror: {minus: -0.54, plus: 0.57}
+      label: stat
+    - {label: sys, symerror: 0.12}
+    - {label: 'sys,branching fraction', symerror: 0.34}
+    value: 4.52
+  - errors:
+    - asymerror: {minus: -0.54, plus: 0.57}
+      label: stat
+    - {label: sys, symerror: 0.14}
+    - {label: 'sys,branching fraction', symerror: 0.3}
+    value: 3.96
+  - errors:
+    - asymerror: {minus: -0.31, plus: 0.33}
+      label: stat
+    - {label: sys, symerror: 0.08}
+    - {label: 'sys,branching fraction', symerror: 0.19}
+    value: 2.58
+  - errors:
+    - asymerror: {minus: -0.38, plus: 0.39}
+      label: stat
+    - {label: sys, symerror: 0.13}
+    - {label: 'sys,branching fraction', symerror: 0.3}
+    value: 4.04
+independent_variables:
+- header: {name: $q^2$ bin, units: GeV$^2/c^4$}
+  values:
+  - {high: 2.0, low: 0.1}
+  - {high: 5.0, low: 2.0}
+  - {high: 8.0, low: 5.0}
+  - {high: 12.5, low: 11.0}
+  - {high: 17.0, low: 15.0}
+  - {high: 19.0, low: 17.0}
+  - {high: 6.0, low: 1.0}
+  - {high: 19.0, low: 15.0}

@@ -1,0 +1,1345 @@
+comment: |
+  CERN-LHC. An angular analysis of the $B^{0} \rightarrow K^{*0}(\rightarrow K^{+}\pi^{-})\mu^{+}\mu^{-}$ decay is presented. The dataset corresponds to an integrated luminosity of $3.0$ fb$^{-1}$ of $pp$ collision data collected at the LHCb experiment. The complete angular information from the decay is used to determine $C\!P$-averaged observables and $C\!P$ asymmetries, taking account of possible contamination from decays with the $K^{+}\pi^{-}$ system in an S-wave configuration. The angular observables and their correlations are reported in bins of $q^2$, the invariant mass squared of the dimuon system. The observables are determined both from an unbinned maximum likelihood fit and by using the principal moments of the angular distribution. In addition, by fitting for $q^2$-dependent decay amplitudes in the region $1.1 < q^{2} < 6.0 \mathrm{\,GeV}^{2}/c^{4}$, the zero-crossing points of several angular observables are computed. A global fit is performed to the complete set of $C\!P$-averaged observables obtained from the maximum likelihood fit. This fit indicates differences with predictions based on the Standard Model at the level of 3.4 standard deviations. These differences could be explained by contributions from physics beyond the Standard Model, or by an unexpectedly large hadronic effect that is not accounted for in the Standard Model predictions.
+dateupdated: 27/09/2016 15:25:15
+hepdata_doi: 10.17182/hepdata.74247.v1
+modifications:
+- {action: Encoded, date: 08 SEP 2016, who: Marcin Chrzaszcz <mchrzasz@cern.ch>}
+record_ids:
+- {id: 1409497, type: inspire}
+- {id: 6662, type: red}
+---
+data_file: Table1.yaml
+description: |
+  CP-averaged angular observables evaluated by the unbinned maximum likelihood fit.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [POL, ASYM]
+- name: phrases
+  values: [Inclusive, Polarization, Asymmetry Measurement, Proton-Proton Scattering,
+    Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix A, Table 3
+name: Table 1
+table_doi: 10.17182/hepdata.74247.v1/t1
+---
+data_file: Table2.yaml
+description: |
+  CP-averaged angular observables evaluated by the unbinned maximum likelihood fit. The first uncertainties are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [POL]
+- name: phrases
+  values: [Inclusive, Polarization, Proton-Proton Scattering, Strange Production,
+    Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix A, Table 4
+name: Table 2
+table_doi: 10.17182/hepdata.74247.v1/t2
+---
+data_file: Table3.yaml
+description: |
+  CP-asymmetric angular observables evaluated by the unbinned maximum likelihood fit. The first uncertainties are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement, Proton-Proton Scattering, Strange Production,
+    Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix A, Table 5
+name: Table 3
+table_doi: 10.17182/hepdata.74247.v1/t3
+---
+data_file: Table4.yaml
+description: |
+  Optimised angular observables evaluated by the unbinned maximum likelihood fit. The first uncertainties are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [POL]
+- name: phrases
+  values: [Inclusive, Polarization, Proton-Proton Scattering, Strange Production,
+    Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix A, Table 6
+name: Table 4
+table_doi: 10.17182/hepdata.74247.v1/t4
+---
+data_file: Table5.yaml
+description: |
+  CP-averaged angular observables evaluated using the method of moments. The first uncertainties are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [POL]
+- name: phrases
+  values: [Inclusive, Polarization, Proton-Proton Scattering, Strange Production,
+    Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix A, Table 7
+name: Table 5
+table_doi: 10.17182/hepdata.74247.v1/t5
+---
+data_file: Table6.yaml
+description: |
+  CP-asymmetries evaluated using the method of moments. The first uncertainties are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [ASYM]
+- name: phrases
+  values: [Inclusive, Asymmetry Measurement, Proton-Proton Scattering, Strange Production,
+    Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix A, Table 8
+name: Table 6
+table_doi: 10.17182/hepdata.74247.v1/t6
+---
+data_file: Table7.yaml
+description: |
+  Optimised observables evaluated using the method of moments. The first uncertainties are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [POL]
+- name: phrases
+  values: [Inclusive, Polarization, Proton-Proton Scattering, Strange Production,
+    Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix A, Table 9
+name: Table 7
+table_doi: 10.17182/hepdata.74247.v1/t7
+---
+data_file: Table8.yaml
+description: |
+  Zero-crossing points determined with an amplitude fit.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [POL]
+- name: phrases
+  values: [Inclusive, Polarization, Proton-Proton Scattering, Strange Production,
+    Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Section 9
+name: Table 8
+table_doi: 10.17182/hepdata.74247.v1/t8
+---
+data_file: Table9.yaml
+description: |
+  Likelihood correlation matrix $0.1 < q^2 < 0.98~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix C, Table 10
+name: Table 9
+table_doi: 10.17182/hepdata.74247.v1/t9
+---
+data_file: Table10.yaml
+description: |
+  Likelihood correlation matrix $1.1 < q^2 < 2.5~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix C, Table 11
+name: Table 10
+table_doi: 10.17182/hepdata.74247.v1/t10
+---
+data_file: Table11.yaml
+description: |
+  Likelihood correlation matrix $2.5 < q^2 < 4.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix C, Table 12
+name: Table 11
+table_doi: 10.17182/hepdata.74247.v1/t11
+---
+data_file: Table12.yaml
+description: |
+  Likelihood correlation matrix $4.0 <q^2< 6.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix C, Table 13
+name: Table 12
+table_doi: 10.17182/hepdata.74247.v1/t12
+---
+data_file: Table13.yaml
+description: |
+  Likelihood correlation matrix $6.0 < q^2 < 8.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix C, Table 14
+name: Table 13
+table_doi: 10.17182/hepdata.74247.v1/t13
+---
+data_file: Table14.yaml
+description: |
+  Likelihood correlation matrix $11.0 <q^2< 12.5 ~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix C, Table 15
+name: Table 14
+table_doi: 10.17182/hepdata.74247.v1/t14
+---
+data_file: Table15.yaml
+description: |
+  Likelihood correlation matrix $15.0 < q^2 < 17.0 ~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix C, Table 16
+name: Table 15
+table_doi: 10.17182/hepdata.74247.v1/t15
+---
+data_file: Table16.yaml
+description: |
+  Likelihood correlation matrix $17.0 <q^2< 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix C, Table 17
+name: Table 16
+table_doi: 10.17182/hepdata.74247.v1/t16
+---
+data_file: Table17.yaml
+description: |
+  Likelihood correlation matrix $1.1 <q^2< 6.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix C, Table 18
+name: Table 17
+table_doi: 10.17182/hepdata.74247.v1/t17
+---
+data_file: Table18.yaml
+description: |
+  Likelihood correlation matrix $15.0 <q^2< 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix C, Table 19
+name: Table 18
+table_doi: 10.17182/hepdata.74247.v1/t18
+---
+data_file: Table19.yaml
+description: |
+  Likelihood correlation matrix $0.1 < q^2 < 0.98~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix D, Table 20
+name: Table 19
+table_doi: 10.17182/hepdata.74247.v1/t19
+---
+data_file: Table20.yaml
+description: |
+  Likelihood correlation matrix $1.1 < q^2 < 2.5~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix D, Table 21
+name: Table 20
+table_doi: 10.17182/hepdata.74247.v1/t20
+---
+data_file: Table21.yaml
+description: |
+  Likelihood correlation matrix $2.5 < q^2 < 4.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix D, Table 22
+name: Table 21
+table_doi: 10.17182/hepdata.74247.v1/t21
+---
+data_file: Table22.yaml
+description: |
+  Likelihood correlation matrix $4.0 <q^2< 6.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix D, Table 23
+name: Table 22
+table_doi: 10.17182/hepdata.74247.v1/t22
+---
+data_file: Table23.yaml
+description: |
+  Likelihood correlation matrix $6.0 < q^2 < 8.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix D, Table 24
+name: Table 23
+table_doi: 10.17182/hepdata.74247.v1/t23
+---
+data_file: Table24.yaml
+description: |
+  Likelihood correlation matrix $11.0 <q^2< 12.5 ~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix D, Table 25
+name: Table 24
+table_doi: 10.17182/hepdata.74247.v1/t24
+---
+data_file: Table25.yaml
+description: |
+  Likelihood correlation matrix $15.0 <q^2< 17.0 ~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix D, Table 26
+name: Table 25
+table_doi: 10.17182/hepdata.74247.v1/t25
+---
+data_file: Table26.yaml
+description: |
+  Likelihood correlation matrix $17.0 <q^2< 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix D, Table 27
+name: Table 26
+table_doi: 10.17182/hepdata.74247.v1/t26
+---
+data_file: Table27.yaml
+description: |
+  Likelihood correlation matrix $1.1 <q^2< 6.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix D, Table 28
+name: Table 27
+table_doi: 10.17182/hepdata.74247.v1/t27
+---
+data_file: Table28.yaml
+description: |
+  Likelihood correlation matrix $15.0 <q^2< 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix D, Table 29
+name: Table 28
+table_doi: 10.17182/hepdata.74247.v1/t28
+---
+data_file: Table29.yaml
+description: |
+  Likelihood correlation matrix $0.1 < q^2 < 0.98~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix E, Table 30
+name: Table 29
+table_doi: 10.17182/hepdata.74247.v1/t29
+---
+data_file: Table30.yaml
+description: |
+  Likelihood correlation matrix $1.1 < q^2 < 2.5~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix E, Table 31
+name: Table 30
+table_doi: 10.17182/hepdata.74247.v1/t30
+---
+data_file: Table31.yaml
+description: |
+  Likelihood correlation matrix $2.5 < q^2 < 4.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix E, Table 32
+name: Table 31
+table_doi: 10.17182/hepdata.74247.v1/t31
+---
+data_file: Table32.yaml
+description: |
+  Likelihood correlation matrix $4.0 <q^2< 6.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix E, Table 33
+name: Table 32
+table_doi: 10.17182/hepdata.74247.v1/t32
+---
+data_file: Table33.yaml
+description: |
+  Likelihood correlation matrix $6.0 < q^2 < 8.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix E, Table 34
+name: Table 33
+table_doi: 10.17182/hepdata.74247.v1/t33
+---
+data_file: Table34.yaml
+description: |
+  Likelihood correlation matrix $11.0 <q^2< 12.5 ~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix E, Table 35
+name: Table 34
+table_doi: 10.17182/hepdata.74247.v1/t34
+---
+data_file: Table35.yaml
+description: |
+  Likelihood correlation matrix $15.0 <q^2< 17.0 ~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix E, Table 36
+name: Table 35
+table_doi: 10.17182/hepdata.74247.v1/t35
+---
+data_file: Table36.yaml
+description: |
+  Likelihood correlation matrix $17.0 <q^2< 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix E, Table 37
+name: Table 36
+table_doi: 10.17182/hepdata.74247.v1/t36
+---
+data_file: Table37.yaml
+description: |
+  Likelihood correlation matrix $1.1 <q^2< 6.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix E, Table 38
+name: Table 37
+table_doi: 10.17182/hepdata.74247.v1/t37
+---
+data_file: Table38.yaml
+description: |
+  Likelihood correlation matrix $15.0 <q^2< 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix E, Table 39
+name: Table 38
+table_doi: 10.17182/hepdata.74247.v1/t38
+---
+data_file: Table39.yaml
+description: |
+  Bootstrap correlation matrix $0.10 < q^2 < 0.98~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 40
+name: Table 39
+table_doi: 10.17182/hepdata.74247.v1/t39
+---
+data_file: Table40.yaml
+description: |
+  Bootstrap correlation matrix $1.1 < q^2 < 2.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 41
+name: Table 40
+table_doi: 10.17182/hepdata.74247.v1/t40
+---
+data_file: Table41.yaml
+description: |
+  Bootstrap correlation matrix $2.0 < q^2 < 3.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 42
+name: Table 41
+table_doi: 10.17182/hepdata.74247.v1/t41
+---
+data_file: Table42.yaml
+description: |
+  Bootstrap correlation matrix $3.0 < q^2 < 4.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 43
+name: Table 42
+table_doi: 10.17182/hepdata.74247.v1/t42
+---
+data_file: Table43.yaml
+description: |
+  Bootstrap correlation matrix $4.0 < q^2 < 5.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 44
+name: Table 43
+table_doi: 10.17182/hepdata.74247.v1/t43
+---
+data_file: Table44.yaml
+description: |
+  Bootstrap correlation matrix $5.0 < q^2 < 6.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 45
+name: Table 44
+table_doi: 10.17182/hepdata.74247.v1/t44
+---
+data_file: Table45.yaml
+description: |
+  Bootstrap correlation matrix $6.0 < q^2 < 7.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 46
+name: Table 45
+table_doi: 10.17182/hepdata.74247.v1/t45
+---
+data_file: Table46.yaml
+description: |
+  Bootstrap correlation matrix $7.0 < q^2 < 8.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 47
+name: Table 46
+table_doi: 10.17182/hepdata.74247.v1/t46
+---
+data_file: Table47.yaml
+description: |
+  Bootstrap correlation matrix $11.00 <q^2 < 11.75~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 48
+name: Table 47
+table_doi: 10.17182/hepdata.74247.v1/t47
+---
+data_file: Table48.yaml
+description: |
+  Bootstrap correlation matrix $11.75 <q^2 < 12.50~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 49
+name: Table 48
+table_doi: 10.17182/hepdata.74247.v1/t48
+---
+data_file: Table49.yaml
+description: |
+  Bootstrap correlation matrix $15.0 <q^2 < 16.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 50
+name: Table 49
+table_doi: 10.17182/hepdata.74247.v1/t49
+---
+data_file: Table50.yaml
+description: |
+  Bootstrap correlation matrix $16.0 <q^2 < 17.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 51
+name: Table 50
+table_doi: 10.17182/hepdata.74247.v1/t50
+---
+data_file: Table51.yaml
+description: |
+  Bootstrap correlation matrix $17.0 <q^2 < 18.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 52
+name: Table 51
+table_doi: 10.17182/hepdata.74247.v1/t51
+---
+data_file: Table52.yaml
+description: |
+  Bootstrap correlation matrix $18.0 <q^2 < 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 53
+name: Table 52
+table_doi: 10.17182/hepdata.74247.v1/t52
+---
+data_file: Table53.yaml
+description: |
+  Bootstrap correlation matrix $15.0 <q^2 < 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix F, Table 54
+name: Table 53
+table_doi: 10.17182/hepdata.74247.v1/t53
+---
+data_file: Table54.yaml
+description: |
+  Bootstrap correlation matrix $0.10 < q^2 < 0.98~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 55
+name: Table 54
+table_doi: 10.17182/hepdata.74247.v1/t54
+---
+data_file: Table55.yaml
+description: |
+  Bootstrap correlation matrix $1.1 < q^2 < 2.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 56
+name: Table 55
+table_doi: 10.17182/hepdata.74247.v1/t55
+---
+data_file: Table56.yaml
+description: |
+  Bootstrap correlation matrix $2.0 < q^2 < 3.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 57
+name: Table 56
+table_doi: 10.17182/hepdata.74247.v1/t56
+---
+data_file: Table57.yaml
+description: |
+  Bootstrap correlation matrix $3.0 < q^2 < 4.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 58
+name: Table 57
+table_doi: 10.17182/hepdata.74247.v1/t57
+---
+data_file: Table58.yaml
+description: |
+  Bootstrap correlation matrix $4.0 < q^2 < 5.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 59
+name: Table 58
+table_doi: 10.17182/hepdata.74247.v1/t58
+---
+data_file: Table59.yaml
+description: |
+  Bootstrap correlation matrix $5.0 < q^2 < 6.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 60
+name: Table 59
+table_doi: 10.17182/hepdata.74247.v1/t59
+---
+data_file: Table60.yaml
+description: |
+  Bootstrap correlation matrix $6.0 < q^2 < 7.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 61
+name: Table 60
+table_doi: 10.17182/hepdata.74247.v1/t60
+---
+data_file: Table61.yaml
+description: |
+  Bootstrap correlation matrix $7.0 < q^2 < 8.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 62
+name: Table 61
+table_doi: 10.17182/hepdata.74247.v1/t61
+---
+data_file: Table62.yaml
+description: |
+  Bootstrap correlation matrix $11.00 <q^2 < 11.75~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 63
+name: Table 62
+table_doi: 10.17182/hepdata.74247.v1/t62
+---
+data_file: Table63.yaml
+description: |
+  Bootstrap correlation matrix $11.75 <q^2 < 12.50~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 64
+name: Table 63
+table_doi: 10.17182/hepdata.74247.v1/t63
+---
+data_file: Table64.yaml
+description: |
+  Bootstrap correlation matrix $15.0 <q^2 < 16.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 65
+name: Table 64
+table_doi: 10.17182/hepdata.74247.v1/t64
+---
+data_file: Table65.yaml
+description: |
+  Bootstrap correlation matrix $16.0 <q^2 < 17.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 66
+name: Table 65
+table_doi: 10.17182/hepdata.74247.v1/t65
+---
+data_file: Table66.yaml
+description: |
+  Bootstrap correlation matrix $17.0 <q^2 < 18.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 67
+name: Table 66
+table_doi: 10.17182/hepdata.74247.v1/t66
+---
+data_file: Table67.yaml
+description: |
+  Bootstrap correlation matrix $18.0 <q^2 < 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 68
+name: Table 67
+table_doi: 10.17182/hepdata.74247.v1/t67
+---
+data_file: Table68.yaml
+description: |
+  Bootstrap correlation matrix $15.0 <q^2 < 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix G, Table 69
+name: Table 68
+table_doi: 10.17182/hepdata.74247.v1/t68
+---
+data_file: Table69.yaml
+description: |
+  Bootstrap correlation matrix $0.1 <q^2 < 0.98~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 70
+name: Table 69
+table_doi: 10.17182/hepdata.74247.v1/t69
+---
+data_file: Table70.yaml
+description: |
+  Bootstrap correlation matrix $1.1 <q^2 < 2.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 71
+name: Table 70
+table_doi: 10.17182/hepdata.74247.v1/t70
+---
+data_file: Table71.yaml
+description: |
+  Bootstrap correlation matrix $2.0 <q^2 < 3.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 72
+name: Table 71
+table_doi: 10.17182/hepdata.74247.v1/t71
+---
+data_file: Table72.yaml
+description: |
+  Bootstrap correlation matrix $3.0 <q^2 < 4.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 73
+name: Table 72
+table_doi: 10.17182/hepdata.74247.v1/t72
+---
+data_file: Table73.yaml
+description: |
+  Bootstrap correlation matrix $4.0 <q^2 < 5.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 74
+name: Table 73
+table_doi: 10.17182/hepdata.74247.v1/t73
+---
+data_file: Table74.yaml
+description: |
+  Bootstrap correlation matrix $5.0 <q^2 < 6.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 75
+name: Table 74
+table_doi: 10.17182/hepdata.74247.v1/t74
+---
+data_file: Table75.yaml
+description: |
+  Bootstrap correlation matrix $6.0 <q^2 < 7.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 76
+name: Table 75
+table_doi: 10.17182/hepdata.74247.v1/t75
+---
+data_file: Table76.yaml
+description: |
+  Bootstrap correlation matrix $7.0 <q^2 < 8.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 77
+name: Table 76
+table_doi: 10.17182/hepdata.74247.v1/t76
+---
+data_file: Table77.yaml
+description: |
+  Bootstrap correlation matrix $11.0 <q^2 < 11.75~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 78
+name: Table 77
+table_doi: 10.17182/hepdata.74247.v1/t77
+---
+data_file: Table78.yaml
+description: |
+  Bootstrap correlation matrix $11.75 <q^2 < 12.5~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 79
+name: Table 78
+table_doi: 10.17182/hepdata.74247.v1/t78
+---
+data_file: Table79.yaml
+description: |
+  Bootstrap correlation matrix $15.0 <q^2 < 16.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 80
+name: Table 79
+table_doi: 10.17182/hepdata.74247.v1/t79
+---
+data_file: Table80.yaml
+description: |
+  Bootstrap correlation matrix $16.0 <q^2 < 17.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 81
+name: Table 80
+table_doi: 10.17182/hepdata.74247.v1/t80
+---
+data_file: Table81.yaml
+description: |
+  Bootstrap correlation matrix $17.0 < q^2 < 18.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 82
+name: Table 81
+table_doi: 10.17182/hepdata.74247.v1/t81
+---
+data_file: Table82.yaml
+description: |
+  Bootstrap correlation matrix $18.0 < q^2 < 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 83
+name: Table 82
+table_doi: 10.17182/hepdata.74247.v1/t82
+---
+data_file: Table83.yaml
+description: |
+  Bootstrap correlation matrix $15.0 < q^2 < 19.0~{\rm GeV}^2/c^4$.
+keywords:
+- name: reactions
+  values: [P P --> B0 + X]
+- name: observables
+  values: [CORR]
+- name: phrases
+  values: [Inclusive, Proton-Proton Scattering, Strange Production, Muon Production]
+- name: cmenergies
+  values: [7000.0-8000.0]
+location: Data from Appendix H, Table 84
+name: Table 83
+table_doi: 10.17182/hepdata.74247.v1/t83

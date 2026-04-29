@@ -1,0 +1,191 @@
+% =====================================================================
+\section{Data, SM backend, and fit}\label{sec:method}
+% =====================================================================
+
+\subsection{Datasets}
+
+We use five public HEPData submissions covering three decay channels
+and two collaborations:
+\begin{itemize}
+\item \textbf{LHCb 2025} — $B^{0}\!\to\!K^{*0}\mu^{+}\mu^{-}$ at
+  $8.4\,\mathrm{fb}^{-1}$ \citep{LHCb2025BKstmumuComp,
+  LHCb2025BKstmumuHEPData}; 8 exclusive $q^{2}$ bins; full statistical,
+  systematic, and total correlation matrix; 27 dependent variables in
+  six fit configurations. We use configuration~2 (partially-massive
+  model, optimised $P_{i}$ basis, standard binning) and the four
+  observables $P_{5}'$, $P_{4}'$, $P_{1}$, $P_{2}$ — 32 data points
+  with the full $32{\times}32$ covariance.
+\item \textbf{LHCb 2015} — $B^{0}\!\to\!K^{*0}\mu^{+}\mu^{-}$ at
+  $3\,\mathrm{fb}^{-1}$ \citep{LHCb2015BKstmumu, LHCb2015HEPData};
+  Table 4 gives $P_{1}, P_{2}, P_{3}, P_{4}', P_{5}', P_{6}', P_{8}'$
+  on 8 exclusive bins. Diagonal stat$\oplus$syst (no full angular
+  covariance published).
+\item \textbf{LHCb 2021} (charged isospin partner) —
+  $B^{+}\!\to\!K^{*+}\mu^{+}\mu^{-}$ at $9\,\mathrm{fb}^{-1}$
+  \citep{LHCb2021BKstpmumu, LHCb2021HEPData}; \texttt{data2.yaml} gives
+  $F_{L}, P_{1\dots 8}$ on 10 $q^{2}$ bins. We retain the 8 exclusive
+  bins (drop the wide combined $[1.1,6.0]$ and $[15,19]$). Per-bin
+  $8{\times}8$ correlation blocks across observables (block-diagonal
+  in $q^{2}$).
+\item \textbf{CMS 2025} — $B^{0}\!\to\!K^{*}(892)^{0}\mu^{+}\mu^{-}$
+  at 13~TeV, $140\,\mathrm{fb}^{-1}$
+  \citep{CMS2025BKstmumu, CMS2025HEPData}; 6 $q^{2}$ bins (charmonium
+  windows excluded). Per-bin correlation matrices for bins 0,1,2,3,5,7.
+\item \textbf{LHCb 2015 $B_{s}\!\to\!\phi\mu^{+}\mu^{-}$} (cross-channel)
+  \citep{LHCb2015Bsphimumu, LHCb2015BsphiHEPData}; Table 2 gives
+  $F_{L}, S_{3}, S_{4}, S_{7}$ on 8 bins, of which we retain 6
+  exclusive (drop $[1,6]$ and $[15,19]$). No published angular
+  covariance.
+\end{itemize}
+All datasets use $b\to s\mu^{+}\mu^{-}$ kinematics in the same
+$q^{2}\in[0, 19]\,\mathrm{GeV}^{2}$ window, with the same kinematic
+endpoints $J/\psi$ and $\psi(2S)$ shaping the long-distance structure.
+
+\subsection{SM and new-physics predictions (non-linear, headline)}
+
+Standard-Model predictions $O_{\mathrm{SM}}(\mathrm{bin})$ and
+predictions at non-zero $\Delta C_{9}$ are computed on each dataset's
+own bin grid using \texttt{flavio} 2.4 \citep{Straub2018Flavio} with
+\texttt{wilson} 2.5 \citep{Aebischer2018Wilson} and the BSZ
+form-factor parameterisation \citep{Bharucha2016BSZ}. New-physics
+predictions are evaluated by
+\begin{equation}\label{eq:np_pred}
+O_{\mathrm{NP}}(\mathrm{bin}, \Delta C_{9})
+\;=\; \texttt{flavio.np\_prediction}\bigl(O,\, \mathrm{Wilson}(\mathrm{C9\_bsmumu}=\Delta C_{9}),\,
+   q^{2}_{\mathrm{lo}},\, q^{2}_{\mathrm{hi}}\bigr),
+\end{equation}
+in the WET-flavio basis at scale $4.8\,\mathrm{GeV}$ (approximately
+$m_{b}^{\mathrm{pole}}$, the default \texttt{flavio} reference scale).
+Only the \texttt{C9\_bsmumu} component is shifted; all other Wilson
+coefficients are held at their SM values. \emph{No Taylor expansion
+in $\Delta C_{9}$ is used in the headline fits.}
+
+For the $\mathrm{VFD\_GREEN\_600CELL}$ model the kernel produces a
+per-bin $\Delta C_{9}^{\mathrm{eff}}(q^{2}_{i}) = -A\,\kappa(q^{2}_{i})$
+that varies by bin; the non-linear evaluation is performed once per
+bin with the bin's own $\Delta C_{9}^{\mathrm{eff}}$ as the Wilson
+shift. Predictions are cached on disk
+(\texttt{data/processed/flavio\_cache.json}).
+
+\subsection{Linearised response (Mode B; reported as diagnostic)}
+
+An earlier iteration of this analysis used a linearised first-order
+Taylor model around $C_{9}^{\mathrm{SM}}$:
+\begin{equation}\label{eq:modeB}
+O_{\mathrm{pred}}(\mathrm{bin}, C_{9})
+  = O_{\mathrm{SM}}(\mathrm{bin})
+  + \frac{\partial O}{\partial C_{9}}(\mathrm{bin})\,
+    \bigl(C_{9} - C_{9}^{\mathrm{SM}}\bigr),
+\end{equation}
+with the slope obtained as a central-difference numerical derivative
+\begin{equation}
+\frac{\partial O}{\partial C_{9}}(\mathrm{bin}) =
+  \frac{O_{\mathrm{NP}}(C_{9}^{\mathrm{SM}}+\delta) -
+        O_{\mathrm{NP}}(C_{9}^{\mathrm{SM}}-\delta)}{2\delta},
+\qquad \delta = 0.5.
+\end{equation}
+This `Mode B' analysis is retained for two reasons: (i) it
+reproduces the cross-dataset and cross-channel results in the
+project repository;
+(ii) the difference between linearised and non-linear $\Delta\mathrm{AIC}$
+quantifies the non-linearity. On the LHCb 2025 joint fit the per-bin
+linearisation residual reaches $4.3\sigma$ (mean $0.7\sigma$ across
+the 32 bins); the headline
+$\Delta\mathrm{AIC}$ drifts from $-1.67$ (linearised) to $+1.09$
+(non-linear refit), a $2.77$-AIC-unit shift that flips the sign of
+the kernel-vs-constant comparison
+(\S\ref{sec:results}, Table~\ref{tab:joint_fit_modes}).
+\emph{The non-linear analysis is the one reported as headline
+throughout; linearised values appear only as marked
+diagnostics.}
+
+\textbf{Note on the SM tables.} An earlier iteration of this project
+used hand-tabulated SM values and slopes; those tables had wrong-sign
+$\partial P_{5}'/\partial C_{9}$ in several bins. Replacing them with
+\texttt{flavio} 2.4 changed the linearised
+$\mathrm{FREE\_C9}$ best-fit from $\Delta C_{9}\approx -0.15$ to
+$-1.34$, in line with the literature consensus
+\citep{AltmannshoferStraub2013}. The non-linear $\mathrm{FREE\_C9}$
+best-fit on the LHCb 2025 4-observable joint fit is $-1.00$, lower
+in magnitude than the linearised value precisely because of the
+linearisation drift discussed above.
+
+\subsection{Likelihood and model comparison}
+
+We use a Gaussian $\chi^{2}$ likelihood
+\begin{equation}\label{eq:chi2}
+\chi^{2}(\theta) = \bigl(\mathbf{O}_{\mathrm{obs}} -
+   \mathbf{O}_{\mathrm{pred}}(\theta)\bigr)^{\mathsf T}\,
+   \mathbf{C}^{-1}\, \bigl(\mathbf{O}_{\mathrm{obs}} -
+   \mathbf{O}_{\mathrm{pred}}(\theta)\bigr),
+\end{equation}
+with $\mathbf{C}$ the published per-dataset covariance where available,
+and $\mathrm{diag}(\sigma_{\mathrm{stat}}^{2}+\sigma_{\mathrm{syst}}^{2})$
+when not. Models are compared by
+$\mathrm{AIC}=\chi^{2}+2k$ \citep{Akaike1974} and
+$\mathrm{BIC}=\chi^{2}+k\log n$ \citep{Schwarz1978BIC}, with $k$ the
+number of fitted parameters and $n$ the number of data points.
+
+The model arms compared throughout are:
+\begin{itemize}
+\item $\mathrm{SM}$ — no free parameters.
+\item $\mathrm{FREE\_C9}$ — one global shift $\Delta C_{9}$, $k=1$.
+\item $\mathrm{VFD\_GREEN\_600CELL}$ — the geometry-derived kernel of
+  Eq.~\eqref{eq:fit_form}, $k=1$.
+\item $\mathrm{FREE\_C9\!+\!FREE\_C10}$ — joint shift in $C_{9}$ and
+  $C_{10}$, $k=2$ (used in the linearised stress test of
+  \S\ref{sec:stress}).
+\item Charm-loop Gaussian — a free-amplitude, free-width Gaussian
+  centred at the $J/\psi$\,--\,$\psi(2S)$ midpoint
+  $q^{2}=11.59\,\mathrm{GeV}^{2}$, $k=2$ (also stress-test only).
+\end{itemize}
+
+\subsection{Fit conventions}
+
+Across every dataset and channel, the kernel is loaded once via
+\texttt{frozen\_kernel\_at\_bin\_centres} and reused unchanged. Only
+the dimensionless amplitude $A$ in Eq.~\eqref{eq:fit_form} is fitted.
+For the headline non-linear analysis, the optimiser is
+\texttt{scipy.optimize.minimize\_scalar} (Brent's method) with
+$\mathrm{xtol}=5\times 10^{-4}$; for Mode B the optimiser is Powell
+with $\mathrm{tol}=10^{-7}$. Both deliver consistent best-fit values
+within their respective response models. On $B_{s}\to\phi$ the search
+brackets are widened to $|\Delta C_{9}|\leq 6$, $|A|\leq 20$ to
+accommodate the smaller $S$-basis slopes
+(\S\ref{sec:cross-channel}).
+
+For every dataset we additionally run, where applicable, a 500-trial
+non-parametric bootstrap over $q^{2}$ bins (each bin treated as a unit
+of all observables) and a $q^{2}$ region-split fit (low / central /
+high). Bootstrap loss uses diagonal stat$\oplus$syst because resampling
+with replacement makes the published covariance singular. The
+bootstrap is reported as a sign-stability test on $A$ rather than as a
+strict confidence interval, since it discards the off-diagonal
+correlation information used in the all-data fit.
+
+\subsection{Reproducibility ledger}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{ll}
+\toprule
+item & value \\
+\midrule
+flavio & 2.4.0 \\
+wilson & 2.5 \\
+WET basis, scale & flavio, $\mu = 4.8\,\mathrm{GeV}$ \\
+$C_{9}^{\mathrm{SM}}$ (reference) & $4.27$ \\
+non-linear optimiser & \texttt{scipy.minimize\_scalar} (Brent), xtol $5\!\times\!10^{-4}$ \\
+linearised optimiser (Mode B) & \texttt{scipy.minimize} Powell, tol $10^{-7}$ \\
+non-linear search bracket ($\Delta C_{9}$) & $[-3.0,\,+0.5]$ ($B\!\to\!K^{*}$); $[-6.0,\,+0.5]$ ($B_{s}\!\to\!\phi$) \\
+non-linear search bracket ($A$) & $[0.0,\,8.0]$ ($B\!\to\!K^{*}$); $[0.0,\,20.0]$ ($B_{s}\!\to\!\phi$) \\
+form-factor MC seeds & numpy default RNG, $n=20$ samples \\
+bootstrap RNG seeds & numpy default RNG, $n=500$ trials per dataset \\
+flavio cache & \texttt{data/processed/flavio\_cache.json} \\
+\bottomrule
+\end{tabular}
+\caption{Software, basis, and optimiser settings used for every fit
+in this paper.}
+\label{tab:repro_ledger}
+\end{table}

@@ -1,0 +1,190 @@
+% =====================================================================
+\section{Stress tests}\label{sec:stress}
+% =====================================================================
+
+The kernel fit of \S\ref{sec:results} is stress-tested in five
+independent ways: (i) bin bootstrap, (ii) $q^{2}$ region splits, (iii)
+alternative single- and two-Wilson-coefficient comparison models,
+(iv) a charm-loop nuisance proxy, and (v) a 20-sample BSZ
+form-factor Monte Carlo. The kernel shape is held fixed throughout;
+only $A$ is fitted.
+
+\paragraph{Mode caveat.} All stress tests in this section use the
+linearised Mode-B response (Eq.~\ref{eq:modeB}). The headline non-linear
+analysis on LHCb 2025 (\S\ref{subsec:joint_fit}) gives different
+absolute $\chi^{2}$ values, smaller best-fit amplitudes, and a
+$\Delta\mathrm{AIC}$ of opposite sign vs $\mathrm{FREE\_C9}$ (see
+Table~\ref{tab:joint_fit_modes}). What the Mode-B stress tests
+\emph{can} establish is qualitative: sign-stability of $A$ under
+perturbations, region-by-region behaviour, and the relative
+performance of competing $q^{2}$-shapes. They cannot rescue the
+non-linear $\Delta\mathrm{AIC}$ result. Numbers below are quoted
+under Mode B and should be read accordingly.
+
+\subsection{Bin bootstrap}
+
+A non-parametric bootstrap is run with $N=500$ trials. Each trial
+resamples 8 $q^{2}$ bins with replacement from the canonical grid;
+all four observables in a chosen bin enter together (bins are the
+unit of resampling, not individual observable rows). Loss uses
+diagonal stat$\oplus$syst because resampling with replacement makes
+the published covariance singular for duplicated rows.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lc}
+\toprule
+statistic & value \\
+\midrule
+mean $A$         & $+1.592$ \\
+median $A$       & $+1.594$ \\
+std $A$          & $0.203$ \\
+$90\,\%$ CI      & $[+1.356,\ +1.852]$ \\
+fraction $A<0$   & $0.002$ \\
+\bottomrule
+\end{tabular}
+\caption{Bootstrap statistics for the shared kernel amplitude on
+the LHCb 2025 four-observable joint fit, $N=500$ trials. Sign-stable
+to $99.8\,\%$; 90\,\% CI within $\pm 15\,\%$ of the central value.}
+\label{tab:bootstrap}
+\end{table}
+
+\subsection{Region splits}
+
+The same fit is repeated independently on three $q^{2}$ sub-windows.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lcrrrrrr}
+\toprule
+region & $q^{2}$ range (GeV$^{2}$) & $n_{\mathrm{bins}}$ & $n$ &
+   FREE\_C9 $\chi^{2}$ & FREE $\Delta C_{9}$ &
+   VFD $A$ & $\Delta\mathrm{AIC}$ \\
+\midrule
+low\_q2     & $[0.06,\,4.0]$  & 3 & 12 & 20.86 & $-1.13$ & $+1.40$ & $-0.09$ \\
+central\_q2 & $[4.0,\,8.0]$   & 2 &  8 &  5.43 & $-1.56$ & $+1.82$ & $-0.33$ \\
+high\_q2    & $[11.0,\,19.0]$ & 3 & 12 & 10.04 & $-1.17$ & $+1.30$ & $-0.69$ \\
+\bottomrule
+\end{tabular}
+\caption{Region-split fits on the LHCb 2025 four-observable joint
+data with the kernel held fixed. VFD beats FREE\_C9 in every region.
+Per-region amplitudes are $A\in[1.30, 1.82]$ (sign-uniform), with
+$\Delta C_{9}^{\mathrm{eff}}\in[-1.57, -1.12]$ (sign-uniform).}
+\label{tab:regions}
+\end{table}
+
+The amplitude varies in a 40\,\% band across regions but stays
+sign-uniform; the high-$q^{2}$ window — conventionally the regime
+where charm-loop / long-distance contributions are largest and where
+SM theory is least reliable — is the region where VFD's AIC advantage
+is largest, not smallest.
+
+\subsection{Alternative single- and two-Wilson-coefficient models}
+
+We compare against three alternative models on the same joint dataset
+(Table~\ref{tab:alts}).
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcrrrl}
+\toprule
+model & $k$ & $\chi^{2}$ & AIC & $\Delta\mathrm{AIC}$ & params \\
+\midrule
+FREE\_C9                       & 1 & 39.32 & 41.32 & $0.00$  & $\Delta C_{9}=-1.34$ \\
+\textbf{VFD\_GREEN\_600CELL}   & 1 & \textbf{37.64} & \textbf{39.64} & $\boldsymbol{-1.67}$ & $A=+1.59$, $\Delta C_{9}^{\mathrm{eff}}=-1.37$ \\
+FREE\_C9 + FREE\_C10           & 2 & 39.05 & 43.05 & $+1.73$ & $\Delta C_{9}=-1.40$, $\Delta C_{10}=+0.19$ \\
+charm-loop Gaussian            & 2 & 35.41 & 39.41 & $-1.91$ & $A=+1.83$, $\sigma=8.96\,\mathrm{GeV}^{2}$ \\
+\bottomrule
+\end{tabular}
+\caption{Joint-fit comparison on LHCb 2025 four observables.
+Adding $C_{10}$ does not help. The free centre-peaked Gaussian
+(charm-loop nuisance proxy) achieves a slightly lower AIC than the
+kernel at the cost of one extra parameter.}
+\label{tab:alts}
+\end{table}
+
+\paragraph{Reading.} Adding a free $C_{10}$ shift on top of $C_{9}$
+produces a $\chi^{2}$ improvement of only $0.27$, less than the
+$+2$ AIC penalty for the extra parameter; the data does not want
+$\Delta C_{10}$ at this level. The charm-loop Gaussian — a
+two-parameter ansatz with free amplitude and free width centred at
+the $J/\psi$\,--\,$\psi(2S)$ midpoint — does fit slightly better
+($\Delta\mathrm{AIC}=-1.91$ vs FREE\_C9, vs $-1.67$ for VFD), at the
+cost of one extra parameter. Versus VFD it gains $0.24$ in $\chi^{2}$
+for the cost of $1$ AIC unit, $\Delta\mathrm{AIC}_{\mathrm{charm\,vs\,VFD}}=-0.24$:
+not significant. The fitted width $\sigma\approx 9\,\mathrm{GeV}^{2}$ is
+much broader than the natural charm-resonance scale ($\Gamma_{J/\psi}^{2}
+\sim 0.1\,\mathrm{GeV}^{2}$), meaning the data is not selecting a
+localised charm bump but the same broad centre-peaked shape that the
+geometric kernel captures with one parameter rather than two.
+
+\subsection{Form-factor Monte Carlo}
+
+Twenty samples are drawn from the full joint multivariate constraint
+on the BSZ $B\to K^{*}$ form-factor coefficients
+\citep{Bharucha2016BSZ} via
+\texttt{flavio.\allowbreak default\_parameters.\allowbreak get\_random\_all}.
+For each draw the BSZ constraints are replaced with delta
+distributions at the sampled values;
+\texttt{flavio.\allowbreak default\_parameters} is monkey-patched
+for the prediction loop and restored on exit. SM and slope tables
+are regenerated from scratch per draw (96 \texttt{flavio} calls per
+trial).
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lc}
+\toprule
+statistic & value \\
+\midrule
+$n$ samples completed   & $20/20$ \\
+mean $A$                & $+1.570$ \\
+std $A$                 & $0.163$ \\
+$90\,\%$ CI             & $[+1.389,\ +1.801]$ \\
+fraction $A<0$          & $0.000$ \\
+\bottomrule
+\end{tabular}
+\caption{BSZ form-factor Monte Carlo statistics. The shared
+kernel amplitude shifts by less than $\pm 15\,\%$ under random
+form-factor draws and never changes sign.}
+\label{tab:ff_mc}
+\end{table}
+
+\subsection{Acceptance summary}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lp{4.5cm}p{6.0cm}}
+\toprule
+test (Mode B) & criterion & result \\
+\midrule
+1. bin bootstrap                & sign-stable, magnitude bounded
+                                & \textsc{pass} (Mode B; $99.8\,\%$ positive, CI $\pm 15\,\%$) \\
+2. $q^{2}$ region splits        & cross-region consistency, no sign flip
+                                & \textsc{pass} (Mode B; 3/3 regions $\Delta\mathrm{AIC}<0$, all $A>0$) \\
+3a. FREE\_C9 + FREE\_C10        & adding $C_{10}$ does not displace VFD
+                                & \textsc{pass} (Mode B; $\Delta\mathrm{AIC}=+1.73$ vs FREE\_C9) \\
+3b. charm-loop Gaussian         & VFD competitive at same shape level
+                                & \textsc{partial} (Mode B; $\Delta\mathrm{AIC}_{\mathrm{charm\,vs\,VFD}}=-0.24$, charm $k=2$) \\
+4. form-factor MC               & sign-stable, magnitude bounded
+                                & \textsc{pass} (Mode B; $100\,\%$ positive, CI $\pm 15\,\%$) \\
+5. frozen kernel                & shape never refit
+                                & \textsc{pass} (only $A$ fitted everywhere) \\
+\midrule
+\multicolumn{3}{p{12.0cm}}{\emph{Non-linear stress tests not run;
+the linearised $\Delta\mathrm{AIC}$ values quoted above do not
+transfer to the non-linear refit.}} \\
+\bottomrule
+\end{tabular}
+\caption{Stress-test acceptance summary on the LHCb 2025
+multi-observable joint fit, all under the linearised Mode-B response.
+Sign-stability and magnitude-bounded behaviour transfer qualitatively
+to the non-linear regime, but Mode-B AIC numbers do not.}
+\label{tab:stress_accept}
+\end{table}

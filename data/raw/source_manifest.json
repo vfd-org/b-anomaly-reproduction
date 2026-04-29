@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "project": "WO-VFD-BANOMALY-001",
+  "primary_paper": {
+    "arxiv_id": "2512.18053",
+    "report_number": "LHCb-PAPER-2025-041 / CERN-EP-2025-278",
+    "title": "A comprehensive analysis of the B0 -> K*0 mu+ mu- decay",
+    "authors": "LHCb Collaboration (R. Aaij et al.)",
+    "arxiv_abs_url": "https://arxiv.org/abs/2512.18053",
+    "arxiv_pdf_url": "https://arxiv.org/pdf/2512.18053",
+    "inspire_record": "3094698",
+    "inspire_url": "https://inspirehep.net/literature/3094698",
+    "cern_record_ids": ["2951844", "2951760"],
+    "cern_record_urls": [
+      "https://cds.cern.ch/record/2951844",
+      "https://cds.cern.ch/record/2951760"
+    ],
+    "hepdata_record_id": "ins3094698",
+    "hepdata_doi": "10.17182/hepdata.167733.v1",
+    "hepdata_record_url": "https://www.hepdata.net/record/ins3094698",
+    "hepdata_archive_url": "https://www.hepdata.net/download/submission/ins3094698/original",
+    "hepdata_archive_local_path": "data/raw/hepdata/HEPData-ins3094698-v1.zip",
+    "hepdata_archive_size_bytes": 3967310,
+    "hepdata_archive_last_modified": "2026-02-19T13:41:13Z",
+    "supplementary_machine_readable": "yes",
+    "date_accessed": "2026-04-28",
+    "paper_pdf_local_path": "data/raw/lhcb_2512_18053.pdf",
+    "paper_text_local_path": "data/raw/lhcb_2512_18053.txt",
+    "notes": "HEPData supplementary archive obtained 2026-04-28 from https://www.hepdata.net/download/submission/ins3094698/original. Contains 6 fit configurations (config_1..config_6) each with results + stat/syst/total correlation matrices in both YAML and JSON. Paper text explicitly directs readers to the HEPData page for systematic uncertainties and full observable results."
+  },
+  "hepdata_configs": {
+    "config_1": "Partially massive model, CP-asymmetries fixed to 0, Si basis, standard q^2 binning",
+    "config_2": "Partially massive model, CP-asymmetries fixed to 0, Pi basis (P5' anomaly observable), standard q^2 binning",
+    "config_3": "Fully massive model in all q^2 bins, CP-asymmetries=0, Si basis, standard q^2 binning",
+    "config_4": "Massless model q^2>1.1 GeV^2, CP-asymmetries floated, Si basis, standard q^2 binning",
+    "config_5": "Fully massless model, CP-asymmetries=0, Pi basis, standard q^2 binning",
+    "config_6": "Partially massive, CP-asymmetries=0, Si basis, half-sized q^2 binning"
+  },
+  "hepdata_observables_per_config": [
+    "S1c", "S2c", "S2s", "P1", "P2", "P3", "P4p", "P5p", "P6c", "P6p", "P8p",
+    "FS", "S1ac", "S1bcre", "SS1re", "SS2re", "SS3re", "SS4re", "SS5re",
+    "S1bcim", "SS1im", "SS2im", "SS3im", "SS4im", "SS5im",
+    "dBF/dq2", "rel_BF_pwave"
+  ],
+  "hepdata_q2_bins_standard": "10 bins from [0.06, 0.98] up through above-resonance region (see config_*_results.json indep['values'])",
+  "auxiliary_sources": [
+    {
+      "name": "flavio",
+      "purpose": "SM and BSM predictions for B -> K* mu mu observables",
+      "url": "https://flav-io.github.io/",
+      "status": "optional Phase 6 backend"
+    },
+    {
+      "name": "EOS",
+      "purpose": "Theory predictions for flavour observables",
+      "url": "https://eos.github.io/",
+      "status": "optional Phase 6 backend"
+    },
+    {
+      "name": "wilson",
+      "purpose": "Wilson coefficient running and basis transformations",
+      "url": "https://wilson-eft.github.io/",
+      "status": "optional Phase 6 backend"
+    }
+  ],
+  "data_status": {
+    "observables_csv": "data/processed/lhcb_2512_18053_observables.csv",
+    "covariance_npy": "data/processed/lhcb_2512_18053_covariance.npy",
+    "metadata_json": "data/processed/lhcb_2512_18053_metadata.json",
+    "current_state": "PLACEHOLDER_SCHEMA_ONLY"
+  }
+}

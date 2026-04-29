@@ -1,0 +1,21 @@
+dependent_variables:
+- header: {name: Zero-crossing C.L., units: PCT}
+  qualifiers:
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - {value: 68.0}
+  - {value: 68.0}
+  - {value: 95.0}
+independent_variables:
+- header: {name: Zero-crossing}
+  values:
+  - {value: $q_0(S_5)$}
+  - {value: '$q_0(A_{FB})$'}
+  - {value: $q_0(S_4)$}
+- header: {name: Range, units: GEV**2}
+  values:
+  - {high: 3.95, low: 2.49}
+  - {high: 4.87, low: 3.4}
+  - {value: < 2.65}

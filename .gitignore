@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project artefacts that should be regenerated, not committed
+data/processed/lhcb_2512_18053_observables.csv
+data/processed/lhcb_2512_18053_metadata.json
+data/processed/lhcb_2512_18053_covariance.npy
+
+# LaTeX intermediates (the paper PDF is committed; the rest are not)
+paper/main.aux
+paper/main.bbl
+paper/main.blg
+paper/main.log
+paper/main.out
+paper/main.toc
+paper/main.fls
+paper/main.fdb_latexmk
+paper/main.synctex.gz
+paper/sections/*.aux
+paper/_minted-*/
+# Tectonic working directory
+paper/main.xdv
+
+# Tool outputs / scratch
+/tmp/
+*.log

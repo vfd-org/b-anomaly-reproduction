@@ -1,0 +1,208 @@
+% =====================================================================
+\section{Cross-channel test: $B_{s}\to\phi\mu\mu$}\label{sec:cross-channel}
+% =====================================================================
+
+The kernel is now applied to the $B_{s}^{0}\to\phi\mu^{+}\mu^{-}$
+angular analysis of LHCb 2015 \citep{LHCb2015Bsphimumu,
+LHCb2015BsphiHEPData}, the same flavour transition $b\to s\mu\mu$ but
+with a different vector meson final state.
+
+\subsection{Dataset}
+
+LHCb 2015 publishes Table 2: $F_{L}, S_{3}, S_{4}, S_{7}$ on 8 $q^{2}$
+bins, of which 6 are exclusive (we drop the wide combined $[1, 6]$
+and $[15, 19]$). No published angular covariance; we use diagonal
+stat$\oplus$syst. The flavio decay string is \texttt{Bs->phimumu};
+observable strings are $\langle F_{L}\rangle, \langle S_{3}\rangle,
+\langle S_{4}\rangle, \langle S_{7}\rangle$.
+
+\subsection{Headline result (non-linear)}
+
+Re-fitting with \texttt{flavio.np\_prediction} directly (no Taylor
+expansion) on the same dataset:
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcrrrl}
+\toprule
+model & $k$ & $\chi^{2}$ & AIC & $\Delta\mathrm{AIC}$ & params \\
+\midrule
+FREE\_C9        & 1 & 13.20 & 15.20 & $0.00$  & $\Delta C_{9}=-4.12$ \\
+\textbf{VFD\_GREEN\_600CELL} & 1 & \textbf{12.96} & \textbf{14.96} & $\boldsymbol{-0.24}$ & $A=+4.98$, $\Delta C_{9}^{\mathrm{eff}}=-3.85$ \\
+\bottomrule
+\end{tabular}
+\caption{$B_{s}\to\phi\mu\mu$ non-linear frozen-kernel fit on LHCb 2015,
+6 exclusive $q^{2}$ bins, four observables, 24 data points, diagonal
+errors (no published angular covariance). The kernel marginally lowers
+AIC by $0.24$ unit at equal $k=1$. Both fits give a sign-uniform
+negative $\Delta C_{9}^{\mathrm{eff}}$. Mode-B linearised fit gave
+$\Delta\mathrm{AIC}=-0.08$; values are essentially equivalent at this
+sensitivity.}
+\label{tab:bs_phi_main}
+\end{table}
+
+The 500-trial bootstrap on bins (run under Mode B, retained as a
+diagnostic) gives $A_{\mathrm{mean}}=+6.71$, std $3.27$, 90\,\% CI
+$[+5.20,+16.15]$, fraction $A<0 = 0/500$: sign-stable but magnitude
+poorly constrained. Region splits under Mode B give $A=+5.31$ in the
+low-$q^{2}$ region (unpinned), with the central and high regions
+hitting the optimiser bound and providing no quantitative constraint
+because angular slopes there drop to
+$\partial O/\partial C_{9}\sim 10^{-4}$. Only the low-$q^{2}$ region
+split is taken as a quantitative cross-check.
+
+\subsection{Apparent factor-of-4 amplitude difference: largely a basis effect}
+
+The fitted amplitude on $B_{s}\to\phi$ ($A_{\mathrm{NL}}\approx +5.0$)
+is roughly $4\times$ larger than the four $B \to K^{*}$ non-linear
+fits in $P$-basis ($A_{\mathrm{NL}}\approx +1.05$ to $+2.06$;
+\S\ref{sec:cross-dataset}). The first-order interpretation
+``$B_{s}\to\phi$ has weaker $C_{9}$ sensitivity'' is incorrect.
+A direct slope comparison shows:
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{cccccccccc}
+\toprule
+$q^{2}$ bin & \multicolumn{4}{c}{$B^{0}\to K^{*0}$ ($\partial O/\partial C_{9}$)} &
+              \multicolumn{4}{c}{$B_{s}\to\phi$ ($\partial O/\partial C_{9}$)} &
+              RMS ratio \\
+            & $F_{L}$ & $S_{3}$ & $S_{4}$ & $S_{7}$ &
+              $F_{L}$ & $S_{3}$ & $S_{4}$ & $S_{7}$ & \\
+\midrule
+$[0.10,\,2.00]$ & $+0.071$ & $-0.001$ & $+0.015$ & $+0.002$ &
+                  $+0.068$ & $-0.003$ & $+0.012$ & $+0.002$ & 0.96 \\
+$[2.00,\,5.00]$ & $+0.036$ & $-0.001$ & $-0.004$ & $+0.004$ &
+                  $+0.032$ & $-0.002$ & $-0.003$ & $+0.004$ & 0.89 \\
+$[5.00,\,8.00]$ & $+0.010$ & $-0.001$ & $-0.002$ & $+0.002$ &
+                  $+0.010$ & $-0.001$ & $-0.002$ & $+0.002$ & 0.97 \\
+$[11.0,\,12.5]$ & $+0.001$ & $-0.000$ & $-0.000$ & $+0.001$ &
+                  $+0.001$ & $-0.000$ & $-0.000$ & $+0.001$ & 0.98 \\
+$[15.0,\,17.0]$ & $+0.000$ & $-0.000$ & $-0.000$ & $+0.000$ &
+                  $+0.000$ & $-0.000$ & $-0.000$ & $+0.000$ & 0.88 \\
+$[17.0,\,19.0]$ & $+0.000$ & $+0.000$ & $+0.000$ & $+0.000$ &
+                  $-0.000$ & $+0.000$ & $+0.000$ & $+0.000$ & 0.94 \\
+\bottomrule
+\end{tabular}
+\caption{Side-by-side $S$-basis dO/dC$_{9}$ slopes from \texttt{flavio}.
+The two channels agree on slope magnitudes within $\pm 10$--$20\,\%$ at
+matched $q^{2}$ bins; the rightmost column is RMS ratio of Bs$\to\phi$
+to $B\to K^{*}$ across the four observables.}
+\label{tab:slopes_compare}
+\end{table}
+
+The slopes are essentially identical between channels at matched
+$q^{2}$. The amplitude gap is therefore not a channel effect but a
+\emph{basis} effect.
+
+\paragraph{Krüger--Matias amplification.} The optimised $P_{i}$ basis
+\citep{Kruger2005Pbasis,Descotes2013P5p} is constructed to absorb the
+$F_{L}$ form-factor dependence by dividing it out:
+\begin{align}
+P_{5}' &= S_{5} \,/\, \sqrt{F_{L}(1-F_{L})}, \qquad
+P_{4}' = S_{4} \,/\, \sqrt{F_{L}(1-F_{L})}, \\
+P_{1}  &= 2\,S_{3} \,/\, (1-F_{L}), \qquad
+P_{2}  = (2/3)\, A_{\mathrm{FB}} \,/\, (1-F_{L}).
+\end{align}
+At typical $F_{L}\approx 0.5$ this multiplies the per-observable
+$C_{9}$ sensitivity by $1/\sqrt{F_{L}(1-F_{L})}\approx 2$. We verify
+this numerically: for $B \to K^{*}$,
+\begin{equation}
+\frac{|\partial P_{5}'/\partial C_{9}|}{|\partial S_{5}/\partial C_{9}|}
+\;=\; 2.04 \text{--} 2.88
+\end{equation}
+across the six matched bins, tracking the analytic factor
+$1/\sqrt{F_{L}(1-F_{L})}$ to within 10\,\%.
+
+\paragraph{Why $B_{s}\to\phi$ was forced into the unamplified basis.}
+LHCb 2015 \citep{LHCb2015Bsphimumu} publishes only the $S$-basis for
+this decay; \texttt{flavio} reflects this — the $P$-basis observables
+$\langle P_{5}'\rangle(\text{Bs}\to\phi\mu\mu)$ are not registered.
+The cross-dataset fits of \S\ref{sec:cross-dataset} used the amplified
+$P$-basis (where LHCb 2025, CMS 2025, LHCb 2015, LHCb 2021 all
+publish); the cross-channel fit here is forced into the unamplified
+$S$-basis.
+
+\paragraph{Predicted vs observed amplitude.} If the kernel is genuinely
+universal across channels and only the basis differs, the
+$P$- to $S$-basis amplitude scaling is
+\begin{equation}\label{eq:basis_conv}
+A_{S\text{-basis}} \;\approx\; A_{P\text{-basis}}\times
+\bigl\langle 1/\sqrt{F_{L}(1-F_{L})}\bigr\rangle_{\kappa}
+\;\approx\; A_{P\text{-basis}}\times 2.2,
+\end{equation}
+with the per-bin factor $2.04$--$2.88$ that we measured on
+$B\to K^{*}$ (above). Using the non-linear LHCb 2025 result
+$A_{P}^{\mathrm{LHCb\,2025}} = +1.14$ as the reference $P$-basis
+amplitude, the predicted $S$-basis amplitude on $B_{s}\!\to\!\phi$ is
+\begin{equation}
+A^{\mathrm{Bs}\to\phi}_{S, \text{predicted}} \;\approx\; +1.14 \times 2.2 \;\approx\; +2.5.
+\end{equation}
+The non-linear refit gives $A^{\mathrm{Bs}\to\phi}_{S, \text{observed}} = +4.98$, a factor of
+$\sim 2.0$ over prediction. The basis-corrected prediction $+2.5$
+sits \emph{outside} the bootstrap 90\,\% CI on $A$,
+$[+5.20, +16.15]$ — the bootstrap interval lies entirely above the
+prediction, although it is also entirely above the central fit value
+itself, which is itself a sign that the diagonal-only chi-square
+underweights inter-observable information and admits a larger
+best-fit. We attribute the residual gap to:
+\begin{enumerate}
+\item the absence of a published angular covariance matrix for
+  $B_{s}\!\to\!\phi$, which makes the best-fit $A$ unstable in
+  magnitude;
+\item the per-bin scaling factor scatter $\pm 20\,\%$ around $2.2$;
+\item the limited $3\,\mathrm{fb}^{-1}$ statistics of the 2015
+  $B_{s}\!\to\!\phi$ analysis.
+\end{enumerate}
+We therefore characterise the cross-channel result as:
+\emph{the amplitude gap collapses from a factor of $\sim 4$ to a
+factor of $\sim 2$ once basis is harmonised, with a factor-of-$2$
+residual that is at least as large as the basis-correction itself;
+this single dataset cannot in principle constrain
+channel-universality at better than factor-of-$2$ precision.}
+
+\subsection{Acceptance gates (cross-channel, non-linear)}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{p{6.5cm}p{8.0cm}}
+\toprule
+criterion & result \\
+\midrule
+$A$ same sign as the four $B\to K^{*}$ fits & \textsc{pass} ($A_{\mathrm{NL}}=+4.98>0$) \\
+effective $\Delta C_{9}^{\mathrm{eff}}$ negative & \textsc{pass} ($-3.85$) \\
+VFD AIC competitive with FREE\_C9   & \textsc{observed} (marginal $\Delta\mathrm{AIC}=-0.24$, $w_{\mathrm{VFD}}\approx 0.53$) \\
+bootstrap $A$ sign-stable           & \textsc{pass} ($500/500$ positive) \\
+unpinned low-$q^{2}$ region split sign-positive & \textsc{pass} ($A=+5.31$) \\
+central / high-$q^{2}$ region splits & \textsc{not quantitative} (bound-pinned; reported only) \\
+basis correction predicts amplitude & \textsc{partial} (predicted $+2.5$ vs observed $+4.98$; factor $\sim 2$ unexplained gap) \\
+\bottomrule
+\end{tabular}
+\caption{The non-linear cross-channel fit is sign-consistent with the
+four $B\to K^{*}$ fits and AIC-degenerate with FREE\_C9; the
+basis-effect explanation accounts for most but not all of the
+amplitude difference.}
+\end{table}
+
+\subsection{Channels not tested}
+
+\paragraph{$B^{+}\to K^{+}\mu\mu$.} Five candidate INSPIRE records were
+probed for HEPData submissions covering the LHCb and CMS $B^{+}\to
+K^{+}$ angular and branching-fraction analyses; all five returned the
+HEPData 404 page from the standard download endpoint. We were unable
+to construct a clean cross-channel test for this decay. Recorded as
+an open channel.
+
+\paragraph{$B \to K_{0,2}^{*}(1430)\mu\mu$.} The HEPData record
+ins1486676 \citep{LHCb2016Kst0214030HEPData} is available but reports
+S-wave + D-wave $\Gamma_{i}$ moments rather than the standard angular
+basis; not a clean kernel test. Skipped.
+
+\paragraph{Belle / Belle II.} The Belle full $\Upsilon(4S)$ angular
+analysis lacks a published correlation matrix on HEPData; Belle II had
+not released a cross-comparable angular dataset at the time of writing.
+Both deferred.

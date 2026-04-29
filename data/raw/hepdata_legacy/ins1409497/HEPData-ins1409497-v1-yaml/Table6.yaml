@@ -1,0 +1,574 @@
+dependent_variables:
+- header: {name: '$A_{3}$'}
+  qualifiers:
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - errors:
+    - asymerror: {minus: -0.061, plus: 0.059}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: -0.04
+  - errors:
+    - asymerror: {minus: -0.136, plus: 0.126}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: -0.134
+  - errors:
+    - asymerror: {minus: -0.1, plus: 0.101}
+      label: stat
+    - {label: sys, symerror: 0.001}
+    value: -0.018
+  - errors:
+    - asymerror: {minus: -0.132, plus: 0.12}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: -0.118
+  - errors:
+    - {label: stat, symerror: 0.098}
+    - {label: sys, symerror: 0.005}
+    value: -0.064
+  - errors:
+    - asymerror: {minus: -0.122, plus: 0.119}
+      label: stat
+    - {label: sys, symerror: 0.004}
+    value: -0.076
+  - errors:
+    - asymerror: {minus: -0.091, plus: 0.089}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: -0.073
+  - errors:
+    - asymerror: {minus: -0.093, plus: 0.104}
+      label: stat
+    - {label: sys, symerror: 0.005}
+    value: 0.168
+  - errors:
+    - asymerror: {minus: -0.083, plus: 0.09}
+      label: stat
+    - {label: sys, symerror: 0.008}
+    value: 0.124
+  - errors:
+    - asymerror: {minus: -0.09, plus: 0.096}
+      label: stat
+    - {label: sys, symerror: 0.008}
+    value: 0.124
+  - errors:
+    - asymerror: {minus: -0.091, plus: 0.085}
+      label: stat
+    - {label: sys, symerror: 0.005}
+    value: -0.108
+  - errors:
+    - {label: stat, symerror: 0.087}
+    - {label: sys, symerror: 0.006}
+    value: 0.016
+  - errors:
+    - asymerror: {minus: -0.094, plus: 0.09}
+      label: stat
+    - {label: sys, symerror: 0.01}
+    value: -0.145
+  - errors:
+    - asymerror: {minus: -0.129, plus: 0.133}
+      label: stat
+    - {label: sys, symerror: 0.011}
+    value: 0.05
+  - errors:
+    - asymerror: {minus: -0.048, plus: 0.047}
+      label: stat
+    - {label: sys, symerror: 0.011}
+    value: -0.053
+- header: {name: '$A_{4}$'}
+  qualifiers:
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - errors:
+    - asymerror: {minus: -0.092, plus: 0.09}
+      label: stat
+    - {label: sys, symerror: 0.013}
+    value: -0.047
+  - errors:
+    - asymerror: {minus: -0.181, plus: 0.191}
+      label: stat
+    - {label: sys, symerror: 0.028}
+    value: 0.283
+  - errors:
+    - asymerror: {minus: -0.123, plus: 0.146}
+      label: stat
+    - {label: sys, symerror: 0.042}
+    value: 0.261
+  - errors:
+    - asymerror: {minus: -0.196, plus: 0.194}
+      label: stat
+    - {label: sys, symerror: 0.045}
+    value: 0.002
+  - errors:
+    - asymerror: {minus: -0.154, plus: 0.155}
+      label: stat
+    - {label: sys, symerror: 0.047}
+    value: 0.076
+  - errors:
+    - asymerror: {minus: -0.187, plus: 0.174}
+      label: stat
+    - {label: sys, symerror: 0.048}
+    value: -0.457
+  - errors:
+    - asymerror: {minus: -0.12, plus: 0.121}
+      label: stat
+    - {label: sys, symerror: 0.052}
+    value: -0.104
+  - errors:
+    - asymerror: {minus: -0.127, plus: 0.132}
+      label: stat
+    - {label: sys, symerror: 0.058}
+    value: 0.058
+  - errors:
+    - asymerror: {minus: -0.105, plus: 0.101}
+      label: stat
+    - {label: sys, symerror: 0.063}
+    value: -0.058
+  - errors:
+    - asymerror: {minus: -0.112, plus: 0.102}
+      label: stat
+    - {label: sys, symerror: 0.056}
+    value: -0.242
+  - errors:
+    - asymerror: {minus: -0.091, plus: 0.094}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: 0.059
+  - errors:
+    - asymerror: {minus: -0.093, plus: 0.087}
+      label: stat
+    - {label: sys, symerror: 0.028}
+    value: -0.11
+  - errors:
+    - asymerror: {minus: -0.095, plus: 0.093}
+      label: stat
+    - {label: sys, symerror: 0.045}
+    value: -0.071
+  - errors:
+    - asymerror: {minus: -0.162, plus: 0.155}
+      label: stat
+    - {label: sys, symerror: 0.059}
+    value: -0.12
+  - errors:
+    - asymerror: {minus: -0.052, plus: 0.049}
+      label: stat
+    - {label: sys, symerror: 0.027}
+    value: -0.049
+- header: {name: '$A_{5}$'}
+  qualifiers:
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.066}
+    - {label: sys, symerror: 0.011}
+    value: -0.008
+  - errors:
+    - asymerror: {minus: -0.176, plus: 0.166}
+      label: stat
+    - {label: sys, symerror: 0.008}
+    value: -0.11
+  - errors:
+    - asymerror: {minus: -0.12, plus: 0.124}
+      label: stat
+    - {label: sys, symerror: 0.008}
+    value: 0.028
+  - errors:
+    - asymerror: {minus: -0.168, plus: 0.167}
+      label: stat
+    - {label: sys, symerror: 0.005}
+    value: 0.015
+  - errors:
+    - asymerror: {minus: -0.142, plus: 0.143}
+      label: stat
+    - {label: sys, symerror: 0.005}
+    value: 0.051
+  - errors:
+    - {label: stat, symerror: 0.139}
+    - {label: sys, symerror: 0.006}
+    value: -0.011
+  - errors:
+    - asymerror: {minus: -0.116, plus: 0.117}
+      label: stat
+    - {label: sys, symerror: 0.006}
+    value: 0.04
+  - errors:
+    - asymerror: {minus: -0.117, plus: 0.122}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: 0.084
+  - errors:
+    - asymerror: {minus: -0.106, plus: 0.102}
+      label: stat
+    - {label: sys, symerror: 0.013}
+    value: -0.042
+  - errors:
+    - asymerror: {minus: -0.102, plus: 0.105}
+      label: stat
+    - {label: sys, symerror: 0.012}
+    value: 0.097
+  - errors:
+    - asymerror: {minus: -0.085, plus: 0.087}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: 0.039
+  - errors:
+    - asymerror: {minus: -0.079, plus: 0.073}
+      label: stat
+    - {label: sys, symerror: 0.008}
+    value: -0.138
+  - errors:
+    - asymerror: {minus: -0.086, plus: 0.085}
+      label: stat
+    - {label: sys, symerror: 0.015}
+    value: -0.02
+  - errors:
+    - asymerror: {minus: -0.131, plus: 0.134}
+      label: stat
+    - {label: sys, symerror: 0.015}
+    value: 0.186
+  - errors:
+    - {label: stat, symerror: 0.044}
+    - {label: sys, symerror: 0.008}
+    value: -0.01
+- header: {name: '$A_{6s}$'}
+  qualifiers:
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - errors:
+    - asymerror: {minus: -0.127, plus: 0.128}
+      label: stat
+    - {label: sys, symerror: 0.016}
+    value: 0.167
+  - errors:
+    - asymerror: {minus: -0.155, plus: 0.161}
+      label: stat
+    - {label: sys, symerror: 0.005}
+    value: 0.213
+  - errors:
+    - asymerror: {minus: -0.111, plus: 0.121}
+      label: stat
+    - {label: sys, symerror: 0.004}
+    value: 0.077
+  - errors:
+    - asymerror: {minus: -0.125, plus: 0.121}
+      label: stat
+    - {label: sys, symerror: 0.001}
+    value: -0.047
+  - errors:
+    - {label: stat, symerror: 0.107}
+    - {label: sys, symerror: 0.009}
+    value: -0.085
+  - errors:
+    - asymerror: {minus: -0.121, plus: 0.124}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: 0.116
+  - errors:
+    - asymerror: {minus: -0.083, plus: 0.087}
+      label: stat
+    - {label: sys, symerror: 0.005}
+    value: 0.063
+  - errors:
+    - asymerror: {minus: -0.088, plus: 0.096}
+      label: stat
+    - {label: sys, symerror: 0.006}
+    value: 0.1
+  - errors:
+    - asymerror: {minus: -0.089, plus: 0.091}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: 0.016
+  - errors:
+    - asymerror: {minus: -0.081, plus: 0.076}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: -0.099
+  - errors:
+    - asymerror: {minus: -0.081, plus: 0.076}
+      label: stat
+    - {label: sys, symerror: 0.01}
+    value: -0.117
+  - errors:
+    - asymerror: {minus: -0.081, plus: 0.079}
+      label: stat
+    - {label: sys, symerror: 0.01}
+    value: -0.035
+  - errors:
+    - asymerror: {minus: -0.091, plus: 0.087}
+      label: stat
+    - {label: sys, symerror: 0.009}
+    value: -0.109
+  - errors:
+    - asymerror: {minus: -0.139, plus: 0.132}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: -0.167
+  - errors:
+    - asymerror: {minus: -0.044, plus: 0.045}
+      label: stat
+    - {label: sys, symerror: 0.008}
+    value: -0.096
+- header: {name: '$A_{7}$'}
+  qualifiers:
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - errors:
+    - asymerror: {minus: -0.062, plus: 0.064}
+      label: stat
+    - {label: sys, symerror: 0.01}
+    value: 0.112
+  - errors:
+    - asymerror: {minus: -0.2, plus: 0.167}
+      label: stat
+    - {label: sys, symerror: 0.006}
+    value: -0.193
+  - errors:
+    - asymerror: {minus: -0.144, plus: 0.13}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: -0.162
+  - errors:
+    - asymerror: {minus: -0.162, plus: 0.165}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: -0.004
+  - errors:
+    - {label: stat, symerror: 0.13}
+    - {label: sys, symerror: 0.003}
+    value: -0.146
+  - errors:
+    - {label: stat, symerror: 0.135}
+    - {label: sys, symerror: 0.003}
+    value: 0.058
+  - errors:
+    - asymerror: {minus: -0.122, plus: 0.125}
+      label: stat
+    - {label: sys, symerror: 0.005}
+    value: 0.181
+  - errors:
+    - asymerror: {minus: -0.125, plus: 0.129}
+      label: stat
+    - {label: sys, symerror: 0.004}
+    value: 0.064
+  - errors:
+    - asymerror: {minus: -0.113, plus: 0.11}
+      label: stat
+    - {label: sys, symerror: 0.002}
+    value: -0.064
+  - errors:
+    - asymerror: {minus: -0.11, plus: 0.116}
+      label: stat
+    - {label: sys, symerror: 0.002}
+    value: 0.144
+  - errors:
+    - asymerror: {minus: -0.094, plus: 0.087}
+      label: stat
+    - {label: sys, symerror: 0.004}
+    value: -0.124
+  - errors:
+    - asymerror: {minus: -0.092, plus: 0.087}
+      label: stat
+    - {label: sys, symerror: 0.006}
+    value: -0.081
+  - errors:
+    - asymerror: {minus: -0.094, plus: 0.093}
+      label: stat
+    - {label: sys, symerror: 0.011}
+    value: -0.025
+  - errors:
+    - asymerror: {minus: -0.122, plus: 0.125}
+      label: stat
+    - {label: sys, symerror: 0.006}
+    value: 0.022
+  - errors:
+    - asymerror: {minus: -0.049, plus: 0.048}
+      label: stat
+    - {label: sys, symerror: 0.014}
+    value: -0.062
+- header: {name: '$A_{8}$'}
+  qualifiers:
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.08}
+    - {label: sys, symerror: 0.012}
+    value: 0.021
+  - errors:
+    - asymerror: {minus: -0.18, plus: 0.203}
+      label: stat
+    - {label: sys, symerror: 0.008}
+    value: 0.13
+  - errors:
+    - asymerror: {minus: -0.161, plus: 0.152}
+      label: stat
+    - {label: sys, symerror: 0.006}
+    value: -0.06
+  - errors:
+    - asymerror: {minus: -0.185, plus: 0.188}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: 0.005
+  - errors:
+    - asymerror: {minus: -0.146, plus: 0.15}
+      label: stat
+    - {label: sys, symerror: 0.001}
+    value: 0.183
+  - errors:
+    - asymerror: {minus: -0.167, plus: 0.156}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: -0.195
+  - errors:
+    - asymerror: {minus: -0.13, plus: 0.131}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: 0.004
+  - errors:
+    - asymerror: {minus: -0.127, plus: 0.131}
+      label: stat
+    - {label: sys, symerror: 0.002}
+    value: 0.078
+  - errors:
+    - asymerror: {minus: -0.121, plus: 0.123}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: 0.072
+  - errors:
+    - asymerror: {minus: -0.107, plus: 0.112}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: -0.017
+  - errors:
+    - asymerror: {minus: -0.092, plus: 0.095}
+      label: stat
+    - {label: sys, symerror: 0.005}
+    value: 0.087
+  - errors:
+    - {label: stat, symerror: 0.089}
+    - {label: sys, symerror: 0.005}
+    value: 0.013
+  - errors:
+    - asymerror: {minus: -0.097, plus: 0.1}
+      label: stat
+    - {label: sys, symerror: 0.004}
+    value: 0.131
+  - errors:
+    - asymerror: {minus: -0.138, plus: 0.14}
+      label: stat
+    - {label: sys, symerror: 0.01}
+    value: -0.029
+  - errors:
+    - asymerror: {minus: -0.049, plus: 0.05}
+      label: stat
+    - {label: sys, symerror: 0.01}
+    value: 0.059
+- header: {name: '$A_{9}$'}
+  qualifiers:
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.062}
+    - {label: sys, symerror: 0.009}
+    value: 0.043
+  - errors:
+    - asymerror: {minus: -0.153, plus: 0.136}
+      label: stat
+    - {label: sys, symerror: 0.01}
+    value: -0.126
+  - errors:
+    - asymerror: {minus: -0.101, plus: 0.102}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: 0.013
+  - errors:
+    - asymerror: {minus: -0.125, plus: 0.115}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: -0.129
+  - errors:
+    - asymerror: {minus: -0.1, plus: 0.103}
+      label: stat
+    - {label: sys, symerror: 0.008}
+    value: 0.16
+  - errors:
+    - asymerror: {minus: -0.12, plus: 0.118}
+      label: stat
+    - {label: sys, symerror: 0.002}
+    value: -0.001
+  - errors:
+    - asymerror: {minus: -0.09, plus: 0.092}
+      label: stat
+    - {label: sys, symerror: 0.005}
+    value: 0.125
+  - errors:
+    - asymerror: {minus: -0.093, plus: 0.108}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: 0.195
+  - errors:
+    - asymerror: {minus: -0.102, plus: 0.097}
+      label: stat
+    - {label: sys, symerror: 0.003}
+    value: -0.082
+  - errors:
+    - {label: stat, symerror: 0.092}
+    - {label: sys, symerror: 0.002}
+    value: -0.014
+  - errors:
+    - asymerror: {minus: -0.082, plus: 0.089}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: 0.145
+  - errors:
+    - asymerror: {minus: -0.084, plus: 0.086}
+      label: stat
+    - {label: sys, symerror: 0.004}
+    value: 0.058
+  - errors:
+    - asymerror: {minus: -0.092, plus: 0.095}
+      label: stat
+    - {label: sys, symerror: 0.006}
+    value: 0.116
+  - errors:
+    - asymerror: {minus: -0.128, plus: 0.121}
+      label: stat
+    - {label: sys, symerror: 0.007}
+    value: -0.147
+  - errors:
+    - asymerror: {minus: -0.045, plus: 0.048}
+      label: stat
+    - {label: sys, symerror: 0.016}
+    value: 0.065
+independent_variables:
+- header: {name: $q^2$, units: GEV**2}
+  values:
+  - {high: 0.98, low: 0.1}
+  - {high: 2.0, low: 1.1}
+  - {high: 3.0, low: 2.0}
+  - {high: 4.0, low: 3.0}
+  - {high: 5.0, low: 4.0}
+  - {high: 6.0, low: 5.0}
+  - {high: 7.0, low: 6.0}
+  - {high: 8.0, low: 7.0}
+  - {high: 11.75, low: 11.0}
+  - {high: 12.5, low: 11.75}
+  - {high: 16.0, low: 15.0}
+  - {high: 17.0, low: 16.0}
+  - {high: 18.0, low: 17.0}
+  - {high: 19.0, low: 18.0}
+  - {high: 19.0, low: 15.0}

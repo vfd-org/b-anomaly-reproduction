@@ -1,0 +1,100 @@
+% =====================================================================
+\section{Conclusion}\label{sec:conclusion}
+% =====================================================================
+
+We have constructed a single $q^{2}$-dependent response kernel
+$\kappa(q^{2})$ from a finite 2I-equivariant graph (the 600-cell
+$V_{600}$, 120 vertices, 720 edges) regularised by the golden-ratio
+mass $\varphi^{-2}$ as the discrete Green's response of the standard
+graph Laplacian to a uniform equatorial-shell source, and tested
+whether the same fixed shape — with one fitted dimensionless amplitude
+per dataset — describes the $B\to K^{*}\mu^{+}\mu^{-}$ angular anomaly
+as published by two collaborations across five fits and three decay
+channels. The headline analysis evaluates every fit using
+\texttt{flavio.np\_prediction} directly (no Taylor expansion in
+$\Delta C_{9}$); the earlier linearised analysis is reported alongside
+as a methodology diagnostic, with the difference between the two
+modes the largest single uncertainty in the project.
+
+The headline numerical results are:
+\begin{itemize}
+\item \textbf{LHCb 2025, four-observable joint fit (non-linear):}
+  $A=+1.14$, $\Delta C_{9}^{\mathrm{eff}}=-0.86$, with
+  $\Delta\mathrm{AIC}=+1.09$ relative to a constant-$\Delta C_{9}$
+  shift at the same parameter cost. The kernel does not beat the
+  constant shift on this dataset.
+\item \textbf{Cross-dataset (non-linear, 5 fits across 2
+  collaborations and 3 channels):} $\Delta\mathrm{AIC}\in
+  [-0.24, +1.09]$ around zero, with $2/5$ favouring the kernel and
+  $3/5$ favouring the constant shift. Stacked Akaike weight:
+  $w_{\mathrm{VFD}}=0.35$, $w_{\mathrm{FREE\_C9}}=0.65$.
+\item \textbf{Sign uniformity:} $A>0$ in all $5/5$ fits;
+  $\Delta C_{9}^{\mathrm{eff}}<0$ in all $5/5$ fits. Under a random
+  sign null this has $p=2^{-5}\approx 0.03$.
+\item \textbf{Cross-dataset amplitude scatter:} non-linear
+  $A\in[+1.05,+2.06]$ across the four $P$-basis $B\to K^{*}$ fits
+  (factor $\sim 2$); $A=+4.98$ on the $S$-basis $B_{s}\!\to\!\phi$
+  fit, mostly explained by the $P/S$ basis amplification factor
+  $\langle 1/\sqrt{F_{L}(1-F_{L})}\rangle\approx 2.2$, with a
+  factor-of-$2$ unexplained residual.
+\item \textbf{Linearisation drift:} on LHCb 2025 the headline
+  $\Delta\mathrm{AIC}$ shifts by $+2.77$ between the linearised and
+  non-linear fits, larger than the linearised preference itself; the
+  non-linear refit is taken as headline.
+\item \textbf{Theoretical compression:} the kernel involves no fitted
+  continuous shape parameters. The fit-tunable quantity per dataset
+  is the dimensionless amplitude $A$, plus one
+  pure-geometry-confirmed discrete variant choice
+  (\S\ref{sec:derivation}, Table~\ref{tab:variant_selection}).
+\end{itemize}
+
+\paragraph{Falsification programme.} Each of the following events would
+falsify the kernel-direction-consistency hypothesis:
+\begin{enumerate}
+\item A future $B\to K^{*}\mu\mu$ measurement (with any collaboration,
+  any luminosity, any energy) gives $A<0$ on the geometry-derived kernel
+  under non-linear refit.
+\item Cross-dataset amplitude scatter on the $P$-basis fits exceeds
+  a factor of $\sim 5$ once basis is harmonised.
+\item Belle II angular $B\to K^{*}$ data, when released, gives an
+  amplitude inconsistent with $+1.5\pm 0.5$ in the $P$-basis
+  under non-linear refit.
+\item A cross-channel $B^{+}\to K^{+}\mu\mu$ analysis (when public
+  HEPData becomes available) gives $A<0$ under non-linear refit.
+\end{enumerate}
+
+The earlier project iteration's falsification trigger ``A future
+analysis with non-linear $\Delta C_{9}$ evaluation gives
+$\Delta\mathrm{AIC}_{\mathrm{VFD\,vs\,FREE\_C9}}\geq 0$ on the LHCb
+2025 joint fit'' has now fired (\S\ref{subsec:joint_fit}). We
+therefore explicitly weaken the model-comparison claim: the kernel is
+sign-consistent with the anomaly but is not statistically preferred
+over a constant Wilson-coefficient shift.
+
+\paragraph{What this is, and is not.} This is a structural test of the
+$b\to s\mu\mu$ angular anomaly's $q^{2}$ shape. \emph{What survives
+the headline non-linear analysis:} a single geometry-derived kernel
+with one fitted amplitude per dataset is consistent in direction with
+the angular anomaly across two collaborations, two isospin partners,
+and one cross-channel test. \emph{What does not survive:} an AIC
+preference for the geometric shape over a constant
+Wilson-coefficient shift. The data does not yet distinguish the
+geometric kernel from a generic centre-peaked
+nuisance.
+
+\paragraph{Reproducibility.} All code, data, processed outputs, and
+this paper are released under the MIT licence at
+\citep{vfdBAnomalyRepo}. The complete pipeline (HEPData download,
+SM-table regeneration via \texttt{flavio}, all driver scripts
+including the non-linear refits and Akaike-weight stacking, figure
+regeneration, paper recompilation) is reproducible from
+\texttt{repro/run\_all.sh} on a clean checkout. Persistent
+\texttt{flavio} caches under \texttt{data/processed/flavio\_cache.json}
+ensure subsequent runs do not re-query \texttt{flavio} for already-computed
+SM and non-linear-NP values. The non-linear refit scripts
+(\texttt{scripts/wo016c\_nonlinear\_refit.py},
+\texttt{scripts/wo016d\_nonlinear\_xdataset.py}) and the
+Akaike-stacking script
+(\texttt{scripts/wo016a\_akaike\_stack.py}) are stand-alone and
+regenerate the headline tables of \S\ref{sec:results} and
+\S\ref{sec:cross-dataset}.

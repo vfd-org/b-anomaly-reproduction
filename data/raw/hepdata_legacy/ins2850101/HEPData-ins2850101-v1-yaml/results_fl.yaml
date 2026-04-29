@@ -1,0 +1,109 @@
+dependent_variables:
+- header: {name: '$F_\mathrm{L}$', units: ''}
+  qualifiers:
+  - {name: SQRT(S), units: TeV, value: 13}
+  - {name: LUMINOSITY, units: 'fb$^{-1}$', value: 140}
+  values:
+  - errors:
+    - asymerror: {minus: -0.054, plus: 0.073}
+      label: stat
+    - {label: syst, symerror: 0.021}
+    value: 0.709
+  - errors:
+    - asymerror: {minus: -0.03, plus: 0.036}
+      label: stat
+    - {label: syst, symerror: 0.016}
+    value: 0.81
+  - errors:
+    - asymerror: {minus: -0.03, plus: 0.032}
+      label: stat
+    - {label: syst, symerror: 0.012}
+    value: 0.714
+  - errors:
+    - asymerror: {minus: -0.016, plus: 0.016}
+      label: stat
+    - {label: syst, symerror: 0.011}
+    value: 0.627
+  - errors:
+    - asymerror: {minus: -0.013, plus: 0.011}
+      label: stat
+    - {label: syst, symerror: 0.009}
+    value: 0.474
+  - errors:
+    - asymerror: {minus: -0.012, plus: 0.012}
+      label: stat
+    - {label: syst, symerror: 0.009}
+    value: 0.394
+- header: {name: '$F_\mathrm{L}{}_{,ABCDMN}$', units: ''}
+  values:
+  - errors:
+    - {label: theo, symerror: 0.079}
+    value: 0.709
+  - errors:
+    - {label: theo, symerror: 0.056}
+    value: 0.793
+  - errors:
+    - {label: theo, symerror: 0.091}
+    value: 0.728
+  - errors:
+    - {label: theo, symerror: 0.161}
+    value: 0.64
+  - {value: '---'}
+  - errors:
+    - {label: theo, symerror: 0.045}
+    value: 0.358
+- header: {name: '$F_\mathrm{L}{}_{,EOS}$', units: ''}
+  values:
+  - errors:
+    - {label: theo, symerror: 0.0277}
+    value: 0.738
+  - errors:
+    - {label: theo, symerror: 0.0193}
+    value: 0.803
+  - errors:
+    - {label: theo, symerror: 0.0252}
+    value: 0.709
+  - errors:
+    - {label: theo, symerror: 0.0269}
+    value: 0.595
+  - {value: '---'}
+  - {value: '---'}
+- header: {name: '$F_\mathrm{L}{}_{,flavio}$', units: ''}
+  values:
+  - errors:
+    - {label: theo, symerror: 0.048}
+    value: 0.737
+  - errors:
+    - {label: theo, symerror: 0.036}
+    value: 0.793
+  - errors:
+    - {label: theo, symerror: 0.05}
+    value: 0.703
+  - {value: '---'}
+  - {value: '---'}
+  - {value: '---'}
+- header: {name: '$F_\mathrm{L}{}_{,HEPfit}$', units: ''}
+  values:
+  - errors:
+    - {label: theo, symerror: 0.137}
+    value: 0.734
+  - errors:
+    - {label: theo, symerror: 0.155}
+    value: 0.663
+  - errors:
+    - {label: theo, symerror: 0.178}
+    value: 0.528
+  - errors:
+    - {label: theo, symerror: 0.18}
+    value: 0.408
+  - {value: '---'}
+  - {value: '---'}
+independent_variables:
+- header: {name: $q^2$ range, units: '$\mathrm{GeV}^2$'}
+  values:
+  - {high: 2, low: 1.1}
+  - {high: 4.3, low: 2}
+  - {high: 6, low: 4.3}
+  - {high: 8.68, low: 6}
+  - {high: 12.86, low: 10.09}
+  - {high: 16, low: 14.18}

@@ -1,0 +1,119 @@
+% =====================================================================
+\section{Introduction}\label{sec:intro}
+% =====================================================================
+
+The angular distribution of the rare flavour-changing-neutral-current
+decay $B^{0}\to K^{*0}\mu^{+}\mu^{-}$ has shown a persistent tension
+with Standard-Model predictions for over a decade, conventionally
+parametrised as a negative shift in the semileptonic vector Wilson
+coefficient $\Delta C_{9}\sim -1$ relative to the SM benchmark
+$C_{9}^{\mathrm{SM}}\approx 4.27$
+\citep{Descotes2013P5p,AltmannshoferStraub2013}. The most recent LHCb
+comprehensive analysis \citep{LHCb2025BKstmumuComp,LHCb2025BKstmumuHEPData}
+confirms the pattern at $8.4\,\mathrm{fb}^{-1}$, with full angular and
+branching-fraction observables determined on the same dataset.
+
+Free Wilson-coefficient fits have served as the standard interpretive
+ansatz: one fits a constant shift $\Delta C_{9}$ across all $q^{2}$ bins
+and reports the best-fit value and its uncertainty. The free shift makes
+no commitment to the underlying shape of any new-physics effect: by
+construction it averages over all bins with weight inversely proportional
+to the squared sensitivity. If the underlying physics has a non-trivial
+$q^{2}$ dependence — for example, a centre-peaked structure between the
+charmonium resonances, or an oscillation with a definite scale — that
+information is discarded.
+
+This paper asks a deliberately constrained question. Suppose the
+$q^{2}$-dependent response kernel $\kappa(q^{2})$ is fixed
+\emph{a priori} by an external geometric construction, with no shape
+parameters tunable to the data, and one fits only its overall
+amplitude. Does the same kernel describe multiple datasets and channels
+with no per-dataset retuning?
+
+Concretely, we take $\kappa(q^{2})$ to be the discrete Green's response
+of a finite 2I-equivariant graph (the 600-cell $V_{600}$, vertices and
+edges of the regular 4-polytope) regularised by the golden ratio
+$\varphi=(1+\sqrt{5})/2$ as a discrete mass scale,
+\begin{equation}\label{eq:kernel_def}
+\psi = \bigl(L_{V_{600}} + \varphi^{-2}\, I\bigr)^{-1} f,
+\qquad
+\kappa(q^{2}) = \mathrm{shell\text{-}mean}\!\bigl[\psi\bigr]\!\Bigl(x(q^{2})\Bigr),
+\end{equation}
+with $f$ a uniform source on the equatorial inner-product shell,
+$L_{V_{600}}$ the standard graph Laplacian, and $x(q^{2}) =
+(q^{2}-q^{2}_{\mathrm{mid}})/\Delta_{\psi}$ a dimensionless coordinate
+anchored at the $J/\psi$\,--\,$\psi(2S)$ midpoint. The construction is
+motivated by the substrate spectral framework of the companion VFD
+preprints \citep{SmartCrystallisation2026,SmartAdaptiveClosureTransport2026};
+its derivation as the appropriate object for compressing this anomaly
+is given in section~\ref{sec:derivation}. The continuum limit is the
+exponential $\kappa(x) = e^{-|x|/\varphi}$. No shape parameter is
+fitted to any dataset.
+
+The fit form everywhere in this paper is
+\begin{equation}\label{eq:fit_form}
+\Delta C_{9}^{\mathrm{VFD}}(q^{2}) \;=\; -A\,\kappa(q^{2}),
+\end{equation}
+with $A$ the only fitted parameter. The kernel is identical across
+every dataset and decay channel; SM predictions and Wilson-coefficient
+slopes are regenerated per dataset on its own $q^{2}$ bin grid using
+\texttt{flavio} 2.4 \citep{Straub2018Flavio}.
+
+\subsection*{Scope and epistemic status}
+
+This paper reports two analyses of the same data: a linearised fit
+(Mode~B; first-order Taylor expansion of every angular observable
+in $\Delta C_{9}$ around $C_{9}^{\mathrm{SM}}$) and a fully
+non-linear fit using \texttt{flavio.np\_prediction} directly. The
+fitted $\Delta C_{9}$ values are of order unity, well outside the
+linear regime, and the two analyses give materially different model
+comparisons. \emph{We treat the non-linear analysis as the headline;
+the linearised analysis is reported as a methodology diagnostic.}
+
+We claim the following (non-linear refit):
+\begin{enumerate}
+\item On the LHCb 2025 dataset, the geometry-derived kernel and a
+  free $\Delta C_{9}$ shift give comparable fit quality at the same
+  parameter cost ($k=1$ each), with $\Delta\mathrm{AIC}=+1.09$
+  marginally favouring the constant shift.
+\item Across five fits — LHCb 2015 (3\,fb$^{-1}$,
+  $B^{0}\!\to\! K^{*0}$), LHCb 2021 (9\,fb$^{-1}$, $B^{+}\!\to\!K^{*+}$,
+  charged isospin partner), CMS 2025 (140\,fb$^{-1}$, 13~TeV),
+  LHCb 2025 (8.4\,fb$^{-1}$), and the cross-channel
+  $B_{s}\!\to\!\phi\mu\mu$ — the non-linear $\Delta\mathrm{AIC}$
+  values span $[-0.24, +1.09]$. Two of five fits favour the kernel,
+  three favour the constant shift; the stacked Akaike weight is
+  $w_{\mathrm{VFD}}=0.35$ vs $w_{\mathrm{FREE\_C9}}=0.65$.
+\item The fitted amplitudes are sign-uniform across all five fits:
+  $A>0$ in every fit, effective $\Delta C_{9}^{\mathrm{eff}}<0$ in
+  every fit. Under a random-sign null hypothesis the probability
+  of $5/5$ same-sign is $2^{-5}\approx 0.03$.
+\item The cross-channel $B_{s}\!\to\!\phi\mu\mu$ amplitude is
+  factor-of-3 larger in absolute terms; this gap is mostly a basis
+  effect (the 2015 LHCb publication uses the CP-averaged $S_{i}$
+  basis rather than the Krüger--Matias $P_{i}$ basis). After basis
+  correction a residual $\sim 50\,\%$ overshoot remains, attributable
+  to the absence of a published angular covariance and the limited
+  $3\,\mathrm{fb}^{-1}$ statistics.
+\end{enumerate}
+
+We do \emph{not} claim:
+\begin{itemize}
+\item That the kernel beats $\mathrm{FREE\_C9}$ on AIC. It does not,
+  on the headline non-linear analysis. A free-width charm-loop
+  Gaussian also fits comparably (\S\ref{sec:stress}).
+\item That the underlying physics is geometric. Whether the data
+  prefers the kernel because of the geometry, or because the
+  geometry reproduces a centre-peaked shape, is not decided here.
+\item That $B \to K\mu\mu$ has been tested. Public HEPData
+  submissions for the LHCb and CMS analyses
+  (LHCb 1209.4284, 1403.8045, 1804.07167; CMS PRD 2018) are not
+  available; this is recorded as an open channel.
+\end{itemize}
+
+The surviving structural claim is: \emph{one geometry-derived
+$q^{2}$-shape with no continuous shape parameters and one fitted
+amplitude per dataset is consistent (sign-uniform; AIC-degenerate
+with a constant Wilson-coefficient shift) with the $b\to s\mu\mu$
+angular anomaly across two collaborations, two isospin partners,
+and one cross-channel test, with no per-dataset retuning.}

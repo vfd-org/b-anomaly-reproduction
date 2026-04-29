@@ -1,0 +1,702 @@
+additional_resources:
+- {description: CERN document server with supplemental material, location: 'https://cds.cern.ch/record/2748571'}
+- {description: Preprint on arXiv, location: 'https://arxiv.org/abs/2012.13241'}
+comment: |
+  CERN-LHC.  Measurements of the angular observables in the B+ --> K*+ mu+ mu- decay with K*+ --> KS0 pi+ and KS0 -> pi+ pi- using proton-proton collisions at a centre-of-mass energy of 7, 8 and 13 TeV with 9 fb^-1 of data collected in 2011-2018. The final states used are 3 charged pions and 2 muons. The fit is performed simultaneously in the sub sets of Run 1 and 2 and the two distinct KS0 categories, whether or not the KS0 decays inside the Vertex Locator or not. Values for the observables in two angular basis are determined, namely the S and P(') basis.
+
+  The reported central values of the angular observables in Table 1 and 2 are evaluated using angular folding techniques. The asymmetric statistical uncertainties are obtained by Feldman-Cousins scans. The correlation between all observables are determined using a bootstrapping method.
+hepdata_doi: 10.17182/hepdata.105273.v1
+---
+data_file: data1.yaml
+description: "Results for the CP-averaged observables Fl, Afb and S3\u2013S9. The
+  first uncertainties are statistical and the second systematic."
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, S3, S4, S5, Afb, S7, S8, S9]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Data from Table 1 on Page 11
+name: Table 1
+table_doi: 10.17182/hepdata.105273.v1/t1
+---
+data_file: data2.yaml
+description: "Results for the optimised observables FL and P1\u2013P'8. The first
+  uncertainties are statistical and the second systematic."
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Data from Table 2 on Page 12
+name: Table 2
+table_doi: 10.17182/hepdata.105273.v1/t2
+---
+additional_resources:
+- {description: Image file, location: Fig3a.png}
+- {description: Thumbnail image file, location: Fig3a_tn.png}
+data_file: Fig3a.yaml
+description: The CP-averaged observable Fl versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, Fl]
+location: Data from Figure 3a on page 9 of preprint
+name: Fig 3a
+table_doi: 10.17182/hepdata.105273.v1/t3
+---
+additional_resources:
+- {description: Image file, location: Fig3b.png}
+- {description: Thumbnail image file, location: Fig3b_tn.png}
+data_file: Fig3b.yaml
+description: The CP-averaged observable S3 versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [S3]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, S3]
+location: Data from Figure 3b on page 9 of preprint
+name: Fig 3b
+table_doi: 10.17182/hepdata.105273.v1/t4
+---
+additional_resources:
+- {description: Image file, location: Fig3c.png}
+- {description: Thumbnail image file, location: Fig3c_tn.png}
+data_file: Fig3c.yaml
+description: The CP-averaged observable S4 versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [S4]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, S4]
+location: Data from Figure 3c on page 9 of preprint
+name: Fig 3c
+table_doi: 10.17182/hepdata.105273.v1/t5
+---
+additional_resources:
+- {description: Image file, location: Fig3d.png}
+- {description: Thumbnail image file, location: Fig3d_tn.png}
+data_file: Fig3d.yaml
+description: The CP-averaged observable S5 versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [S5]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, S5]
+location: Data from Figure 3d on page 9 of preprint
+name: Fig 3d
+table_doi: 10.17182/hepdata.105273.v1/t6
+---
+additional_resources:
+- {description: Image file, location: Fig3e.png}
+- {description: Thumbnail image file, location: Fig3e_tn.png}
+data_file: Fig3e.yaml
+description: The CP-averaged observable Afb versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Afb]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, Afb]
+location: Data from Figure 3e on page 9 of preprint
+name: Fig 3e
+table_doi: 10.17182/hepdata.105273.v1/t7
+---
+additional_resources:
+- {description: Image file, location: Fig3f.png}
+- {description: Thumbnail image file, location: Fig3f_tn.png}
+data_file: Fig3f.yaml
+description: The CP-averaged observable S7 versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [S7]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, S7]
+location: Data from Figure 3f on page 9 of preprint
+name: Fig 3f
+table_doi: 10.17182/hepdata.105273.v1/t8
+---
+additional_resources:
+- {description: Image file, location: Fig3g.png}
+- {description: Thumbnail image file, location: Fig3g_tn.png}
+data_file: Fig3g.yaml
+description: The CP-averaged observable S8 versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [S8]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, S8]
+location: Data from Figure 3g on page 9 of preprint
+name: Fig 3g
+table_doi: 10.17182/hepdata.105273.v1/t9
+---
+additional_resources:
+- {description: Image file, location: Fig3h.png}
+- {description: Thumbnail image file, location: Fig3h_tn.png}
+data_file: Fig3h.yaml
+description: The CP-averaged observable S9 versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [S9]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, S9]
+location: Data from Figure 3h on page 9 of preprint
+name: Fig 3h
+table_doi: 10.17182/hepdata.105273.v1/t10
+---
+additional_resources:
+- {description: Image file, location: Fig4a.png}
+- {description: Thumbnail image file, location: Fig4a_tn.png}
+data_file: Fig4a.yaml
+description: The optimised observable Fl versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, Fl]
+location: Data from Figure 4a on page 10 of preprint
+name: Fig 4a
+table_doi: 10.17182/hepdata.105273.v1/t11
+---
+additional_resources:
+- {description: Image file, location: Fig4b.png}
+- {description: Thumbnail image file, location: Fig4b_tn.png}
+data_file: Fig4b.yaml
+description: The optimised observable P1 versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [P1]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, P1]
+location: Data from Figure 4b on page 10 of preprint
+name: Fig 4b
+table_doi: 10.17182/hepdata.105273.v1/t12
+---
+additional_resources:
+- {description: Image file, location: Fig4c.png}
+- {description: Thumbnail image file, location: Fig4c_tn.png}
+data_file: Fig4c.yaml
+description: The optimised observable P2 versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [P2]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, P2]
+location: Data from Figure 4c on page 10 of preprint
+name: Fig 4c
+table_doi: 10.17182/hepdata.105273.v1/t13
+---
+additional_resources:
+- {description: Image file, location: Fig4d.png}
+- {description: Thumbnail image file, location: Fig4d_tn.png}
+data_file: Fig4d.yaml
+description: The optimised observable P3 versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [P3]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, P3]
+location: Data from Figure 4d on page 10 of preprint
+name: Fig 4d
+table_doi: 10.17182/hepdata.105273.v1/t14
+---
+additional_resources:
+- {description: Image file, location: Fig4e.png}
+- {description: Thumbnail image file, location: Fig4e_tn.png}
+data_file: Fig4e.yaml
+description: The optimised observable P4' versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [P4']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, P4']
+location: Data from Figure 4e on page 10 of preprint
+name: Fig 4e
+table_doi: 10.17182/hepdata.105273.v1/t15
+---
+additional_resources:
+- {description: Image file, location: Fig4f.png}
+- {description: Thumbnail image file, location: Fig4f_tn.png}
+data_file: Fig4f.yaml
+description: The optimised observable P5' versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [P5']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, P5']
+location: Data from Figure 4f on page 10 of preprint
+name: Fig 4f
+table_doi: 10.17182/hepdata.105273.v1/t16
+---
+additional_resources:
+- {description: Image file, location: Fig4g.png}
+- {description: Thumbnail image file, location: Fig4g_tn.png}
+data_file: Fig4g.yaml
+description: The optimised observable P6' versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [P6']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, P6']
+location: Data from Figure 4g on page 10 of preprint
+name: Fig 4g
+table_doi: 10.17182/hepdata.105273.v1/t17
+---
+additional_resources:
+- {description: Image file, location: Fig4h.png}
+- {description: Thumbnail image file, location: Fig4h_tn.png}
+data_file: Fig4h.yaml
+description: The optimised observable P8' versus q2. The first (second) error bars
+  represent the statistical (total) uncertainties.
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, P8']
+location: Data from Figure 4h on page 10 of preprint
+name: Fig 4h
+table_doi: 10.17182/hepdata.105273.v1/t18
+---
+data_file: corr_S_bin0.yaml
+description: "Correlation matrix for the CP-averaged observables FL, AFB and S3\u2013S9
+  from the maximum-likelihood fit in the interval 0.10 < q2 < 0.98 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, S3, S4, S5, Afb, S7, S8, S9]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 3 on Page 13
+name: Table 3
+table_doi: 10.17182/hepdata.105273.v1/t19
+---
+data_file: corr_S_bin1.yaml
+description: "Correlation matrix for the CP-averaged observables FL, AFB and S3\u2013S9
+  from the maximum-likelihood fit in the interval 1.10 < q2 < 2.50 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, S3, S4, S5, Afb, S7, S8, S9]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 4 on Page 13
+name: Table 4
+table_doi: 10.17182/hepdata.105273.v1/t20
+---
+data_file: corr_S_bin2.yaml
+description: "Correlation matrix for the CP-averaged observables FL, AFB and S3\u2013S9
+  from the maximum-likelihood fit in the interval 2.50 < q2 < 4.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, S3, S4, S5, Afb, S7, S8, S9]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 5 on Page 13
+name: Table 5
+table_doi: 10.17182/hepdata.105273.v1/t21
+---
+data_file: corr_S_bin3.yaml
+description: "Correlation matrix for the CP-averaged observables FL, AFB and S3\u2013S9
+  from the maximum-likelihood fit in the interval 4.00 < q2 < 6.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, S3, S4, S5, Afb, S7, S8, S9]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 6 on Page 14
+name: Table 6
+table_doi: 10.17182/hepdata.105273.v1/t22
+---
+data_file: corr_S_bin4.yaml
+description: "Correlation matrix for the CP-averaged observables FL, AFB and S3\u2013S9
+  from the maximum-likelihood fit in the interval 6.00 < q2 < 8.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, S3, S4, S5, Afb, S7, S8, S9]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 7 on Page 14
+name: Table 7
+table_doi: 10.17182/hepdata.105273.v1/t23
+---
+data_file: corr_S_bin5.yaml
+description: "Correlation matrix for the CP-averaged observables FL, AFB and S3\u2013S9
+  from the maximum-likelihood fit in the interval 11.00 < q2 < 12.50 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, S3, S4, S5, Afb, S7, S8, S9]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 8 on Page 14
+name: Table 8
+table_doi: 10.17182/hepdata.105273.v1/t24
+---
+data_file: corr_S_bin6.yaml
+description: "Correlation matrix for the CP-averaged observables FL, AFB and S3\u2013S9
+  from the maximum-likelihood fit in the interval 15.00 < q2 < 17.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, S3, S4, S5, Afb, S7, S8, S9]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 9 on Page 15
+name: Table 9
+table_doi: 10.17182/hepdata.105273.v1/t25
+---
+data_file: corr_S_bin7.yaml
+description: "Correlation matrix for the CP-averaged observables FL, AFB and S3\u2013S9
+  from the maximum-likelihood fit in the interval 17.00 < q2 < 19.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, S3, S4, S5, Afb, S7, S8, S9]
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 10 on Page 15
+name: Table 10
+table_doi: 10.17182/hepdata.105273.v1/t26
+---
+data_file: corr_S_bin8.yaml
+description: "Correlation matrix for the CP-averaged observables FL, AFB and S3\u2013S9
+  from the maximum-likelihood fit in the interval 1.10 < q2 < 6.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 11 on Page 15
+name: Table 11
+table_doi: 10.17182/hepdata.105273.v1/t27
+---
+data_file: corr_S_bin9.yaml
+description: "Correlation matrix for the CP-averaged observables FL, AFB and S3\u2013S9
+  from the maximum-likelihood fit in the interval 15.00 < q2 < 19.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 12 on Page 16
+name: Table 12
+table_doi: 10.17182/hepdata.105273.v1/t28
+---
+data_file: corr_P_bin0.yaml
+description: "Correlation matrix for the optimised observables FL and P1\u2013P'8
+  from the maximum-likelihood fit in the interval 0.10 < q2 < 0.98 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 13 on Page 17
+name: Table 13
+table_doi: 10.17182/hepdata.105273.v1/t29
+---
+data_file: corr_P_bin1.yaml
+description: "Correlation matrix for the optimised observables FL and P1\u2013P'8
+  from the maximum-likelihood fit in the interval 1.10 < q2 < 2.50 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 14 on Page 17
+name: Table 14
+table_doi: 10.17182/hepdata.105273.v1/t30
+---
+data_file: corr_P_bin2.yaml
+description: "Correlation matrix for the optimised observables FL and P1\u2013P'8
+  from the maximum-likelihood fit in the interval 2.50 < q2 < 4.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 15 on Page 18
+name: Table 15
+table_doi: 10.17182/hepdata.105273.v1/t31
+---
+data_file: corr_P_bin3.yaml
+description: "Correlation matrix for the optimised observables FL and P1\u2013P'8
+  from the maximum-likelihood fit in the interval 4.00 < q2 < 6.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 16 on Page 18
+name: Table 16
+table_doi: 10.17182/hepdata.105273.v1/t32
+---
+data_file: corr_P_bin4.yaml
+description: "Correlation matrix for the optimised observables FL and P1\u2013P'8
+  from the maximum-likelihood fit in the interval 6.00 < q2 < 8.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 17 on Page 18
+name: Table 17
+table_doi: 10.17182/hepdata.105273.v1/t33
+---
+data_file: corr_P_bin5.yaml
+description: "Correlation matrix for the optimised observables FL and P1\u2013P'8
+  from the maximum-likelihood fit in the interval 11.00 < q2 < 12.50 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 18 on Page 19
+name: Table 18
+table_doi: 10.17182/hepdata.105273.v1/t34
+---
+data_file: corr_P_bin6.yaml
+description: "Correlation matrix for the optimised observables FL and P1\u2013P'8
+  from the maximum-likelihood fit in the interval 15.00 < q2 < 17.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 19 on Page 19
+name: Table 19
+table_doi: 10.17182/hepdata.105273.v1/t35
+---
+data_file: corr_P_bin7.yaml
+description: "Correlation matrix for the optimised observables FL and P1\u2013P'8
+  from the maximum-likelihood fit in the interval 17.00 < q2 < 19.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 20 on Page 19
+name: Table 20
+table_doi: 10.17182/hepdata.105273.v1/t36
+---
+data_file: corr_P_bin8.yaml
+description: "Correlation matrix for the optimised observables FL and P1\u2013P'8
+  from the maximum-likelihood fit in the interval 1.10 < q2 < 6.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 21 on Page 20
+name: Table 21
+table_doi: 10.17182/hepdata.105273.v1/t37
+---
+data_file: corr_P_bin9.yaml
+description: "Correlation matrix for the optimised observables FL and P1\u2013P'8
+  from the maximum-likelihood fit in the interval 15.00 < q2 < 19.00 GeV2/c4"
+keywords:
+- name: reactions
+  values: [B+ --> K*+ mu+ mu-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [7000.0, 8000.0, 13000.0]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B -> K* mu mu, bsll, angular
+      analysis, angular observables, correlations]
+location: Data from Table 22 on Page 20
+name: Table 22
+table_doi: 10.17182/hepdata.105273.v1/t38

@@ -1,0 +1,98 @@
+[
+  {
+    "model":"FREE_C9",
+    "k_params":1,
+    "chi2":14.9113625767,
+    "amplitude":-1.3771673075,
+    "delta_aic_vs_FREE_C9":0.0,
+    "delta_aic_vs_KAPPA_EXP":7.0000330722,
+    "correlation_with_exp":null,
+    "correlation_with_cos":null,
+    "eigenvalue":null,
+    "notes":"global C9 shift"
+  },
+  {
+    "model":"KAPPA_EXP (Layer 1)",
+    "k_params":1,
+    "chi2":7.9113295046,
+    "amplitude":4.4931050463,
+    "delta_aic_vs_FREE_C9":-7.0000330722,
+    "delta_aic_vs_KAPPA_EXP":0.0,
+    "correlation_with_exp":1.0,
+    "correlation_with_cos":0.8573973265,
+    "eigenvalue":null,
+    "notes":"Green's fn of L_phi on R"
+  },
+  {
+    "model":"FULL_LIFT[UNWEIGHTED]_EIGENMODE",
+    "k_params":1,
+    "chi2":68.8774417596,
+    "amplitude":0.0,
+    "delta_aic_vs_FREE_C9":53.9660791829,
+    "delta_aic_vs_KAPPA_EXP":60.966112255,
+    "correlation_with_exp":0.8488890174,
+    "correlation_with_cos":0.9989213436,
+    "eigenvalue":5.527864045,
+    "notes":"shell-mean psi = [-1.0, -0.539, -0.0, 0.206, 0.333, 0.206, -0.0, -0.539, -1.0]"
+  },
+  {
+    "model":"FULL_LIFT[UNWEIGHTED]_GREENS",
+    "k_params":1,
+    "chi2":13.5553723813,
+    "amplitude":1.6840321438,
+    "delta_aic_vs_FREE_C9":-1.3559901954,
+    "delta_aic_vs_KAPPA_EXP":5.6440428768,
+    "correlation_with_exp":0.9967985381,
+    "correlation_with_cos":0.8811748188,
+    "eigenvalue":0.3819660113,
+    "notes":"shell-mean psi = [0.788, 0.813, 0.864, 0.89, 1.0, 0.89, 0.864, 0.813, 0.788]"
+  },
+  {
+    "model":"FULL_LIFT[PHI_GEOMETRIC]_EIGENMODE",
+    "k_params":1,
+    "chi2":68.8774417596,
+    "amplitude":4.045030564e-16,
+    "delta_aic_vs_FREE_C9":53.9660791829,
+    "delta_aic_vs_KAPPA_EXP":60.966112255,
+    "correlation_with_exp":0.9167541597,
+    "correlation_with_cos":0.5939777935,
+    "eigenvalue":16.091394104,
+    "notes":"shell-mean psi = [-0.484, -0.483, -0.412, -0.379, 1.0, -0.38, -0.413, -0.483, -0.484]"
+  },
+  {
+    "model":"FULL_LIFT[PHI_GEOMETRIC]_GREENS",
+    "k_params":1,
+    "chi2":14.7130928491,
+    "amplitude":1.4839477418,
+    "delta_aic_vs_FREE_C9":-0.1982697277,
+    "delta_aic_vs_KAPPA_EXP":6.8017633445,
+    "correlation_with_exp":0.9129905074,
+    "correlation_with_cos":0.5866213391,
+    "eigenvalue":0.3819660113,
+    "notes":"shell-mean psi = [0.928, 0.928, 0.931, 0.932, 1.0, 0.932, 0.931, 0.928, 0.928]"
+  },
+  {
+    "model":"FULL_LIFT[PHI_ARITHMETIC]_EIGENMODE",
+    "k_params":1,
+    "chi2":67.0709855135,
+    "amplitude":2.3622814421,
+    "delta_aic_vs_FREE_C9":52.1596229368,
+    "delta_aic_vs_KAPPA_EXP":59.159656009,
+    "correlation_with_exp":0.8065358205,
+    "correlation_with_cos":0.4450507202,
+    "eigenvalue":21.6910861647,
+    "notes":"shell-mean psi = [0.0, -0.001, 0.08, -0.377, 1.0, -0.379, 0.08, -0.001, 0.0]"
+  },
+  {
+    "model":"FULL_LIFT[PHI_ARITHMETIC]_GREENS",
+    "k_params":1,
+    "chi2":14.7815860368,
+    "amplitude":1.4548996039,
+    "delta_aic_vs_FREE_C9":-0.1297765399,
+    "delta_aic_vs_KAPPA_EXP":6.8702565322,
+    "correlation_with_exp":0.8988651524,
+    "correlation_with_cos":0.5626113001,
+    "eigenvalue":0.3819660112,
+    "notes":"shell-mean psi = [0.947, 0.947, 0.949, 0.947, 1.0, 0.947, 0.949, 0.947, 0.947]"
+  }
+]

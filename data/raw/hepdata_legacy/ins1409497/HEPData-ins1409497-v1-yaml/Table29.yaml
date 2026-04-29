@@ -1,0 +1,205 @@
+dependent_variables:
+- header: {name: ''}
+  qualifiers:
+  - {name: $q^2$ = M**2(<MU+ MU->), units: GeV^2, value: 0.1-0.98}
+  - {name: RE, value: P P --> B0 < K*(892) < K+ PI- > MU+ MU- > X}
+  - {name: SQRT(S), units: GeV, value: '7000.0'}
+  - {name: SQRT(S), units: GeV, value: '8000.0'}
+  values:
+  - {value: 1.0}
+  - {value: 0.02}
+  - {value: 0.03}
+  - {value: 0.0}
+  - {value: -0.07}
+  - {value: -0.12}
+  - {value: -0.03}
+  - {value: 0.01}
+  - {value: 0.02}
+  - {value: 1.0}
+  - {value: 0.0}
+  - {value: 0.04}
+  - {value: 0.01}
+  - {value: 0.09}
+  - {value: -0.07}
+  - {value: -0.02}
+  - {value: 0.03}
+  - {value: 0.0}
+  - {value: 1.0}
+  - {value: -0.02}
+  - {value: 0.11}
+  - {value: 0.04}
+  - {value: 0.03}
+  - {value: -0.08}
+  - {value: 0.0}
+  - {value: 0.04}
+  - {value: -0.02}
+  - {value: 1.0}
+  - {value: -0.02}
+  - {value: -0.04}
+  - {value: -0.11}
+  - {value: -0.01}
+  - {value: -0.07}
+  - {value: 0.01}
+  - {value: 0.11}
+  - {value: -0.02}
+  - {value: 1.0}
+  - {value: 0.09}
+  - {value: 0.0}
+  - {value: 0.07}
+  - {value: -0.12}
+  - {value: 0.09}
+  - {value: 0.04}
+  - {value: -0.04}
+  - {value: 0.09}
+  - {value: 1.0}
+  - {value: 0.0}
+  - {value: 0.0}
+  - {value: -0.03}
+  - {value: -0.07}
+  - {value: 0.03}
+  - {value: -0.11}
+  - {value: 0.0}
+  - {value: 0.0}
+  - {value: 1.0}
+  - {value: 0.01}
+  - {value: 0.01}
+  - {value: -0.02}
+  - {value: -0.08}
+  - {value: -0.01}
+  - {value: 0.07}
+  - {value: 0.0}
+  - {value: 0.01}
+  - {value: 1.0}
+independent_variables:
+- header: {name: CORR}
+  values:
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: $P_4^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: $P_4^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: $P_4^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: $P_4^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: $P_4^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: $P_4^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: $P_4^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: $P_4^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_8^\prime$}
+- header: {name: CORR}
+  values:
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: '$F_{\rm L}$'}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_1$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_2$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_3$}
+  - {value: $P_4^\prime$}
+  - {value: $P_4^\prime$}
+  - {value: $P_4^\prime$}
+  - {value: $P_4^\prime$}
+  - {value: $P_4^\prime$}
+  - {value: $P_4^\prime$}
+  - {value: $P_4^\prime$}
+  - {value: $P_4^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_5^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_6^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: $P_8^\prime$}
+  - {value: $P_8^\prime$}

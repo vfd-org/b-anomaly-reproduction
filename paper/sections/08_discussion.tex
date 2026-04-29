@@ -1,0 +1,145 @@
+% =====================================================================
+\section{Discussion}\label{sec:discussion}
+% =====================================================================
+
+\subsection{What the kernel does, and what a free $\Delta C_{9}$ does}
+
+A free Wilson-coefficient shift $\Delta C_{9}$ is a constant in
+$q^{2}$: it averages over all bins with weight
+$\propto |\partial O/\partial C_{9}|^{2}/\sigma^{2}$. The
+geometry-derived kernel imposes a fixed centre-peaked $q^{2}$ shape
+and fits only its overall amplitude. Both fits use one parameter; the
+kernel additionally specifies the bin-by-bin pattern of the shift.
+
+Under the Mode-B linearised response, the kernel's centre-peaked
+profile and FREE\_C9's flat profile compress the four LHCb 2025
+angular observables differently, and the kernel achieves a marginally
+better $\chi^{2}$ ($\Delta\mathrm{AIC}=-1.67$). Under the headline
+non-linear refit the bin-by-bin pattern matters less because the
+non-linearity in $\Delta C_{9}$ partly compensates for shape
+differences: the constant-shift fit at smaller $|\Delta C_{9}|$ ends
+up with comparable $\chi^{2}$ to the kernel, and the kernel loses by
+$\Delta\mathrm{AIC}=+1.09$. Across five fits the non-linear stacked
+Akaike weight is $w_{\mathrm{VFD}}=0.35$ vs
+$w_{\mathrm{FREE\_C9}}=0.65$, a mild preference for the constant
+shift.
+
+Sign uniformity, however, holds in both modes. In all five fits the
+kernel amplitude $A$ is positive, the effective $\Delta C_{9}$ is
+negative, and the kernel describes the data with $\chi^{2}/\mathrm{dof}$
+comparable to FREE\_C9. The kernel is therefore consistent with the
+shape of the angular anomaly (it does not produce sign flips, even on
+the smallest dataset and even on the cross-channel) without being the
+preferred explanation under AIC.
+
+\subsection{Why the linearisation breaks at $|\Delta C_{9}|\sim 1$}
+
+The angular observables $P_{i}'$ and $S_{i}$ are non-linear in the
+Wilson coefficients: they are constructed from ratios of bilinears in
+the transverse amplitudes, each of which is itself a linear function
+of $C_{9}$. A first-order Taylor expansion of $P_{5}'(C_{9})$ around
+$C_{9}^{\mathrm{SM}}$ has the form $\mathrm{Lin}(\Delta C_{9}) +
+\mathcal{O}(\Delta C_{9}^{2})$, with the quadratic correction
+non-negligible once $|\Delta C_{9}|/C_{9}^{\mathrm{SM}}\gtrsim 0.1$.
+Empirically the per-bin linearisation residual on LHCb 2025 reaches
+$4\sigma$ at the linearised best-fit $\Delta C_{9}=-1.34$, and refit
+under the non-linear model returns $\Delta C_{9}=-1.00$ with
+$\Delta\chi^{2}\approx +1.6$ relative to the linearised value.
+This is consistent with the wider literature, where most modern
+$b\to s\mu\mu$ Wilson-coefficient fits use full likelihood evaluation
+(e.g.\ \texttt{flavio}, EOS, smelli) rather than truncated Taylor
+expansions.
+
+\subsection{Why $\varphi$?}
+
+The kernel's mass scale is the golden-ratio inverse $\varphi^{-1}$,
+not a fitted scale. This is the unique scale tying the discrete
+operator $L_{V_{600}} + \varphi^{-2}I$ to the 2I-equivariant cocycle
+weight $\omega_{+}=\varphi^{\kappa}$ established in the framework's
+substrate-spectral construction
+\citep{SmartCrystallisation2026, SmartAdaptiveClosureTransport2026}.
+The pentagonal cocycle takes integer values
+$\kappa(v)\in\{0,1,4,9,16\}$ on the inner-product shells of $V_{600}$,
+and $\varphi$ enters as the fundamental unit through the binary
+icosahedral group's quaternion structure. We tested three discrete
+edge-weighting schemes (\S\ref{sec:derivation},
+Table~\ref{tab:variant_selection}); the unweighted Laplacian wins on
+both the pure-geometry and LHCb-data criteria, with the rankings
+agreeing.
+
+\subsection{Sign uniformity and the basis-effect lesson}
+
+Across the four $B\to K^{*}$ non-linear fits the amplitude $A$ stays
+in $[+1.05,+2.06]$ (a factor-of-2 spread), with $\Delta C_{9}^{\mathrm{eff}}$
+in $[-1.59,-0.81]$. The cross-channel $B_{s}\!\to\!\phi$ amplitude
+$A_{S}=+4.98$ is roughly $4\times$ larger in absolute terms; the
+basis-correction analysis of \S\ref{sec:cross-channel} shows that the
+Krüger--Matias $P_{i}$ basis amplifies the per-observable $C_{9}$
+sensitivity by $\langle 1/\sqrt{F_{L}(1-F_{L})}\rangle\approx 2.2$
+relative to the CP-averaged $S_{i}$ basis. After basis correction the
+predicted $S$-basis amplitude is $\approx +2.5$ and the observed value
+is $+4.98$, a factor-of-2 unexplained residual. We do \emph{not}
+characterise this as a clean basis-effect victory: the residual is
+comparable to the per-bin scatter of the basis correction, but is not
+small.
+
+The lesson — that $S$-basis vs $P$-basis amplitudes cannot be
+compared directly without the form-factor amplification factor — is
+robust and applies to any future cross-channel analysis using older
+$B_{s}\!\to\!\phi$ publications.
+
+\subsection{Three readings of sign uniformity}
+
+The non-linear fitted amplitudes are $5/5$ positive across the five
+fits, $\Delta C_{9}^{\mathrm{eff}}$ is $5/5$ negative. Under a
+random-sign null this has $p\approx 0.03$. There are at least three
+readings:
+\begin{enumerate}
+\item \emph{Real underlying physics with a centre-peaked $q^{2}$
+  structure.} The kernel direction matches it because a discrete
+  600-cell Green's response is centre-peaked in the appropriate
+  dimensionless coordinate. (FREE\_C9 also matches the direction,
+  since the same anomaly drives both fits.)
+\item \emph{The kernel is the right object.} The 2I-equivariant graph
+  realisation is structurally appropriate to $b\to s$ kinematics for
+  reasons external to the data. Direction consistency is a
+  necessary-but-not-sufficient consequence.
+\item \emph{The data is rank-1 in any centre-peaked basis.} Any
+  reasonable centre-peaked shape would give sign-uniform amplitudes
+  on the same anomaly; the geometric kernel is one such shape, not
+  uniquely selected.
+\end{enumerate}
+The data does not distinguish (1) from (2) from (3). We adopt
+reading (3) as the conservative interpretation. Reading (1) is in
+agreement with the wider $b\to s$ literature
+\citep{Descotes2013P5p,AltmannshoferStraub2013}; reading (2) would
+require deriving the kernel from a closure-operator construction
+\citep{SmartAdaptiveClosureTransport2026} that is theoretical but not
+instantiated for this anomaly.
+
+\subsection{What the linearised stress tests rule out}
+
+The Mode-B stress tests (\S\ref{sec:stress}) rule out specific
+alternative explanations of the LHCb 2025 result:
+\begin{itemize}
+\item \emph{The result is not a single noisy bin.} Bootstrap over bins
+  gives 99.8\,\% sign stability for $A$ and a 90\,\% CI of
+  $A\in[+1.36, +1.85]$ in Mode B.
+\item \emph{The data does not want a $\Delta C_{10}$ shift.} Adding
+  free $C_{10}$ on top of $C_{9}$ improves $\chi^{2}$ by only $0.27$
+  in Mode B, worse than the $+2$ AIC penalty for the extra parameter.
+\item \emph{Form-factor uncertainties do not flip the sign of $A$.}
+  Twenty random draws from the BSZ joint constraint give
+  $A=+1.57\pm 0.16$, $100\,\%$ positive, in Mode B.
+\end{itemize}
+These three statements transfer to the non-linear refit qualitatively
+(direction stable, no $C_{10}$ preference, no FF-induced sign flip),
+though absolute amplitudes are smaller in the non-linear regime.
+
+What the linearised stress tests do \emph{not} rule out is a free
+centre-peaked Gaussian
+($\Delta\mathrm{AIC}=-1.91$ vs FREE\_C9 in Mode B; vs $-1.67$ for
+VFD), which fits comparably to the kernel at the cost of one extra
+parameter. The geometric kernel and the free Gaussian capture the
+same broad centre-peaked structure; the data does not have the
+discriminating power to choose between them.

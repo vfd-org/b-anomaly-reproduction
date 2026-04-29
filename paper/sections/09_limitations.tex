@@ -1,0 +1,153 @@
+% =====================================================================
+\section{Limitations}\label{sec:limitations}
+% =====================================================================
+
+This section enumerates the limitations of the analysis transparently.
+The section is reorganised relative to the Mode-B-era version to put
+the linearisation issue in its rightful place at the head, since it
+materially weakened the original headline claim.
+
+\subsection{Method-level limitations}
+
+\begin{enumerate}
+\item \textbf{Linearised analysis was misleading.} The earlier
+  project iterations (the linearised stress test, the cross-dataset
+  validation, and the cross-channel validation) used a Mode-B
+  linearised response, where every angular observable is approximated
+  as linear
+  in $\Delta C_{9}$ via a central-difference slope at $\delta=\pm 0.5$
+  around $C_{9}^{\mathrm{SM}}$. At the fitted shifts
+  $|\Delta C_{9}|\sim 1$ this is wrong: per-bin linearisation
+  residuals reach $4\sigma$ on LHCb 2025, and the headline
+  $\Delta\mathrm{AIC}$ shifts from $-1.67$ (linearised) to $+1.09$
+  (non-linear refit), reversing the kernel-vs-constant comparison.
+  This paper now uses non-linear \texttt{flavio.np\_prediction}
+  evaluation throughout for the headline numbers; Mode-B values are
+  retained only as a methodology diagnostic. Future analyses on this
+  anomaly should not use a linearised Taylor expansion.
+
+\item \textbf{Variant choice is geometry-confirmed but data-discovered.}
+  The unweighted Laplacian was originally selected because it gave
+  the best LHCb-data $\chi^{2}$ among the three admissible variants
+  (\S\ref{sec:derivation}, Table~\ref{tab:variant_selection}).
+  We subsequently verified that the same variant wins on a pure
+  geometry criterion (correlation with the Layer-1 continuum kernel,
+  no LHCb data), and we now defend the AIC counting $k=1$ for VFD on
+  this basis. The variant choice therefore does not consume an
+  effective fit parameter, but the historical contingency that the
+  data was looked at first is acknowledged.
+
+\item \textbf{Single Wilson coefficient.} We compare against
+  $\mathrm{FREE\_C9}$ and $\mathrm{FREE\_C9 + FREE\_C10}$ but do not
+  test against the wider Wilson-coefficient space ($C_{9}'$, $C_{10}'$,
+  scalar/tensor operators, lepton-flavour-non-universal shifts).
+  The Mode-B stress test (\S\ref{sec:stress}) ruled out $C_{10}$ at
+  the relevant level on the joint LHCb 2025 fit; the broader
+  Wilson-coefficient comparison is deferred.
+
+\item \textbf{Source ansatz.} The equatorial inner-product shell
+  (30 vertices) is chosen as the source $f$ in
+  Eq.~\eqref{eq:psi_discrete}. This is a natural choice for the
+  2I-equivariant graph but is not derived from a first-principles
+  closure operator on the $B\to K^{*}$ kinematic substrate; alternative
+  sources have not been comprehensively scanned.
+
+\item \textbf{Theoretical derivation incomplete.} The kernel is built
+  from the standard graph Laplacian + $\varphi^{-2}$ regulariser plus
+  the equatorial-shell source ansatz. The proper Hodge edge Laplacian
+  $L_{\mathrm{edge}} = \delta_{2}\delta_{2}^{\mathsf T} +
+  \delta_{1}^{\mathsf T}\delta_{1}$ with 2I-equivariant boundary maps
+  from the 1200 triangular faces, and the Lyapunov-flow selection
+  rule of \citep{SmartAdaptiveClosureTransport2026}, are deferred.
+\end{enumerate}
+
+\subsection{Data and statistical limitations}
+
+\begin{enumerate}\setcounter{enumi}{5}
+\item \textbf{Bootstrap covariance.} The bin bootstrap uses diagonal
+  $\sigma_{\mathrm{stat}}^{2}+\sigma_{\mathrm{syst}}^{2}$ rather than
+  the full LHCb covariance, because resampling with replacement
+  produces duplicated rows and a singular covariance submatrix. This
+  is the standard non-parametric bootstrap but it under-counts
+  inter-bin correlation information that the all-data fit exploits.
+  The bootstrap is therefore reported as a sign-stability test, not
+  a confidence interval on the central-fit $A$.
+
+\item \textbf{Form-factor MC scope.} The 20-sample BSZ form-factor
+  Monte Carlo varies only the joint $B\to K^{*}$ form-factor
+  multivariate constraint. CKM elements, quark masses, and decay
+  constants are held at their flavio centrals. The 90\,\% CI
+  $\pm 0.21$ on $A$ is a lower bound on the FF-induced uncertainty.
+  The binomial 95\,\% CI on the ``$0/20$ negative'' result spans
+  $[0, 14\,\%]$ — the form-factor MC is too small to give a tight
+  constraint on the lower tail of the sign distribution.
+
+\item \textbf{$B_{s}\to\phi$ covariance.} HEPData publishes no
+  inter-observable correlation matrix for the LHCb 2015
+  $B_{s}\to\phi$ angular fit. We use diagonal stat$\oplus$syst, which
+  may overestimate the per-observable independence and therefore
+  admit a larger best-fit amplitude than a covariance-aware fit
+  would.
+
+\item \textbf{High-$q^{2}$ flavio QCDF.} flavio's QCDF interpolation
+  issues a ``do not trust above $6\,\mathrm{GeV}^{2}$'' warning. We
+  use the values anyway. For bins above $6\,\mathrm{GeV}^{2}$ the SM
+  prediction has theoretical uncertainty larger than the LHCb stat
+  + syst errors; this is not currently propagated as a separate
+  covariance source.
+
+\item \textbf{Bound pinning.} Two of the cross-channel
+  $B_{s}\!\to\!\phi$ region-split fits (central and high $q^{2}$)
+  pinned at the optimiser bounds because slopes drop to
+  $O(10^{-4})$ there. These are reported but flagged in the run log;
+  only the unpinned low-$q^{2}$ region split is taken as quantitative.
+
+\item \textbf{$P_{4}'$ convention.} CMS publishes $P_{4}'$ values
+  outside the $[-1, +1]$ flavio-convention range. The full
+  $P_{4}'$-included fit produces an inflated $\chi^{2}$. The
+  CMS-no-$P_{4}'$ fit gives a clean result; it is the one used in
+  the headline. The $P_{4}'$-included row is reported as a
+  diagnostic of the convention mismatch.
+
+\item \textbf{Single-observable basis on $B_{s}\to\phi$.} The 2015
+  LHCb publication chose the $S$-basis, not the amplified $P$-basis.
+  Future $B_{s}\to\phi$ analyses with $P$-basis output would tighten
+  the cross-channel amplitude constraint substantially.
+\end{enumerate}
+
+\subsection{What is not in scope}
+
+\begin{enumerate}\setcounter{enumi}{12}
+\item \textbf{Bayesian posterior.} All intervals are frequentist
+  ($\Delta\chi^{2}=1$ Gaussian approximation or non-parametric
+  bootstrap). A proper Bayesian treatment marginalising over form
+  factors and charm-loop nuisance parameters is not in scope.
+
+\item \textbf{$B^{+}\to K^{+}\mu\mu$.} HEPData submissions for the
+  relevant LHCb (1209.4284, 1403.8045, 1804.07167) and CMS PRD 2018
+  papers are not publicly available. This decay channel is
+  uncovered.
+
+\item \textbf{Branching-fraction observables.} flavio's
+  \texttt{<dBR/dq2>} returns $0$ in the version used; rate observables
+  are uncovered.
+
+\item \textbf{Belle / Belle II.} Belle's full $\Upsilon(4S)$ angular
+  analysis lacks a public correlation matrix on HEPData; Belle II had
+  not released a comparable angular dataset at the time of writing.
+\end{enumerate}
+
+\subsection{The honest verdict}
+
+The result is consistency-of-direction, not statistical preference.
+The geometry-derived kernel describes the angular anomaly with one
+parameter per dataset, sign-uniformly, across two collaborations,
+two isospin partners, and two decay channels. Under non-linear
+evaluation it does \emph{not} beat a constant Wilson-coefficient shift
+on AIC; the stacked Akaike weight is $\approx 1.9{:}1$ in favour of
+$\mathrm{FREE\_C9}$. The substantive surviving claim is that
+\emph{a single geometry-derived $q^{2}$-shape with no fitted shape
+parameters and one fitted amplitude per dataset is sign-consistent
+with the $b\to s\mu\mu$ angular anomaly across five public fits}, with
+the stronger ``it beats the constant shift on AIC'' claim of the
+earlier project iterations being a linearisation artifact.

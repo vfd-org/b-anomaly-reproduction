@@ -1,0 +1,72 @@
+dependent_variables:
+- header: {name: S8, units: ''}
+  qualifiers:
+  - {name: RE, value: B+ --> K*+ < KS0 PI+ > MU+ MU-}
+  - {name: SQRT(S), units: GEV, value: 7000}
+  - {name: SQRT(S), units: GEV, value: 8000}
+  - {name: SQRT(S), units: GEV, value: 13000}
+  - {name: LUMI, units: FB**-1, value: 9}
+  values:
+  - errors:
+    - asymerror: {minus: -0.2, plus: 0.22}
+      label: stat
+    - {label: sys, symerror: 0.05}
+    value: 0.21
+  - errors:
+    - asymerror: {minus: -0.37, plus: 0.4}
+      label: stat
+    - {label: sys, symerror: 0.04}
+    value: 0.06
+  - errors:
+    - asymerror: {minus: -0.58, plus: 0.75}
+      label: stat
+    - {label: sys, symerror: 0.03}
+    value: 0.04
+  - errors:
+    - asymerror: {minus: -0.22, plus: 0.21}
+      label: stat
+    - {label: sys, symerror: 0.03}
+    value: -0.07
+  - errors:
+    - asymerror: {minus: -0.16, plus: 0.18}
+      label: stat
+    - {label: sys, symerror: 0.02}
+    value: -0.19
+  - errors:
+    - asymerror: {minus: -0.14, plus: 0.14}
+      label: stat
+    - {label: sys, symerror: 0.01}
+    value: 0.06
+  - errors:
+    - asymerror: {minus: -0.11, plus: 0.12}
+      label: stat
+    - {label: sys, symerror: 0.02}
+    value: -0.17
+  - errors:
+    - asymerror: {minus: -0.16, plus: 0.18}
+      label: stat
+    - {label: sys, symerror: 0.02}
+    value: 0.17
+  - errors:
+    - asymerror: {minus: -0.14, plus: 0.13}
+      label: stat
+    - {label: sys, symerror: 0.02}
+    value: 0.02
+  - errors:
+    - asymerror: {minus: -0.09, plus: 0.09}
+      label: stat
+    - {label: sys, symerror: 0.01}
+    value: -0.06
+independent_variables:
+- header: {name: dimuon invariant mass squared, units: GEV**2}
+  values:
+  - {high: 0.98, low: 0.1}
+  - {high: 2.5, low: 1.1}
+  - {high: 4, low: 2.5}
+  - {high: 6, low: 4}
+  - {high: 8, low: 6}
+  - {high: 12.5, low: 11}
+  - {high: 17, low: 15}
+  - {high: 19, low: 17}
+  - {high: 6, low: 1.1}
+  - {high: 19, low: 15}

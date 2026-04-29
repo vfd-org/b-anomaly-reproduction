@@ -1,0 +1,425 @@
+---
+name: config_1_results
+description: Fit configuration (i); the partially massive model with CP-asymmetries fixed to 0, and with
+    the Si basis for the CP-averaged observables. The standard q2 binning is used. This table presents the
+    results for all obervables in all q2 bins. The central values of the observables after (val) bias
+    corrections are given in the yaml. Additionally in the json the results before bias corrections are
+    provided (fit_val). The statistical uncertainty from the Hessian matrix of the fit is presented (fit_err)
+    as well as the assigned systematic uncertainty before the correction from the Neyman construction (detector).
+    Finally the asymmetric statistical uncertainty obtained from the Neyman construction is shown (stat)
+    as well as the corresponding total systematic uncertainty, including that from the Neyman construction
+    (syst) and the resulting total asymmetric uncertainties (total). Where there is no difference between
+    the asymmetric and symmetric uncertainties and the two central values in the json there were no corrections
+    from the Neyman construction applied.
+keywords:
+    - {name : reactions, values : [B0 --> K+ pi- mu+ mu-]}
+    - {name : phrases , values : [Angular Dependence, Neutral Current] }
+data_file: config_1_results.yaml
+additional_resources:
+    -   location: config_1_results.json
+        description: The fit results in json format. The fields "fit_val", "fit_err" and "syst" represent
+            the results before the Neyman corrections. The results after the Neyman corrections have been
+            applied are "val" (central value) and "hi_err" and "lo_err" for the total asymmetric uncertainties.
+            The total asymmetric uncertainties have also been split into statistical and systematic components.
+        type: yaml
+    -   location: config_1_correlation_stat.yaml
+        description: Fit configuration (i); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The standard q2 binning is used. This
+            table presents the statistical correlation matrix as obtained from the Hessian matrix of the
+            fit. In yaml format.
+        type: yaml
+    -   location: config_1_correlation_stat.json
+        description: Fit configuration (i); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The standard q2 binning is used. This
+            table presents the statistical correlation matrix as obtained from the Hessian matrix of the
+            fit. In json format from a pandas data frame.
+        type: json
+    -   location: config_1_correlation_syst.yaml
+        description: Fit configuration (i); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The standard q2 binning is used. This
+            table presents the correlation matrix of the systematic uncertainties, without including any
+            uncertainties from the corrections of the Neyman construction. In yaml format.
+        type: yaml
+    -   location: config_1_correlation_syst.json
+        description: Fit configuration (i); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The standard q2 binning is used. This
+            table presents the correlation matrix of the systematic uncertainties, without including any
+            uncertainties from the corrections of the Neyman construction. In json format from a pandas
+            data frame.
+        type: json
+    -   location: config_1_correlation_total.yaml
+        description: Fit configuration (i); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The standard q2 binning is used. This
+            table presents the total correlation matrix when summing the statistical and systematic covarainces,
+            as well as the variances (both statistical and systematic) arising from the Neyman construction.
+            When adding the Neyman consrtruction uncertainties, no change is made to the statistical correlation
+            matrix and the systematic uncertainties from the Neyman construction are treated as uncorrelated
+            between observables and bins. Where there is an asymmetric uncertainty, the mean of the two
+            values is assigned. In yaml format.
+        type: yaml
+    -   location: config_1_correlation_total.json
+        description: Fit configuration (i); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The standard q2 binning is used. This
+            table presents the total correlation matrix when summing the statistical and systematic covarainces,
+            as well as the variances (both statistical and systematic) arising from the Neyman construction.
+            When adding the Neyman consrtruction uncertainties, no change is made to the statistical correlation
+            matrix and the systematic uncertainties from the Neyman construction are treated as uncorrelated
+            between observables and bins. Where there is an asymmetric uncertainty, the mean of the two
+            values is assigned. In json format from a pandas data frame.
+        type: json
+
+
+---
+name: config_2_results
+description: Fit configuration (ii); the partially massive model with CP-asymmetries fixed to 0, and with
+    the optimised Pi basis for the CP-averaged observables. The standard q2 binning is used. This table
+    presents the results for all obervables in all q2 bins. The central values of the observables after
+    (val) bias corrections are given in the yaml. Additionally in the json the results before bias corrections
+    are provided (fit_val). The statistical uncertainty from the Hessian matrix of the fit is presented
+    (fit_err) as well as the assigned systematic uncertainty before the correction from the Neyman construction
+    (detector). Finally the asymmetric statistical uncertainty obtained from the Neyman construction is
+    shown (stat) as well as the corresponding total systematic uncertainty, including that from the Neyman
+    construction (syst) and the resulting total asymmetric uncertainties (total). Where there is no
+    difference between the asymmetric and symmetric uncertainties and the two central values in the json
+    there were no corrections from the Neyman construction applied.
+keywords:
+    - {name : reactions, values : [B0 --> K+ pi- mu+ mu-]}
+    - {name : phrases , values : [Angular Dependence, Neutral Current] }
+data_file: config_2_results.yaml
+additional_resources:
+    -   location: config_2_results.json
+        description: The fit results in json format. The fields "fit_val", "fit_err" and "syst" represent
+            the results before the Neyman corrections. The results after the Neyman corrections have been
+            applied are "val" (central value) and "hi_err" and "lo_err" for the total asymmetric uncertainties.
+            The total asymmetric uncertainties have also been split into statistical and systematic components.
+        type: yaml
+    -   location: config_2_correlation_stat.yaml
+        description: Fit configuration (ii); the partially massive model with CP-asymmetries fixed to 0,
+            and with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the statistical correlation matrix as obtained from the Hessian matrix
+            of the fit. In yaml format.
+        type: yaml
+    -   location: config_2_correlation_stat.json
+        description: Fit configuration (ii); the partially massive model with CP-asymmetries fixed to 0,
+            and with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the statistical correlation matrix as obtained from the Hessian matrix
+            of the fit. In json format from a pandas data frame.
+        type: json
+    -   location: config_2_correlation_syst.yaml
+        description: Fit configuration (ii); the partially massive model with CP-asymmetries fixed to 0,
+            and with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the correlation matrix of the systematic uncertainties, without including
+            any uncertainties from the corrections of the Neyman construction. In yaml format.
+        type: yaml
+    -   location: config_2_correlation_syst.json
+        description: Fit configuration (ii); the partially massive model with CP-asymmetries fixed to 0,
+            and with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the correlation matrix of the systematic uncertainties, without including
+            any uncertainties from the corrections of the Neyman construction. In json format from a pandas
+            data frame.
+        type: json
+    -   location: config_2_correlation_total.yaml
+        description: Fit configuration (ii); the partially massive model with CP-asymmetries fixed to 0,
+            and with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the total correlation matrix when summing the statistical and systematic
+            covarainces, as well as the variances (both statistical and systematic) arising from the Neyman
+            construction. When adding the Neyman consrtruction uncertainties, no change is made to the statistical
+            correlation matrix and the systematic uncertainties from the Neyman construction are treated
+            as uncorrelated between observables and bins. Where there is an asymmetric uncertainty, the
+            mean of the two values is assigned. In yaml format.
+        type: yaml
+    -   location: config_2_correlation_total.json
+        description: Fit configuration (ii); the partially massive model with CP-asymmetries fixed to 0,
+            and with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the total correlation matrix when summing the statistical and systematic
+            covarainces, as well as the variances (both statistical and systematic) arising from the Neyman
+            construction. When adding the Neyman consrtruction uncertainties, no change is made to the statistical
+            correlation matrix and the systematic uncertainties from the Neyman construction are treated
+            as uncorrelated between observables and bins. Where there is an asymmetric uncertainty, the
+            mean of the two values is assigned. In json format from a pandas data frame.
+        type: json
+
+
+---
+name: config_3_results
+description: Fit configuration (iii); the fully massive model in all q2 bins with CP-asymmetries fixed to
+    0, and with the Si basis for the CP-averaged observables. The standard q2 binning is used. This table
+    presents the results for all obervables in all q2 bins. The central values of the observables after
+    (val) bias corrections are given in the yaml. Additionally in the json the results before bias corrections
+    are provided (fit_val). The statistical uncertainty from the Hessian matrix of the fit is presented
+    (fit_err) as well as the assigned systematic uncertainty before the correction from the Neyman construction
+    (detector). Finally the asymmetric statistical uncertainty obtained from the Neyman construction is
+    shown (stat) as well as the corresponding total systematic uncertainty, including that from the Neyman
+    construction (syst) and the resulting total asymmetric uncertainties (total). Where there is no
+    difference between the asymmetric and symmetric uncertainties and the two central values in the json
+    there were no corrections from the Neyman construction applied.
+keywords:
+    - {name : reactions, values : [B0 --> K+ pi- mu+ mu-]}
+    - {name : phrases , values : [Angular Dependence, Neutral Current] }
+data_file: config_3_results.yaml
+additional_resources:
+    -   location: config_3_results.json
+        description: The fit results in json format. The fields "fit_val", "fit_err" and "syst" represent
+            the results before the Neyman corrections. The results after the Neyman corrections have been
+            applied are "val" (central value) and "hi_err" and "lo_err" for the total asymmetric uncertainties.
+            The total asymmetric uncertainties have also been split into statistical and systematic components.
+        type: yaml
+    -   location: config_3_correlation_stat.yaml
+        description: Fit configuration (iii); the fully massive model in all q2 bins with CP-asymmetries
+            fixed to 0, and with the Si basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the statistical correlation matrix as obtained from the Hessian matrix
+            of the fit. In yaml format.
+        type: yaml
+    -   location: config_3_correlation_stat.json
+        description: Fit configuration (iii); the fully massive model in all q2 bins with CP-asymmetries
+            fixed to 0, and with the Si basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the statistical correlation matrix as obtained from the Hessian matrix
+            of the fit. In json format from a pandas data frame.
+        type: json
+    -   location: config_3_correlation_syst.yaml
+        description: Fit configuration (iii); the fully massive model in all q2 bins with CP-asymmetries
+            fixed to 0, and with the Si basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the correlation matrix of the systematic uncertainties, without including
+            any uncertainties from the corrections of the Neyman construction. In yaml format.
+        type: yaml
+    -   location: config_3_correlation_syst.json
+        description: Fit configuration (iii); the fully massive model in all q2 bins with CP-asymmetries
+            fixed to 0, and with the Si basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the correlation matrix of the systematic uncertainties, without including
+            any uncertainties from the corrections of the Neyman construction. In json format from a pandas
+            data frame.
+        type: json
+    -   location: config_3_correlation_total.yaml
+        description: Fit configuration (iii); the fully massive model in all q2 bins with CP-asymmetries
+            fixed to 0, and with the Si basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the total correlation matrix when summing the statistical and systematic
+            covarainces, as well as the variances (both statistical and systematic) arising from the Neyman
+            construction. When adding the Neyman consrtruction uncertainties, no change is made to the statistical
+            correlation matrix and the systematic uncertainties from the Neyman construction are treated
+            as uncorrelated between observables and bins. Where there is an asymmetric uncertainty, the
+            mean of the two values is assigned. In yaml format.
+        type: yaml
+    -   location: config_3_correlation_total.json
+        description: Fit configuration (iii); the fully massive model in all q2 bins with CP-asymmetries
+            fixed to 0, and with the Si basis for the CP-averaged observables. The standard q2 binning is
+            used. This table presents the total correlation matrix when summing the statistical and systematic
+            covarainces, as well as the variances (both statistical and systematic) arising from the Neyman
+            construction. When adding the Neyman consrtruction uncertainties, no change is made to the statistical
+            correlation matrix and the systematic uncertainties from the Neyman construction are treated
+            as uncorrelated between observables and bins. Where there is an asymmetric uncertainty, the
+            mean of the two values is assigned. In json format from a pandas data frame.
+        type: json
+
+
+---
+name: config_4_results
+description: Fit configuration (iv); the massless model for q2>1.1 with CP-asymmetries floated and with
+    the Si basis for the CP-averaged observables. The standard q2 binning is used. This table presents the
+    results for all obervables in all q2 bins. The central values of the observables after (val) bias
+    corrections are given in the yaml. Additionally in the json the results before bias corrections are
+    provided (fit_val). The statistical uncertainty from the Hessian matrix of the fit is presented (fit_err)
+    as well as the assigned systematic uncertainty before the correction from the Neyman construction (detector).
+    Finally the asymmetric statistical uncertainty obtained from the Neyman construction is shown (stat)
+    as well as the corresponding total systematic uncertainty, including that from the Neyman construction
+    (syst) and the resulting total asymmetric uncertainties (total). Where there is no difference between
+    the asymmetric and symmetric uncertainties and the two central values in the json there were no corrections
+    from the Neyman construction applied.
+keywords:
+    - {name : reactions, values : [B0 --> K+ pi- mu+ mu-]}
+    - {name : phrases , values : [Angular Dependence, Neutral Current] }
+data_file: config_4_results.yaml
+additional_resources:
+    -   location: config_4_results.json
+        description: The fit results in json format. The fields "fit_val", "fit_err" and "syst" represent
+            the results before the Neyman corrections. The results after the Neyman corrections have been
+            applied are "val" (central value) and "hi_err" and "lo_err" for the total asymmetric uncertainties.
+            The total asymmetric uncertainties have also been split into statistical and systematic components.
+        type: yaml
+    -   location: config_4_correlation_stat.yaml
+        description: Fit configuration (iv); the massless model for q2>1.1 with CP-asymmetries floated and
+            with the Si basis for the CP-averaged observables. The standard q2 binning is used. This table
+            presents the statistical correlation matrix as obtained from the Hessian matrix of the fit.
+            In yaml format.
+        type: yaml
+    -   location: config_4_correlation_stat.json
+        description: Fit configuration (iv); the massless model for q2>1.1 with CP-asymmetries floated and
+            with the Si basis for the CP-averaged observables. The standard q2 binning is used. This table
+            presents the statistical correlation matrix as obtained from the Hessian matrix of the fit.
+            In json format from a pandas data frame.
+        type: json
+    -   location: config_4_correlation_syst.yaml
+        description: Fit configuration (iv); the massless model for q2>1.1 with CP-asymmetries floated and
+            with the Si basis for the CP-averaged observables. The standard q2 binning is used. This table
+            presents the correlation matrix of the systematic uncertainties, without including any uncertainties
+            from the corrections of the Neyman construction. In yaml format.
+        type: yaml
+    -   location: config_4_correlation_syst.json
+        description: Fit configuration (iv); the massless model for q2>1.1 with CP-asymmetries floated and
+            with the Si basis for the CP-averaged observables. The standard q2 binning is used. This table
+            presents the correlation matrix of the systematic uncertainties, without including any uncertainties
+            from the corrections of the Neyman construction. In json format from a pandas data frame.
+        type: json
+    -   location: config_4_correlation_total.yaml
+        description: Fit configuration (iv); the massless model for q2>1.1 with CP-asymmetries floated and
+            with the Si basis for the CP-averaged observables. The standard q2 binning is used. This table
+            presents the total correlation matrix when summing the statistical and systematic covarainces,
+            as well as the variances (both statistical and systematic) arising from the Neyman construction.
+            When adding the Neyman consrtruction uncertainties, no change is made to the statistical correlation
+            matrix and the systematic uncertainties from the Neyman construction are treated as uncorrelated
+            between observables and bins. Where there is an asymmetric uncertainty, the mean of the two
+            values is assigned. In yaml format.
+        type: yaml
+    -   location: config_4_correlation_total.json
+        description: Fit configuration (iv); the massless model for q2>1.1 with CP-asymmetries floated and
+            with the Si basis for the CP-averaged observables. The standard q2 binning is used. This table
+            presents the total correlation matrix when summing the statistical and systematic covarainces,
+            as well as the variances (both statistical and systematic) arising from the Neyman construction.
+            When adding the Neyman consrtruction uncertainties, no change is made to the statistical correlation
+            matrix and the systematic uncertainties from the Neyman construction are treated as uncorrelated
+            between observables and bins. Where there is an asymmetric uncertainty, the mean of the two
+            values is assigned. In json format from a pandas data frame.
+        type: json
+
+
+---
+name: config_5_results
+description: Fit configuration (v); the fully massless model with CP-asymmetries fixed to 0, and with the
+    optimised Pi basis for the CP-averaged observables. The standard q2 binning is used. This table presents
+    the results for all obervables in all q2 bins. The central values of the observables after (val) bias
+    corrections are given in the yaml. Additionally in the json the results before bias corrections are
+    provided (fit_val). The statistical uncertainty from the Hessian matrix of the fit is presented (fit_err)
+    as well as the assigned systematic uncertainty before the correction from the Neyman construction (detector).
+    Finally the asymmetric statistical uncertainty obtained from the Neyman construction is shown (stat)
+    as well as the corresponding total systematic uncertainty, including that from the Neyman construction
+    (syst) and the resulting total asymmetric uncertainties (total). Where there is no difference between
+    the asymmetric and symmetric uncertainties and the two central values in the json there were no corrections
+    from the Neyman construction applied.
+keywords:
+    - {name : reactions, values : [B0 --> K+ pi- mu+ mu-]}
+    - {name : phrases , values : [Angular Dependence, Neutral Current] }
+data_file: config_5_results.yaml
+additional_resources:
+    -   location: config_5_results.json
+        description: The fit results in json format. The fields "fit_val", "fit_err" and "syst" represent
+            the results before the Neyman corrections. The results after the Neyman corrections have been
+            applied are "val" (central value) and "hi_err" and "lo_err" for the total asymmetric uncertainties.
+            The total asymmetric uncertainties have also been split into statistical and systematic components.
+        type: yaml
+    -   location: config_5_correlation_stat.yaml
+        description: Fit configuration (v); the fully massless model with CP-asymmetries fixed to 0, and
+            with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is used.
+            This table presents the statistical correlation matrix as obtained from the Hessian matrix of
+            the fit. In yaml format.
+        type: yaml
+    -   location: config_5_correlation_stat.json
+        description: Fit configuration (v); the fully massless model with CP-asymmetries fixed to 0, and
+            with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is used.
+            This table presents the statistical correlation matrix as obtained from the Hessian matrix of
+            the fit. In json format from a pandas data frame.
+        type: json
+    -   location: config_5_correlation_syst.yaml
+        description: Fit configuration (v); the fully massless model with CP-asymmetries fixed to 0, and
+            with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is used.
+            This table presents the correlation matrix of the systematic uncertainties, without including
+            any uncertainties from the corrections of the Neyman construction. In yaml format.
+        type: yaml
+    -   location: config_5_correlation_syst.json
+        description: Fit configuration (v); the fully massless model with CP-asymmetries fixed to 0, and
+            with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is used.
+            This table presents the correlation matrix of the systematic uncertainties, without including
+            any uncertainties from the corrections of the Neyman construction. In json format from a pandas
+            data frame.
+        type: json
+    -   location: config_5_correlation_total.yaml
+        description: Fit configuration (v); the fully massless model with CP-asymmetries fixed to 0, and
+            with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is used.
+            This table presents the total correlation matrix when summing the statistical and systematic
+            covarainces, as well as the variances (both statistical and systematic) arising from the Neyman
+            construction. When adding the Neyman consrtruction uncertainties, no change is made to the statistical
+            correlation matrix and the systematic uncertainties from the Neyman construction are treated
+            as uncorrelated between observables and bins. Where there is an asymmetric uncertainty, the
+            mean of the two values is assigned. In yaml format.
+        type: yaml
+    -   location: config_5_correlation_total.json
+        description: Fit configuration (v); the fully massless model with CP-asymmetries fixed to 0, and
+            with the optimised Pi basis for the CP-averaged observables. The standard q2 binning is used.
+            This table presents the total correlation matrix when summing the statistical and systematic
+            covarainces, as well as the variances (both statistical and systematic) arising from the Neyman
+            construction. When adding the Neyman consrtruction uncertainties, no change is made to the statistical
+            correlation matrix and the systematic uncertainties from the Neyman construction are treated
+            as uncorrelated between observables and bins. Where there is an asymmetric uncertainty, the
+            mean of the two values is assigned. In json format from a pandas data frame.
+        type: json
+
+
+---
+name: config_6_results
+description: Fit configuration (vi); the partially massive model with CP-asymmetries fixed to 0, and with
+    the Si basis for the CP-averaged observables. The half-sized q2 binning is used. This table presents
+    the results for all obervables in all q2 bins. The central values of the observables after (val) bias
+    corrections are given in the yaml. Additionally in the json the results before bias corrections are
+    provided (fit_val). The statistical uncertainty from the Hessian matrix of the fit is presented (fit_err)
+    as well as the assigned systematic uncertainty before the correction from the Neyman construction (detector).
+    Finally the asymmetric statistical uncertainty obtained from the Neyman construction is shown (stat)
+    as well as the corresponding total systematic uncertainty, including that from the Neyman construction
+    (syst) and the resulting total asymmetric uncertainties (total). Where there is no difference between
+    the asymmetric and symmetric uncertainties and the two central values in the json there were no corrections
+    from the Neyman construction applied.
+keywords:
+    - {name : reactions, values : [B0 --> K+ pi- mu+ mu-]}
+    - {name : phrases , values : [Angular Dependence, Neutral Current] }
+data_file: config_6_results.yaml
+additional_resources:
+    -   location: config_6_results.json
+        description: The fit results in json format. The fields "fit_val", "fit_err" and "syst" represent
+            the results before the Neyman corrections. The results after the Neyman corrections have been
+            applied are "val" (central value) and "hi_err" and "lo_err" for the total asymmetric uncertainties.
+            The total asymmetric uncertainties have also been split into statistical and systematic components.
+        type: yaml
+    -   location: config_6_correlation_stat.yaml
+        description: Fit configuration (vi); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The half-sized q2 binning is used. This
+            table presents the statistical correlation matrix as obtained from the Hessian matrix of the
+            fit. In yaml format.
+        type: yaml
+    -   location: config_6_correlation_stat.json
+        description: Fit configuration (vi); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The half-sized q2 binning is used. This
+            table presents the statistical correlation matrix as obtained from the Hessian matrix of the
+            fit. In json format from a pandas data frame.
+        type: json
+    -   location: config_6_correlation_syst.yaml
+        description: Fit configuration (vi); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The half-sized q2 binning is used. This
+            table presents the correlation matrix of the systematic uncertainties, without including any
+            uncertainties from the corrections of the Neyman construction. In yaml format.
+        type: yaml
+    -   location: config_6_correlation_syst.json
+        description: Fit configuration (vi); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The half-sized q2 binning is used. This
+            table presents the correlation matrix of the systematic uncertainties, without including any
+            uncertainties from the corrections of the Neyman construction. In json format from a pandas
+            data frame.
+        type: json
+    -   location: config_6_correlation_total.yaml
+        description: Fit configuration (vi); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The half-sized q2 binning is used. This
+            table presents the total correlation matrix when summing the statistical and systematic covarainces,
+            as well as the variances (both statistical and systematic) arising from the Neyman construction.
+            When adding the Neyman consrtruction uncertainties, no change is made to the statistical correlation
+            matrix and the systematic uncertainties from the Neyman construction are treated as uncorrelated
+            between observables and bins. Where there is an asymmetric uncertainty, the mean of the two
+            values is assigned. In yaml format.
+        type: yaml
+    -   location: config_6_correlation_total.json
+        description: Fit configuration (vi); the partially massive model with CP-asymmetries fixed to 0,
+            and with the Si basis for the CP-averaged observables. The half-sized q2 binning is used. This
+            table presents the total correlation matrix when summing the statistical and systematic covarainces,
+            as well as the variances (both statistical and systematic) arising from the Neyman construction.
+            When adding the Neyman consrtruction uncertainties, no change is made to the statistical correlation
+            matrix and the systematic uncertainties from the Neyman construction are treated as uncorrelated
+            between observables and bins. Where there is an asymmetric uncertainty, the mean of the two
+            values is assigned. In json format from a pandas data frame.
+        type: json
+
+

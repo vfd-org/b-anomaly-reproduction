@@ -1,0 +1,293 @@
+additional_resources:
+- {description: Created with hepdata_lib 0.16.0, location: 'https://doi.org/10.5281/zenodo.1217998'}
+comment: 'CMS at CERN LHC: Angular analysis of the B0 --> K*(892)0 mu+ mu- decay in
+  proton-proton collisions at a centre-of-mass energy of 13 TeV.'
+data_license: {description: 'CC0 enables reusers to distribute, remix, adapt, and
+    build upon the material in any medium or format, with no conditions.', name: CC0,
+  url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
+hepdata_doi: 10.17182/hepdata.154898.v1
+---
+additional_resources:
+- {description: Image file, location: Figure_003-a.png}
+- {description: Thumbnail image file, location: thumb_Figure_003-a.png}
+data_file: results_fl.yaml
+description: Results for the $F_\mathrm{L}$ angular observable. The first uncertainties
+  are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [Fl]
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Figure 3
+name: Results Fl
+table_doi: 10.17182/hepdata.154898.v1/t1
+---
+additional_resources:
+- {description: Image file, location: Figure_003-b.png}
+- {description: Thumbnail image file, location: thumb_Figure_003-b.png}
+data_file: results_p1.yaml
+description: Results for the $P_1$ angular observable. The first uncertainties are
+  statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [P1]
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Figure 3
+name: Results P1
+table_doi: 10.17182/hepdata.154898.v1/t2
+---
+additional_resources:
+- {description: Image file, location: Figure_003-c.png}
+- {description: Thumbnail image file, location: thumb_Figure_003-c.png}
+data_file: results_p2.yaml
+description: Results for the $P_2$ angular observable. The first uncertainties are
+  statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [P2]
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Figure 3
+name: Results P2
+table_doi: 10.17182/hepdata.154898.v1/t3
+---
+additional_resources:
+- {description: Image file, location: Figure_003-d.png}
+- {description: Thumbnail image file, location: thumb_Figure_003-d.png}
+data_file: results_p3.yaml
+description: Results for the $P_3$ angular observable. The first uncertainties are
+  statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [P3]
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Figure 3
+name: Results P3
+table_doi: 10.17182/hepdata.154898.v1/t4
+---
+additional_resources:
+- {description: Image file, location: Figure_003-e.png}
+- {description: Thumbnail image file, location: thumb_Figure_003-e.png}
+data_file: results_p4p.yaml
+description: Results for the $P_4^\prime$ angular observable. The first uncertainties
+  are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [P4p]
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Figure 3
+name: Results P4p
+table_doi: 10.17182/hepdata.154898.v1/t5
+---
+additional_resources:
+- {description: Image file, location: Figure_003-f.png}
+- {description: Thumbnail image file, location: thumb_Figure_003-f.png}
+data_file: results_p5p.yaml
+description: Results for the $P_5^\prime$ angular observable. The first uncertainties
+  are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [P5p]
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Figure 3
+name: Results P5p
+table_doi: 10.17182/hepdata.154898.v1/t6
+---
+additional_resources:
+- {description: Image file, location: Figure_003-g.png}
+- {description: Thumbnail image file, location: thumb_Figure_003-g.png}
+data_file: results_p6p.yaml
+description: Results for the $P_6^\prime$ angular observable. The first uncertainties
+  are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [P6p]
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Figure 3
+name: Results P6p
+table_doi: 10.17182/hepdata.154898.v1/t7
+---
+additional_resources:
+- {description: Image file, location: Figure_003-h.png}
+- {description: Thumbnail image file, location: thumb_Figure_003-h.png}
+data_file: results_p8p.yaml
+description: Results for the $P_8^\prime$ angular observable. The first uncertainties
+  are statistical and the second systematic.
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [P8p]
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Figure 3
+name: Results P8p
+table_doi: 10.17182/hepdata.154898.v1/t8
+---
+data_file: table_2.yaml
+description: "Results for the CP averaged observables $F_L$ and $P_1$\u2013$P_8^\\prime$.
+  The first uncertainties are statistical and the second systematic."
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Data from Table 2
+name: Table 2
+table_doi: 10.17182/hepdata.154898.v1/t9
+---
+data_file: correlation_matrix_q2_bin_0.yaml
+description: "Correlation matrix of angular observables Fl and P1\u2013P8', considering
+  only the statistical uncertainties from the maximum-likelihood fit in the interval
+  1.1 < $q^2$ < 2 GeV$^2$"
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Additional material
+name: Correlation matrix q2 bin 0
+table_doi: 10.17182/hepdata.154898.v1/t10
+---
+data_file: correlation_matrix_q2_bin_1.yaml
+description: "Correlation matrix of angular observables Fl and P1\u2013P8', considering
+  only the statistical uncertainties from the maximum-likelihood fit in the interval
+  2 < $q^2$ < 4.3 GeV$^2$"
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Additional material
+name: Correlation matrix q2 bin 1
+table_doi: 10.17182/hepdata.154898.v1/t11
+---
+data_file: correlation_matrix_q2_bin_2.yaml
+description: "Correlation matrix of angular observables Fl and P1\u2013P8', considering
+  only the statistical uncertainties from the maximum-likelihood fit in the interval
+  4.3 < $q^2$ < 6 GeV$^2$"
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Additional material
+name: Correlation matrix q2 bin 2
+table_doi: 10.17182/hepdata.154898.v1/t12
+---
+data_file: correlation_matrix_q2_bin_3.yaml
+description: "Correlation matrix of angular observables Fl and P1\u2013P8', considering
+  only the statistical uncertainties from the maximum-likelihood fit in the interval
+  6 < $q^2$ < 8.68 GeV$^2$"
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Additional material
+name: Correlation matrix q2 bin 3
+table_doi: 10.17182/hepdata.154898.v1/t13
+---
+data_file: correlation_matrix_q2_bin_5.yaml
+description: "Correlation matrix of angular observables Fl and P1\u2013P8', considering
+  only the statistical uncertainties from the maximum-likelihood fit in the interval
+  10.09 < $q^2$ < 12.86 GeV$^2$"
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Additional material
+name: Correlation matrix q2 bin 5
+table_doi: 10.17182/hepdata.154898.v1/t14
+---
+data_file: correlation_matrix_q2_bin_7.yaml
+description: "Correlation matrix of angular observables Fl and P1\u2013P8', considering
+  only the statistical uncertainties from the maximum-likelihood fit in the interval
+  14.18 < $q^2$ < 16 GeV$^2$"
+keywords:
+- name: reactions
+  values: [B0 --> K*(892)0 MU+ MU-]
+- name: observables
+  values: [Fl, P1, P2, P3, P4', P5', P6', P8']
+- name: cmenergies
+  values: [13000]
+- name: phrases
+  values: [Rare decay, Penguin decay, flavor anomalies, B0 -> K* mu mu, bsll, angular
+      analysis, angular observables]
+location: Additional material
+name: Correlation matrix q2 bin 7
+table_doi: 10.17182/hepdata.154898.v1/t15

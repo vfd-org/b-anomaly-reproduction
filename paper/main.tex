@@ -1,0 +1,152 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{xcolor}
+
+\graphicspath{{figures/}{../reports/figures/}}
+
+\title{A geometry-derived response kernel for the\\
+       $B \to K^{*}\mu^{+}\mu^{-}$ angular anomaly:\\
+       sign-uniform cross-dataset and cross-channel fit}
+
+\author{%
+  Lee Smart\\[2pt]
+  \textit{Institute of Vibrational Field Dynamics}\\[2pt]
+  \texttt{contact@vibrationalfielddynamics.org}\\[2pt]
+  \texttt{@vfd\_org}%
+}
+
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+
+\noindent\textbf{Status:} Preprint, not peer-reviewed.
+
+\noindent\emph{Negative-of-headline result.}
+A fully non-linear refit
+(\texttt{flavio.\allowbreak np\_\allowbreak prediction})
+shows the geometry-derived kernel is statistically
+indistinguishable from a constant $\Delta C_{9}$ shift on AIC.
+An earlier linearised analysis (Mode B) had found a marginal
+preference for the kernel that did not survive the non-linear test.
+The remaining structural finding is direction consistency of the
+fitted amplitude across two collaborations, three decay channels,
+and five fits — a property that follows from any sufficiently
+centre-peaked one-parameter shape on the same anomaly and which the
+geometric kernel satisfies but does not uniquely deliver.
+
+\begin{abstract}
+We test whether a single $q^{2}$-dependent response kernel
+$\kappa(q^{2})$, constructed from a finite 2I-equivariant graph
+substrate (the 600-cell $V_{600}$) regularised by the golden ratio
+$\varphi$ as a discrete mass scale, can describe the
+$B^{0}\to K^{*0}\mu^{+}\mu^{-}$ angular anomaly across multiple
+datasets and decay channels. The kernel is the shell-mean
+projection of the discrete Green's response
+$\psi = (L_{V_{600}} + \varphi^{-2} I)^{-1} f$, with $f$ a uniform
+source on the equatorial inner-product shell; the kernel shape has no
+continuous fitted parameters. The continuum limit is
+$\kappa(x) = e^{-|x|/\varphi}$ with
+$x = (q^{2}-q^{2}_{\mathrm{mid}})/\Delta_{\psi}$, where
+$q^{2}_{\mathrm{mid}}$ and $\Delta_{\psi}$ are the
+$J/\psi$\,-\,$\psi(2S)$ midpoint and half-spread. Of three discrete
+edge-weighting variants the unweighted Laplacian is selected; we show
+in \S\ref{sec:derivation} that this same variant wins on a
+pure-geometry criterion (correlation with the continuum kernel)
+independent of the LHCb data.
+
+Using \texttt{flavio}~\citep{Straub2018Flavio} for SM and
+non-linear-in-$C_{9}$ predictions on each dataset's own bin
+grid, and fitting only one dimensionless amplitude $A$ per dataset, we
+find:
+(i) on the LHCb 2025 data~\citep{LHCb2025BKstmumuComp} the kernel
+gives $\Delta\mathrm{AIC}=+1.09$ vs a free $\Delta C_{9}$ shift on a
+joint fit of four angular observables (P5', P4', P1, P2): a marginal
+\emph{disfavouring} of the kernel relative to the constant shift, both
+at $k=1$;
+(ii) on five fits across two collaborations and three decay channels
+— LHCb~2015~\citep{LHCb2015BKstmumu},
+LHCb~2021 ($B^{+}\!\to\!K^{*+}$)~\citep{LHCb2021BKstpmumu},
+CMS~2025~\citep{CMS2025BKstmumu}, LHCb~2025, and
+$B_{s}\!\to\!\phi\mu\mu$~\citep{LHCb2015Bsphimumu} — the
+non-linear $\Delta\mathrm{AIC}$ values span $[-0.24, +1.09]$ around
+zero, with $2/5$ datasets favouring the kernel and $3/5$ favouring
+the constant shift; the stacked Akaike weight is
+$w_{\mathrm{VFD}}=0.35$ vs $w_{\mathrm{FREE\_C9}}=0.65$;
+(iii) the fitted amplitudes are sign-uniform across all five fits
+($A>0$ in every fit, effective $\Delta C_{9}^{\mathrm{eff}}<0$ in
+every fit); the null against which this is non-trivial is the
+``no anomaly'' null, against which $\mathrm{FREE\_C9}$ would also
+produce $5/5$ same-sign fits — sign-uniformity confirms the kernel
+is consistent in direction with the established anomaly, not that
+the kernel is preferred over a constant Wilson-coefficient shift;
+(iv) the apparent factor-of-3 amplitude difference between the
+$P$-basis $B\to K^{*}$ fits and the $S$-basis $B_{s}\!\to\!\phi$ fit
+is mostly a basis effect (Krüger--Matias $P_{i}$ vs CP-averaged
+$S_{i}$), with a residual $\sim 50\,\%$ overshoot of the
+basis-corrected prediction that we cannot resolve given the published
+2015 $B_{s}\!\to\!\phi$ statistics and the absence of an angular
+covariance matrix.
+
+The kernel is consistent with the angular anomaly's $q^{2}$ shape but
+does not improve over a constant Wilson-coefficient shift on AIC under
+non-linear evaluation. The surviving claim is direction-consistency
+across two collaborations, three decay channels, and five fits, with
+no per-dataset shape retuning — a claim that follows from any
+sufficiently centre-peaked single-parameter shape on the same anomaly,
+and which the geometric kernel satisfies but does not uniquely
+deliver. We do not claim the kernel is the preferred or unique shape:
+a free-width Gaussian charm-loop proxy fits marginally better in
+$\chi^{2}$ at the cost of one extra parameter. A previous linearised
+analysis (linear in $\Delta C_{9}$ via central-difference slopes)
+found a stronger result that did not survive the non-linear refit;
+the earlier numbers are reproduced as a linearisation diagnostic in
+\S\ref{sec:method}.
+\end{abstract}
+
+% =====================================================================
+\input{sections/01_introduction.tex}
+\input{sections/02_method.tex}
+\input{sections/03_derivation.tex}
+\input{sections/04_results.tex}
+\input{sections/05_stress_tests.tex}
+\input{sections/06_cross_dataset.tex}
+\input{sections/07_cross_channel.tex}
+\input{sections/08_discussion.tex}
+\input{sections/09_limitations.tex}
+\input{sections/10_conclusion.tex}
+% =====================================================================
+
+\section*{Acknowledgements}
+We thank the LHCb and CMS collaborations for releasing the
+HEPData supplementary tables that made this analysis possible. The
+non-linear refit headline of this paper rests entirely on
+\texttt{flavio}~\citep{Straub2018Flavio} and
+\texttt{wilson}~\citep{Aebischer2018Wilson}; we thank Straub, Aebischer,
+and the wider \texttt{flavio} community for maintaining and
+documenting these tools, without which this work could not have been
+done. The BSZ form-factor
+parameterisation~\citep{Bharucha2016BSZ} underlies all SM
+predictions. All code and processed data are released under MIT
+licence at the project repository~\citep{vfdBAnomalyRepo}.
+
+\section*{Reproducibility}
+The complete pipeline (data download, SM table regeneration via flavio,
+all WO drivers, figure regeneration, this paper) is reproducible from
+the project repository~\citep{vfdBAnomalyRepo} via the included
+\texttt{repro/run\_all.sh} script. Persistent caches under
+\texttt{data/processed/flavio\_cache.json} avoid re-querying flavio
+on subsequent runs.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
