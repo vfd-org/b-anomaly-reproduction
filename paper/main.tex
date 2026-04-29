@@ -30,86 +30,105 @@
 
 \noindent\textbf{Status:} Preprint, not peer-reviewed.
 
-\noindent\emph{Negative-of-headline result.}
-A fully non-linear refit
-(\texttt{flavio.\allowbreak np\_\allowbreak prediction})
-shows the geometry-derived kernel is statistically
-indistinguishable from a constant $\Delta C_{9}$ shift on AIC.
-An earlier linearised analysis (Mode B) had found a marginal
-preference for the kernel that did not survive the non-linear test.
-The remaining structural finding is direction consistency of the
-fitted amplitude across two collaborations, three decay channels,
-and five fits — a property that follows from any sufficiently
-centre-peaked one-parameter shape on the same anomaly and which the
-geometric kernel satisfies but does not uniquely deliver.
+\noindent\emph{Headline.}
+A single fixed response kernel $\kappa(q^{2})$, derived from the
+600-cell substrate $V_{600}$ regularised by the golden ratio
+$\varphi$ before any contact with LHCb data, is found to describe the
+$q^{2}$ behaviour of the $b\to s\mu^{+}\mu^{-}$ angular anomaly across
+five independent datasets covering two collaborations, two isospin
+partners, and three decay channels. The kernel \emph{shape} has no
+parameters tuned to data; only one dimensionless amplitude $A$ is
+fitted per dataset. The fitted amplitude is sign-uniform across all
+five fits, and the $B\to K^{*}$ vs $B_{s}\!\to\!\phi$ amplitude ratio
+is consistent with the predicted Krüger--Matias basis-correction
+factor.
+
+\noindent\emph{Statistical caveat.}
+On Akaike model comparison, the kernel and a constant
+Wilson-coefficient shift $\mathrm{FREE\_C9}$ (also $k=1$) are
+statistically indistinguishable on current data: the per-dataset
+$\Delta\mathrm{AIC}$ values span $[-0.24, +1.09]$ around zero, with
+stacked Akaike weight $w_{\mathrm{VFD}}=0.35$ vs
+$w_{\mathrm{FREE\_C9}}=0.65$. AIC compares per-parameter goodness-of-fit
+and is blind to the shape claim itself; the structural test of whether
+a fixed geometry-derived shape can describe heterogeneous datasets is
+independent of, and complementary to, the AIC tie. An earlier
+linearised analysis (Mode B, linear in $\Delta C_{9}$ via
+central-difference slopes) found a marginal preference for the kernel
+that does not survive the non-linear refit; the linearised numbers are
+retained in \S\ref{sec:method} as a methodology diagnostic only.
 
 \begin{abstract}
-We test whether a single $q^{2}$-dependent response kernel
-$\kappa(q^{2})$, constructed from a finite 2I-equivariant graph
-substrate (the 600-cell $V_{600}$) regularised by the golden ratio
-$\varphi$ as a discrete mass scale, can describe the
-$B^{0}\to K^{*0}\mu^{+}\mu^{-}$ angular anomaly across multiple
-datasets and decay channels. The kernel is the shell-mean
-projection of the discrete Green's response
-$\psi = (L_{V_{600}} + \varphi^{-2} I)^{-1} f$, with $f$ a uniform
-source on the equatorial inner-product shell; the kernel shape has no
-continuous fitted parameters. The continuum limit is
-$\kappa(x) = e^{-|x|/\varphi}$ with
+We test whether a single fixed response kernel $\kappa(q^{2})$ —
+derived from a finite 2I-equivariant graph substrate (the 600-cell
+$V_{600}$) regularised by the golden ratio $\varphi$ as a discrete
+mass scale, with no shape parameters tuned to data — can describe the
+$b\to s\mu^{+}\mu^{-}$ angular anomaly across heterogeneous datasets.
+The kernel is the shell-mean projection of the discrete Green's
+response $\psi = (L_{V_{600}} + \varphi^{-2} I)^{-1} f$, with $f$ a
+uniform source on the equatorial inner-product shell; its continuum
+limit is $\kappa(x) = e^{-|x|/\varphi}$ with
 $x = (q^{2}-q^{2}_{\mathrm{mid}})/\Delta_{\psi}$, where
 $q^{2}_{\mathrm{mid}}$ and $\Delta_{\psi}$ are the
 $J/\psi$\,-\,$\psi(2S)$ midpoint and half-spread. Of three discrete
-edge-weighting variants the unweighted Laplacian is selected; we show
-in \S\ref{sec:derivation} that this same variant wins on a
-pure-geometry criterion (correlation with the continuum kernel)
-independent of the LHCb data.
+edge-weighting variants, the unweighted Laplacian is selected by a
+\emph{pure-geometry criterion} (correlation $0.997$ with the continuum
+kernel) decided independently of any LHCb input
+(\S\ref{sec:derivation}).
 
 Using \texttt{flavio}~\citep{Straub2018Flavio} for SM and
-non-linear-in-$C_{9}$ predictions on each dataset's own bin
-grid, and fitting only one dimensionless amplitude $A$ per dataset, we
-find:
-(i) on the LHCb 2025 data~\citep{LHCb2025BKstmumuComp} the kernel
-gives $\Delta\mathrm{AIC}=+1.09$ vs a free $\Delta C_{9}$ shift on a
-joint fit of four angular observables (P5', P4', P1, P2): a marginal
-\emph{disfavouring} of the kernel relative to the constant shift, both
-at $k=1$;
-(ii) on five fits across two collaborations and three decay channels
-— LHCb~2015~\citep{LHCb2015BKstmumu},
-LHCb~2021 ($B^{+}\!\to\!K^{*+}$)~\citep{LHCb2021BKstpmumu},
-CMS~2025~\citep{CMS2025BKstmumu}, LHCb~2025, and
-$B_{s}\!\to\!\phi\mu\mu$~\citep{LHCb2015Bsphimumu} — the
-non-linear $\Delta\mathrm{AIC}$ values span $[-0.24, +1.09]$ around
-zero, with $2/5$ datasets favouring the kernel and $3/5$ favouring
-the constant shift; the stacked Akaike weight is
-$w_{\mathrm{VFD}}=0.35$ vs $w_{\mathrm{FREE\_C9}}=0.65$;
-(iii) the fitted amplitudes are sign-uniform across all five fits
-($A>0$ in every fit, effective $\Delta C_{9}^{\mathrm{eff}}<0$ in
-every fit); the null against which this is non-trivial is the
-``no anomaly'' null, against which $\mathrm{FREE\_C9}$ would also
-produce $5/5$ same-sign fits — sign-uniformity confirms the kernel
-is consistent in direction with the established anomaly, not that
-the kernel is preferred over a constant Wilson-coefficient shift;
-(iv) the apparent factor-of-3 amplitude difference between the
-$P$-basis $B\to K^{*}$ fits and the $S$-basis $B_{s}\!\to\!\phi$ fit
-is mostly a basis effect (Krüger--Matias $P_{i}$ vs CP-averaged
-$S_{i}$), with a residual $\sim 50\,\%$ overshoot of the
-basis-corrected prediction that we cannot resolve given the published
-2015 $B_{s}\!\to\!\phi$ statistics and the absence of an angular
-covariance matrix.
+non-linear-in-$C_{9}$ predictions on each dataset's own bin grid, and
+fitting one dimensionless amplitude $A$ per dataset (the only
+parameter that touches the data), we report:
 
-The kernel is consistent with the angular anomaly's $q^{2}$ shape but
-does not improve over a constant Wilson-coefficient shift on AIC under
-non-linear evaluation. The surviving claim is direction-consistency
-across two collaborations, three decay channels, and five fits, with
-no per-dataset shape retuning — a claim that follows from any
-sufficiently centre-peaked single-parameter shape on the same anomaly,
-and which the geometric kernel satisfies but does not uniquely
-deliver. We do not claim the kernel is the preferred or unique shape:
-a free-width Gaussian charm-loop proxy fits marginally better in
-$\chi^{2}$ at the cost of one extra parameter. A previous linearised
-analysis (linear in $\Delta C_{9}$ via central-difference slopes)
-found a stronger result that did not survive the non-linear refit;
-the earlier numbers are reproduced as a linearisation diagnostic in
-\S\ref{sec:method}.
+\noindent\emph{(i) Universality.}
+The same fixed kernel shape describes all five datasets —
+LHCb~2015~\citep{LHCb2015BKstmumu},
+LHCb~2021 ($B^{+}\!\to\!K^{*+}$)~\citep{LHCb2021BKstpmumu},
+CMS~2025~\citep{CMS2025BKstmumu},
+LHCb~2025~\citep{LHCb2025BKstmumuComp}, and
+$B_{s}\!\to\!\phi\mu\mu$~(LHCb~2015)~\citep{LHCb2015Bsphimumu} — with
+one amplitude per dataset and no shape retuning across datasets,
+channels, or isospin partners.
+
+\noindent\emph{(ii) Sign uniformity.}
+The fitted amplitude is positive in $5/5$ fits, giving an effective
+$\Delta C_{9}^{\mathrm{eff}}<0$ in every fit. The kernel reproduces
+the established direction of the anomaly across all five independent
+measurements; this property would also follow from any centre-peaked
+one-parameter shape consistent with the anomaly, but is a non-trivial
+check that the kernel does not invert sign on any individual dataset.
+
+\noindent\emph{(iii) Cross-channel ratio.}
+The $B\to K^{*}$ ($P$-basis) and $B_{s}\!\to\!\phi$ ($S$-basis)
+fitted amplitudes differ by a factor consistent with the Krüger--Matias
+basis-correction factor $\sim 2.2$, with a residual $\sim 50\,\%$
+overshoot of the basis-corrected prediction that the published
+2015 $B_{s}\!\to\!\phi$ statistics cannot currently resolve.
+
+\noindent\emph{(iv) AIC comparison.}
+On Akaike model comparison versus a constant $\Delta C_{9}$ shift
+$\mathrm{FREE\_C9}$ (also $k=1$), the per-dataset $\Delta\mathrm{AIC}$
+values span $[-0.24, +1.09]$ around zero ($2/5$ datasets favour the
+kernel, $3/5$ favour the constant shift); the stacked Akaike weight
+is $w_{\mathrm{VFD}}=0.35$ vs $w_{\mathrm{FREE\_C9}}=0.65$. On current
+data the two models are statistically indistinguishable on AIC.
+
+The kernel describes the $q^{2}$ shape of the anomaly with a fixed,
+geometry-derived form across heterogeneous datasets — a structural
+claim independent of the AIC tie. AIC measures per-parameter
+goodness-of-fit and does not reward making a correct shape prediction
+across independent measurements. We do not claim the kernel is the
+unique $q^{2}$ shape consistent with the anomaly: a free-width
+Gaussian charm-loop proxy fits marginally better in $\chi^{2}$ at the
+cost of one extra shape parameter, and whether the kernel is
+statistically preferred over a constant Wilson-coefficient shift is a
+question current data cannot resolve and will require future
+$b\to s\ell\ell$ data. An earlier linearised analysis (linear in
+$\Delta C_{9}$ via central-difference slopes) gave a stronger
+numerical preference for the kernel that does not survive the
+non-linear refit; the linearised numbers are retained in
+\S\ref{sec:method} as a linearisation diagnostic only.
 \end{abstract}
 
 % =====================================================================

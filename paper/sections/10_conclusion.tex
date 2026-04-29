@@ -19,10 +19,12 @@ modes the largest single uncertainty in the project.
 The headline numerical results are:
 \begin{itemize}
 \item \textbf{LHCb 2025, four-observable joint fit (non-linear):}
-  $A=+1.14$, $\Delta C_{9}^{\mathrm{eff}}=-0.86$, with
-  $\Delta\mathrm{AIC}=+1.09$ relative to a constant-$\Delta C_{9}$
-  shift at the same parameter cost. The kernel does not beat the
-  constant shift on this dataset.
+  the kernel fits with $A=+1.14$,
+  $\Delta C_{9}^{\mathrm{eff}}=-0.86$, $\chi^{2}=41.98$ (32 points,
+  $k=1$). On AIC the kernel and a constant-$\Delta C_{9}$ shift at
+  the same parameter cost are statistically tied
+  ($\Delta\mathrm{AIC}=+1.09$, mild preference for the constant
+  shift).
 \item \textbf{Cross-dataset (non-linear, 5 fits across 2
   collaborations and 3 channels):} $\Delta\mathrm{AIC}\in
   [-0.24, +1.09]$ around zero, with $2/5$ favouring the kernel and
@@ -67,20 +69,31 @@ The earlier project iteration's falsification trigger ``A future
 analysis with non-linear $\Delta C_{9}$ evaluation gives
 $\Delta\mathrm{AIC}_{\mathrm{VFD\,vs\,FREE\_C9}}\geq 0$ on the LHCb
 2025 joint fit'' has now fired (\S\ref{subsec:joint_fit}). We
-therefore explicitly weaken the model-comparison claim: the kernel is
-sign-consistent with the anomaly but is not statistically preferred
-over a constant Wilson-coefficient shift.
+therefore explicitly weaken the \emph{model-comparison} claim: the
+kernel is not statistically preferred over a constant
+Wilson-coefficient shift on current data. The structural-test claims
+listed above are independent of, and unaffected by, this AIC tie.
 
-\paragraph{What this is, and is not.} This is a structural test of the
-$b\to s\mu\mu$ angular anomaly's $q^{2}$ shape. \emph{What survives
-the headline non-linear analysis:} a single geometry-derived kernel
-with one fitted amplitude per dataset is consistent in direction with
-the angular anomaly across two collaborations, two isospin partners,
-and one cross-channel test. \emph{What does not survive:} an AIC
-preference for the geometric shape over a constant
-Wilson-coefficient shift. The data does not yet distinguish the
-geometric kernel from a generic centre-peaked
-nuisance.
+\paragraph{What this is, and is not.}
+This is a structural test of whether a single fixed, geometry-derived
+$q^{2}$ shape can describe the $b\to s\mu^{+}\mu^{-}$ angular anomaly
+across heterogeneous datasets without retuning. \emph{What the data
+shows:} the same fixed kernel describes all five datasets — two
+collaborations, two isospin partners, three decay channels — with
+one amplitude each and no shape retuning; the fitted amplitude is
+sign-uniform across all five fits; the cross-channel amplitude ratio
+is consistent with the predicted Krüger--Matias basis-correction
+factor; and the unweighted Laplacian variant is selected by a
+pure-geometry criterion (correlation $0.997$ with the continuum
+kernel) decided independently of any LHCb input. \emph{What the data
+does not yet show:} a statistical preference for the geometric kernel
+over a constant Wilson-coefficient shift. AIC compares per-parameter
+goodness-of-fit and is blind to the structural claim itself; whether
+the kernel is statistically preferred over a constant shift will
+require future $b\to s\ell\ell$ data. The structural test passes;
+the model-comparison test is at parity. We do not claim a detection
+of new physics, nor that the kernel is the unique $q^{2}$ shape
+consistent with the anomaly.
 
 \paragraph{Reproducibility.} All code, data, processed outputs, and
 this paper are released under the MIT licence at

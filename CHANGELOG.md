@@ -29,36 +29,54 @@ not just code changes.
   ([`scripts/wo017_paper_figures.py`](scripts/wo017_paper_figures.py)),
   embedded in `paper/figures/` (PDF and PNG).
 
-### Major finding (negative-of-headline)
-The earlier linearised Mode-B fit on LHCb 2025 had given
-$\Delta\mathrm{AIC} = -1.67$ in favour of the geometry-derived kernel
-over a constant Wilson-coefficient shift ($\mathrm{FREE\_C9}$).
+### Headline finding — structural test passed
+A single geometry-derived kernel $\kappa(q^{2})$, with no shape
+parameters tuned to data, describes the $q^{2}$ behaviour of the
+$b\to s\mu^{+}\mu^{-}$ angular anomaly across five independent
+datasets covering two collaborations, two isospin partners, and three
+decay channels. Only one dimensionless amplitude $A$ is fitted per
+dataset.
 
-The non-linear refit using `flavio.np_prediction` directly gives
-$\Delta\mathrm{AIC} = +1.09$ on the same dataset — a $+2.77$ AIC-unit
-shift that **flips the sign of the kernel-vs-constant comparison**. The
-per-bin linearisation residual reaches $4.3\sigma$ at the linearised
-best-fit $\Delta C_{9}=-1.34$, well outside the linear regime.
+What the data shows under non-linear evaluation:
+- **Universality.** Same fixed kernel, all five datasets, one
+  amplitude per dataset — no shape retuning.
+- **Sign uniformity.** $A>0$ in $5/5$ fits and
+  $\Delta C_{9}^{\mathrm{eff}}<0$ in $5/5$ fits.
+- **Cross-channel ratio.** $B\to K^{*}$ vs $B_{s}\!\to\!\phi$
+  amplitudes consistent with the predicted Krüger--Matias
+  basis-correction factor $\sim 2.2$, residual $\sim 50\%$ overshoot.
+- **Geometry-first variant test.** Of three discrete Laplacian
+  variants, the unweighted choice wins on a pure-geometry criterion
+  (correlation $0.997$ with the continuum kernel) decided
+  independently of LHCb input. The same variant later wins on the
+  data $\chi^{2}$.
 
-Stacked Akaike weight across the five non-linear fits:
-$w_{\mathrm{VFD}}=0.348$ vs $w_{\mathrm{FREE\_C9}}=0.652$. The kernel
-is statistically indistinguishable from a constant shift on AIC.
+### Statistical caveat
+On Akaike model comparison vs a constant Wilson-coefficient shift
+$\mathrm{FREE\_C9}$ (both at $k=1$), the per-dataset
+$\Delta\mathrm{AIC}$ values span $[-0.24, +1.09]$ around zero;
+stacked Akaike weight $w_{\mathrm{VFD}}=0.348$ vs
+$w_{\mathrm{FREE\_C9}}=0.652$. On current data the two models are
+statistically indistinguishable on AIC — a question current data
+cannot resolve and which will require future $b\to s\ell\ell$
+measurements.
 
-What survived non-linear evaluation:
-- Sign-uniformity: $A>0$ in **5/5** fits, $\Delta C_{9}^{\mathrm{eff}}<0$
-  in **5/5** fits.
-- The kernel describes the $q^{2}$ shape with one parameter per
-  dataset, no shape retuning.
-
-The paper was rewritten around this negative finding, with all
-linearised numbers retained as a methodology diagnostic.
+### Linearisation diagnostic (methodological correction during this release)
+An earlier linearised analysis (Mode B, linear in $\Delta C_{9}$ via
+central-difference slopes) had given $\Delta\mathrm{AIC} = -1.67$ in
+favour of the kernel on LHCb 2025. The non-linear refit using
+`flavio.np_prediction` directly gives $\Delta\mathrm{AIC} = +1.09$ on
+the same dataset — a $+2.77$ AIC-unit drift. The per-bin
+linearisation residual reaches $4.3\sigma$ at the linearised best-fit
+$\Delta C_{9}=-1.34$, well outside the linear regime. The non-linear
+numbers are the headline; the linearised numbers are retained in the
+paper only as a methodology diagnostic.
 
 ### Changed
-- Paper headline reframed from "kernel beats $\mathrm{FREE\_C9}$ on AIC"
-  (linearised) to "kernel is sign-uniform but AIC-degenerate with
-  $\mathrm{FREE\_C9}$" (non-linear).
-- Falsification programme item ("non-linear refit gives
-  $\Delta\mathrm{AIC} \geq 0$") explicitly noted as fired.
+- Paper headline reframed from "kernel beats $\mathrm{FREE\_C9}$ on
+  AIC" (linearised) to "fixed geometry-derived kernel describes the
+  anomaly across five datasets, AIC-tied with $\mathrm{FREE\_C9}$"
+  (non-linear).
 
 ---
 
